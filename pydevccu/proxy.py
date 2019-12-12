@@ -1,9 +1,6 @@
-import ssl
-import socket
 import xmlrpc.client
 import threading
 import logging
-import urllib
 
 LOG = logging.getLogger(__name__)
 
