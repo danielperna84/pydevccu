@@ -7,7 +7,7 @@ import json
 from xmlrpc.server import SimpleXMLRPCServer
 from xmlrpc.server import SimpleXMLRPCRequestHandler
 
-from pydevccu.const import IP_LOCALHOST_V4, PORT_RF, DEVICE_DESCRIPTIONS, PARAMSET_DESCRIPTIONS
+from pydevccu import const
 from pydevccu.proxy import LockingServerProxy
 
 LOG = logging.getLogger(__name__)
@@ -21,24 +21,42 @@ class RPCFunctions():
         LOG.debug("RPCFunctions.__init__")
         self.remotes = {}
         try:
+            self.interface_id = "pydevccu"
             self.devices = []
             self.paramset_descriptions = {}
+            self.states = {}
             script_dir = os.path.dirname(__file__)
-            dd_rel_path = DEVICE_DESCRIPTIONS
+            dd_rel_path = const.DEVICE_DESCRIPTIONS
             dd_path = os.path.join(script_dir, dd_rel_path)
             for filename in os.listdir(dd_path):
                 with open(os.path.join(dd_path, filename)) as fptr:
                     self.devices.extend(json.load(fptr))
-            pd_rel_path = PARAMSET_DESCRIPTIONS
+            pd_rel_path = const.PARAMSET_DESCRIPTIONS
             pd_path = os.path.join(script_dir, pd_rel_path)
             for filename in os.listdir(pd_path):
                 with open(os.path.join(pd_path, filename)) as fptr:
                     pd = json.load(fptr)
                     for k, v in pd.items():
                         self.paramset_descriptions[k] = v
+            if not os.path.exists(const.STATES_DB):
+                self._initStates()
+            self._loadStates()
         except Exception as err:
             LOG.debug("RPCFunctions.__init__: Exception: %s" % err)
             self.devices = []
+
+    def _initStates(self):
+        with open(const.STATES_DB, 'w') as fptr:
+            fptr.write("{}")
+
+    def _loadStates(self):
+        with open(const.STATES_DB) as fptr:
+            self.states = json.load(fptr)
+
+    def _saveStates(self):
+        LOG.debug("Saving states")
+        with open(const.STATES_DB, 'w') as fptr:
+            json.dump(self.states, fptr)
 
     def _askDevices(self, interface_id):
         LOG.debug("RPCFunctions._askDevices: waiting")
@@ -56,6 +74,9 @@ class RPCFunctions():
         self.remotes[interface_id].newDevices(interface_id, self.devices)
         LOG.debug("RPCFunctions._pushDevices: pushed")
 
+    def _fireEvent(self, interface_id, address, value_key, value):
+        LOG.debug("RPCFunctions._fireEvent: %s, %s, %s, %s", interface_id, address, value_key, value)
+
     def listDevices(self, interface_id=None):
         LOG.debug("RPCFunctions.listDevices: interface_id = %s" % interface_id)
         return self.devices
@@ -66,16 +87,59 @@ class RPCFunctions():
 
     def getValue(self, address, value_key):
         LOG.debug("RPCFunctions.getValue: address=%s, value_key=%s" % (address, value_key))
-        return True
+        try:
+            return self.states[address][value_key]
+        except:
+            return self.paramset_descriptions[address][const.ATTR_VALUES][value_key][const.PARAMSET_ATTR_DEFAULT]
 
     def setValue(self, address, value_key, value):
-        LOG.debug("RPCFunctions.getValue: address=%s, value_key=%s, value=%s" % (address, value_key, value))
+        LOG.debug("RPCFunctions.setValue: address=%s, value_key=%s, value=%s" % (address, value_key, value))
+        paramsets = self.paramset_descriptions[address]
+        paramset_values = paramsets[const.ATTR_VALUES]
+        param_data = paramset_values[value_key]
+        if not const.PARAMSET_OPERATIONS_WRITE & param_data[const.PARAMSET_ATTR_OPERATIONS]:
+            LOG.warning("RPCFunctions.setValue: address=%s, value_key=%s: write operation not allowed" % (address, value_key))
+            raise Exception
+        if param_data[const.PARAMSET_ATTR_TYPE] == const.PARAMSET_TYPE_ACTION:
+            self._fireEvent(self.interface_id, address, value_key, True)
+            return ""
+        if param_data[const.PARAMSET_ATTR_TYPE] == const.PARAMSET_TYPE_BOOL:
+            value = bool(value)
+        if param_data[const.PARAMSET_ATTR_TYPE] == const.PARAMSET_TYPE_STRING:
+            value = str(value)
+        if param_data[const.PARAMSET_ATTR_TYPE] in [const.PARAMSET_TYPE_INTEGER, const.PARAMSET_TYPE_ENUM]:
+            value = int(float(value))
+        if param_data[const.PARAMSET_ATTR_TYPE] == const.PARAMSET_TYPE_FLOAT:
+            value = float(value)
+        if param_data[const.PARAMSET_ATTR_TYPE] in [const.PARAMSET_TYPE_INTEGER, const.PARAMSET_TYPE_ENUM]:
+            if value > float(param_data[const.PARAMSET_ATTR_MAX]):
+                LOG.warning("RPCFunctions.setValue: address=%s, value_key=%s: value too high" % (address, value_key))
+                raise Exception
+            if value < float(param_data[const.PARAMSET_ATTR_MIN]):
+                LOG.warning("RPCFunctions.setValue: address=%s, value_key=%s: value too low" % (address, value_key))
+                raise Exception
+        if param_data[const.PARAMSET_ATTR_TYPE] == const.PARAMSET_TYPE_FLOAT:
+            special = param_data.get(const.PARAMSET_ATTR_SPECIAL, [])
+            valid = []
+            for special_value in special:
+                for _, v in special_value:
+                    valid.append(v)
+            if value > float(param_data[const.PARAMSET_ATTR_MAX]) and value not in valid:
+                LOG.warning("RPCFunctions.setValue: address=%s, value_key=%s: value too high and not special" % (address, value_key))
+                raise Exception
+            if value < float(param_data[const.PARAMSET_ATTR_MIN]) and value not in valid:
+                LOG.warning("RPCFunctions.setValue: address=%s, value_key=%s: value too low and not special" % (address, value_key))
+                raise Exception
+        self._fireEvent(self.interface_id, address, value_key, value)
+        if address not in self.states:
+            self.states[address] = {}
+        self.states[address][value_key] = value
         return ""
 
     def getDeviceDescription(self, address):
         LOG.debug("RPCFunctions.getDeviceDescription: address=%s" % (address, ))
         for device in self.devices:
-            if device.get('ADDRESS') == address:
+            if device.get(const.ATTR_ADDRESS) == address:
                 return device
         raise Exception
 
@@ -102,7 +166,7 @@ class RequestHandler(SimpleXMLRPCRequestHandler):
 
 class ServerThread(threading.Thread):
     """XML-RPC server thread to handle messages from CCU / Homegear"""
-    def __init__(self, local=IP_LOCALHOST_V4, localport=PORT_RF):
+    def __init__(self, local=const.IP_LOCALHOST_V4, localport=const.PORT_RF):
         self._local = local
         self._localport = localport
         LOG.debug("ServerThread.__init__")
@@ -131,6 +195,7 @@ class ServerThread(threading.Thread):
 
     def stop(self):
         """Shut down our XML-RPC server."""
+        self._rpcfunctions._saveStates()
         LOG.info("Shutting down server")
         self.server.shutdown()
         LOG.debug("ServerThread.stop: Stopping ServerThread")
