@@ -1,0 +1,238 @@
+{
+"VCU0000141": {
+"MASTER": {
+"LOCAL_RESET_DISABLE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000141:0": {
+"MASTER": {},
+"VALUES": {
+"UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"STICKY_UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 11,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONFIG_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LOWBAT": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_DEVICE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_PEER": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_KEY": {
+"TYPE": "INTEGER",
+"OPERATIONS": 1,
+"FLAGS": 0,
+"DEFAULT": 0,
+"MAX": 127,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"DEVICE_IN_BOOTLOADER": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"UPDATE_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000141:1": {
+"MASTER": {
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"METER_TYPE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 3,
+"MAX": 3,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"GAS-SENSOR",
+"IR-SENSOR",
+"LED-SENSOR",
+"UNKOWN"
+]
+},
+"METER_CONSTANT_IR": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 100,
+"MAX": 65536,
+"MIN": 1,
+"UNIT": "U./kWh",
+"TAB_ORDER": 0
+},
+"METER_SENSIBILITY_IR": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 99,
+"MIN": -99,
+"UNIT": "%",
+"TAB_ORDER": 0
+},
+"METER_CONSTANT_GAS": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.01,
+"MAX": 65.536,
+"MIN": 0.001,
+"UNIT": "m3/Imp.",
+"TAB_ORDER": 0
+},
+"METER_CONSTANT_LED": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 10000,
+"MAX": 65536,
+"MIN": 1,
+"UNIT": "Imp./kWh",
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"BOOT": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "POWERMETER_IGL.BOOT"
+},
+"GAS_ENERGY_COUNTER": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 2147483.647,
+"MIN": 0.0,
+"UNIT": "m3",
+"TAB_ORDER": 0,
+"CONTROL": "POWERMETER_IGL.GAS_ENERGY_COUNTER"
+},
+"GAS_POWER": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 16777.215,
+"MIN": 0.0,
+"UNIT": "m3",
+"TAB_ORDER": 0,
+"CONTROL": "POWERMETER_IGL.GAS_POWER"
+},
+"ENERGY_COUNTER": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 838860.7,
+"MIN": 0.0,
+"UNIT": "Wh",
+"TAB_ORDER": 0,
+"CONTROL": "POWERMETER_IGL.ENERGY_COUNTER"
+},
+"POWER": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 167772.15,
+"MIN": 0.0,
+"UNIT": "W",
+"TAB_ORDER": 0,
+"CONTROL": "POWERMETER_IGL.POWER"
+}
+}
+}
+}

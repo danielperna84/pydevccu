@@ -1,0 +1,1111 @@
+{
+"VCU0000014": {
+"MASTER": {
+"LOGGING_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 2.0,
+"MAX": 25.5,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"CENTRAL_ADDRESS": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"DIRECT_LINK_DEACTIVATE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000014:0": {
+"MASTER": {},
+"VALUES": {
+"UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"STICKY_UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONFIG_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000014:1": {
+"MASTER": {
+"INPUT_TYPE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"SWITCH",
+"PUSHBUTTON"
+]
+},
+"INPUT_LOCKED": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LONG_PRESS_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1.0,
+"MAX": 5.0,
+"MIN": 0.4,
+"UNIT": "s",
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"CHANNEL": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 255,
+"MAX": 255,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"ACTUATOR": {
+"TYPE": "",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+}
+}
+},
+"VCU0000014:2": {
+"MASTER": {
+"INPUT_TYPE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"SWITCH",
+"PUSHBUTTON"
+]
+},
+"INPUT_LOCKED": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LONG_PRESS_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1.0,
+"MAX": 5.0,
+"MIN": 0.4,
+"UNIT": "s",
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"CHANNEL": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 255,
+"MAX": 255,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"ACTUATOR": {
+"TYPE": "",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+}
+}
+},
+"VCU0000014:3": {
+"MASTER": {
+"LOGGING": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"OFF",
+"ON"
+]
+}
+},
+"LINK": {
+"UI_HINT": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": "",
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"SENSOR": {
+"TYPE": "",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CHANNEL": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 255,
+"MAX": 255,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"SHORT_ON_TIME_MODE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"MINIMAL",
+"ABSOLUTE"
+]
+},
+"SHORT_OFF_TIME_MODE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"MINIMAL",
+"ABSOLUTE"
+]
+},
+"SHORT_TOGGLE_USE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"DONT_USE",
+"DIRECT",
+"INVERTED"
+]
+},
+"SHORT_ACTION_TYPE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"INACTIVE",
+"ACTIVE"
+]
+},
+"SHORT_ONDELAY_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"SHORT_ON_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 16383000.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 16383000.0
+}
+},
+"SHORT_OFFDELAY_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"SHORT_OFF_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 16383000.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 16383000.0
+}
+},
+"SHORT_JT_ONDELAY": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"SHORT_JT_ON": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 2,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"SHORT_JT_OFFDELAY": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 3,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"SHORT_JT_OFF": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"LONG_ON_TIME_MODE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"MINIMAL",
+"ABSOLUTE"
+]
+},
+"LONG_OFF_TIME_MODE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"MINIMAL",
+"ABSOLUTE"
+]
+},
+"LONG_TOGGLE_USE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"DONT_USE",
+"DIRECT",
+"INVERTED"
+]
+},
+"LONG_MULTIEXECUTE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": true,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LONG_ACTION_TYPE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"INACTIVE",
+"ACTIVE"
+]
+},
+"LONG_ONDELAY_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"LONG_ON_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 16383000.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 16383000.0
+}
+},
+"LONG_OFFDELAY_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"LONG_OFF_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 16383000.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 16383000.0
+}
+},
+"LONG_JT_ONDELAY": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"LONG_JT_ON": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 2,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"LONG_JT_OFFDELAY": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 3,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"LONG_JT_OFF": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+}
+},
+"VALUES": {
+"STATE": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "SWITCH.STATE"
+},
+"WORKING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INHIBIT": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+}
+},
+"VCU0000014:4": {
+"MASTER": {
+"LOGGING": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"OFF",
+"ON"
+]
+}
+},
+"LINK": {
+"UI_HINT": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": "",
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"SENSOR": {
+"TYPE": "",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CHANNEL": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 255,
+"MAX": 255,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"SHORT_ON_TIME_MODE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"MINIMAL",
+"ABSOLUTE"
+]
+},
+"SHORT_OFF_TIME_MODE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"MINIMAL",
+"ABSOLUTE"
+]
+},
+"SHORT_TOGGLE_USE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"DONT_USE",
+"DIRECT",
+"INVERTED"
+]
+},
+"SHORT_ACTION_TYPE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"INACTIVE",
+"ACTIVE"
+]
+},
+"SHORT_ONDELAY_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"SHORT_ON_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 16383000.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 16383000.0
+}
+},
+"SHORT_OFFDELAY_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"SHORT_OFF_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 16383000.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 16383000.0
+}
+},
+"SHORT_JT_ONDELAY": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"SHORT_JT_ON": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 2,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"SHORT_JT_OFFDELAY": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 3,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"SHORT_JT_OFF": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"LONG_ON_TIME_MODE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"MINIMAL",
+"ABSOLUTE"
+]
+},
+"LONG_OFF_TIME_MODE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"MINIMAL",
+"ABSOLUTE"
+]
+},
+"LONG_TOGGLE_USE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"DONT_USE",
+"DIRECT",
+"INVERTED"
+]
+},
+"LONG_MULTIEXECUTE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": true,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LONG_ACTION_TYPE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"INACTIVE",
+"ACTIVE"
+]
+},
+"LONG_ONDELAY_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"LONG_ON_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 16383000.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 16383000.0
+}
+},
+"LONG_OFFDELAY_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"LONG_OFF_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 16383000.0,
+"MAX": 982980.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 16383000.0
+}
+},
+"LONG_JT_ONDELAY": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"LONG_JT_ON": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 2,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"LONG_JT_OFFDELAY": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 3,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+},
+"LONG_JT_OFF": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ONDELAY",
+"ON",
+"OFFDELAY",
+"OFF",
+"NO_JUMP_IGNORE_COMMAND"
+]
+}
+},
+"VALUES": {
+"STATE": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "SWITCH.STATE"
+},
+"WORKING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INHIBIT": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+}
+}
+}

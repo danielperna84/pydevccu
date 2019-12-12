@@ -1,0 +1,151 @@
+{
+"VCU0000353": {
+"MASTER": {}
+},
+"VCU0000353:0": {
+"MASTER": {},
+"VALUES": {
+"UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"STICKY_UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 11,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONFIG_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LOWBAT": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_DEVICE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_PEER": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000353:1": {
+"MASTER": {},
+"VALUES": {},
+"LINK": {}
+},
+"VCU0000353:2": {
+"MASTER": {},
+"VALUES": {},
+"LINK": {}
+},
+"VCU0000353:3": {
+"MASTER": {},
+"VALUES": {},
+"LINK": {}
+},
+"VCU0000353:4": {
+"MASTER": {},
+"VALUES": {},
+"LINK": {}
+},
+"VCU0000353:5": {
+"MASTER": {},
+"VALUES": {},
+"LINK": {}
+},
+"VCU0000353:6": {
+"MASTER": {},
+"VALUES": {},
+"LINK": {}
+},
+"VCU0000353:7": {
+"MASTER": {},
+"VALUES": {},
+"LINK": {}
+},
+"VCU0000353:8": {
+"MASTER": {},
+"VALUES": {},
+"LINK": {}
+},
+"VCU0000353:9": {
+"MASTER": {},
+"VALUES": {},
+"LINK": {}
+},
+"VCU0000353:10": {
+"MASTER": {},
+"VALUES": {
+"TEMPERATURE": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 80.0,
+"MIN": -40.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"HUMIDITY": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 99,
+"MIN": 0,
+"UNIT": "%",
+"TAB_ORDER": 0
+},
+"AIR_PRESSURE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1100,
+"MIN": 500,
+"UNIT": "hPa",
+"TAB_ORDER": 0
+}
+},
+"LINK": {}
+}
+}

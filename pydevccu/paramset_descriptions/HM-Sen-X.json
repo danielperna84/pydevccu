@@ -1,0 +1,205 @@
+{
+"VCU0000264": {
+"MASTER": {}
+},
+"VCU0000264:0": {
+"MASTER": {},
+"VALUES": {
+"UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"STICKY_UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 11,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONFIG_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LOWBAT": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_KEY": {
+"TYPE": "INTEGER",
+"OPERATIONS": 1,
+"FLAGS": 0,
+"DEFAULT": 0,
+"MAX": 127,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_DEVICE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_PEER": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"unknown": true,
+"VCU0000264:1": {
+"MASTER": {
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"SEQUENCE_PULSE_1": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 4.08,
+"MIN": 0.032,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 0.0
+}
+},
+"SEQUENCE_PULSE_2": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 4.08,
+"MIN": 0.032,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 0.0
+}
+},
+"SEQUENCE_PULSE_3": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 4.08,
+"MIN": 0.032,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 0.0
+}
+},
+"SEQUENCE_PULSE_4": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 4.08,
+"MIN": 0.032,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 0.0
+}
+},
+"SEQUENCE_PULSE_5": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 4.08,
+"MIN": 0.032,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 0.0
+}
+},
+"SEQUENCE_TOLERANCE": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.016,
+"MAX": 4.08,
+"MIN": 0.016,
+"UNIT": "s",
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"SEQUENCE_OK": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "EVENT_INTERFACE.TRIGGER"
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+}
+}

@@ -1,0 +1,191 @@
+{
+"VCU0000193": {
+"MASTER": {}
+},
+"VCU0000193:0": {
+"MASTER": {},
+"VALUES": {
+"UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"STICKY_UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 11,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONFIG_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LOWBAT": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_KEY": {
+"TYPE": "INTEGER",
+"OPERATIONS": 1,
+"FLAGS": 0,
+"DEFAULT": 0,
+"MAX": 127,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_DEVICE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_PEER": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"unknown": true,
+"VCU0000193:1": {
+"MASTER": {
+"LONG_PRESS_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.4,
+"MAX": 1.8,
+"MIN": 0.3,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"DBL_PRESS_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.5,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+}
+}

@@ -1,0 +1,105 @@
+{
+"VCU0000259": {
+"MASTER": {}
+},
+"VCU0000259:0": {
+"MASTER": {},
+"VALUES": {
+"UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"STICKY_UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 11,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONFIG_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LOWBAT": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"DUTYCYCLE": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_DEVICE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_PEER": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000259:1": {
+"MASTER": {},
+"VALUES": {
+"STATE": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 3,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+}
+}

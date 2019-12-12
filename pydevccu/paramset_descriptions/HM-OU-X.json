@@ -1,0 +1,186 @@
+{
+"VCU0000159": {
+"MASTER": {
+"DISPLAY_ENERGYOPTIONS": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 255.0,
+"MAX": 255.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"DISPLAY_BRIGHTNESS": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 15,
+"MAX": 15,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"0",
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10",
+"11",
+"12",
+"13",
+"14",
+"15"
+]
+}
+}
+},
+"VCU0000159:0": {
+"MASTER": {},
+"VALUES": {
+"UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"STICKY_UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 11,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONFIG_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_DEVICE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_PEER": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LED_STATUS": {
+"TYPE": "INTEGER",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"AES_KEY": {
+"TYPE": "INTEGER",
+"OPERATIONS": 1,
+"FLAGS": 0,
+"DEFAULT": 0,
+"MAX": 127,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"unknown": true,
+"VCU0000159:1": {
+"MASTER": {
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BTN_SHORT_ONLY.SHORT"
+},
+"LED_STATUS": {
+"TYPE": "ENUM",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 3,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"OFF",
+"RED",
+"GREEN",
+"ORANGE"
+],
+"CONTROL": "NONE"
+},
+"ALL_LEDS": {
+"TYPE": "STRING",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+}
+}

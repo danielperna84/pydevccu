@@ -1,0 +1,125 @@
+{
+"VCU0000056": {
+"MASTER": {}
+},
+"VCU0000056:0": {
+"MASTER": {},
+"VALUES": {
+"UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"STICKY_UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 11,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONFIG_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LOWBAT": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_DEVICE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_PEER": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000056:1": {
+"MASTER": {
+"VALVE_OFFSET_VALUE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 25,
+"MIN": 0,
+"UNIT": "%",
+"TAB_ORDER": 0
+},
+"VALVE_ERROR_POSITION": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 99,
+"MIN": 0,
+"UNIT": "%",
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"VALVE_STATE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 99,
+"MIN": 0,
+"UNIT": "%",
+"TAB_ORDER": 0
+},
+"ERROR": {
+"TYPE": "ENUM",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"NO_ERROR",
+"VALVE_DRIVE_BLOCKED",
+"VALVE_DRIVE_LOOSE",
+"ADJUSTING_RANGE_TO_SMALL",
+"LOWBAT"
+],
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+}
+}

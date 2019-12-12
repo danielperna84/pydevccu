@@ -1,0 +1,3771 @@
+{
+"VCU0000053": {
+"MASTER": {
+"BUTTON_LOCK": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"DISPLAY_BACKLIGHT_MODE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"OFF",
+"AUTO"
+]
+},
+"DISPLAY_BACKLIGHT_TIME": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 5,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"0s",
+"5s",
+"10s",
+"15s",
+"20s",
+"25s"
+]
+}
+}
+},
+"VCU0000053:0": {
+"MASTER": {},
+"VALUES": {
+"UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"STICKY_UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 11,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONFIG_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LOWBAT": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_DEVICE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_PEER": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000053:1": {
+"MASTER": {},
+"VALUES": {
+"TEMPERATURE": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 80.0,
+"MIN": -40.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"HUMIDITY": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 99,
+"MIN": 0,
+"UNIT": "%",
+"TAB_ORDER": 0
+}
+},
+"LINK": {}
+},
+"VCU0000053:2": {
+"VALUES": {
+"SETPOINT": {
+"TYPE": "FLOAT",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": 21.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"VENT_OPEN": 100.0
+},
+"CONTROL": "TEMP.SETPOINT"
+},
+"ADJUSTING_COMMAND": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 4,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"ADJUSTING_DATA": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 250,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"STATE": {
+"TYPE": "BOOL",
+"OPERATIONS": 2,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "SWITCH.STATE"
+}
+},
+"MASTER": {
+"DISPLAY_TEMPERATUR_INFORMATION": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ACTUAL_VALUE",
+"SET_POINT"
+]
+},
+"DISPLAY_TEMPERATUR_UNIT": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"CELSIUS",
+"FAHRENHEIT"
+]
+},
+"MODE_TEMPERATUR_REGULATOR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 3,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"MANUAL",
+"AUTO",
+"CENTRAL",
+"PARTY"
+]
+},
+"MODE_TEMPERATUR_VALVE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"AUTO",
+"CLOSE_VALVE",
+"OPEN_VALVE"
+]
+},
+"DISPLAY_TEMPERATUR_HUMIDITY_CHANGE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"TEMPERATUR_ONLY",
+"TEMPERATUR_AND_HUMIDITY"
+]
+},
+"TEMPERATUR_COMFORT_VALUE": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 21.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_LOWERING_VALUE": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"PARTY_END_DAY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 200.0,
+"MIN": 0.0,
+"UNIT": "d",
+"TAB_ORDER": 0
+},
+"PARTY_END_MINUTE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1,
+"MIN": 0,
+"UNIT": "m",
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"00",
+"30"
+]
+},
+"PARTY_END_HOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 23,
+"MIN": 0,
+"UNIT": "h",
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"0",
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10",
+"11",
+"12",
+"13",
+"14",
+"15",
+"16",
+"17",
+"18",
+"19",
+"20",
+"21",
+"22",
+"23"
+]
+},
+"TEMPERATUR_PARTY_VALUE": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 21.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"DECALCIFICATION_DAY": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 6,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"SATURDAY",
+"SUNDAY",
+"MONDAY",
+"TUESDAY",
+"WEDNESDAY",
+"THURSDAY",
+"FRIDAY"
+]
+},
+"DECALCIFICATION_HOUR": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 11,
+"MAX": 23,
+"MIN": 0,
+"UNIT": "hour",
+"TAB_ORDER": 0
+},
+"DECALCIFICATION_MINUTE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 50,
+"MIN": 0,
+"UNIT": "minute",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_1": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 360,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_1": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_2": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1380,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_2": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 21.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_3": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_3": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_4": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_4": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_5": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_5": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_6": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_6": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_7": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_7": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_8": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_8": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_9": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_9": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_10": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_10": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_11": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_11": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_12": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_12": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_13": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_13": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_14": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_14": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_15": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_15": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_16": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_16": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_17": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_17": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_18": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_18": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_19": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_19": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_20": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_20": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_21": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_21": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_22": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_22": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_23": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_23": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SATURDAY_24": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SATURDAY_24": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_1": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 360,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_1": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_2": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1380,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_2": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 21.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_3": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_3": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_4": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_4": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_5": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_5": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_6": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_6": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_7": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_7": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_8": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_8": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_9": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_9": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_10": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_10": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_11": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_11": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_12": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_12": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_13": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_13": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_14": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_14": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_15": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_15": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_16": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_16": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_17": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_17": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_18": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_18": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_19": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_19": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_20": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_20": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_21": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_21": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_22": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_22": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_23": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_23": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_SUNDAY_24": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_SUNDAY_24": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_1": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 360,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_1": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_2": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1380,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_2": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 21.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_3": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_3": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_4": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_4": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_5": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_5": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_6": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_6": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_7": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_7": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_8": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_8": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_9": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_9": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_10": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_10": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_11": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_11": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_12": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_12": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_13": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_13": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_14": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_14": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_15": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_15": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_16": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_16": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_17": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_17": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_18": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_18": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_19": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_19": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_20": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_20": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_21": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_21": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_22": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_22": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_23": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_23": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_MONDAY_24": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_MONDAY_24": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_1": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 360,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_1": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_2": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1380,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_2": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 21.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_3": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_3": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_4": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_4": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_5": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_5": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_6": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_6": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_7": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_7": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_8": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_8": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_9": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_9": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_10": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_10": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_11": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_11": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_12": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_12": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_13": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_13": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_14": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_14": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_15": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_15": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_16": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_16": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_17": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_17": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_18": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_18": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_19": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_19": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_20": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_20": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_21": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_21": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_22": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_22": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_23": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_23": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_TUESDAY_24": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_TUESDAY_24": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_1": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 360,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_1": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_2": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1380,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_2": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 21.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_3": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_3": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_4": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_4": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_5": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_5": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_6": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_6": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_7": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_7": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_8": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_8": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_9": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_9": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_10": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_10": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_11": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_11": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_12": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_12": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_13": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_13": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_14": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_14": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_15": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_15": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_16": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_16": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_17": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_17": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_18": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_18": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_19": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_19": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_20": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_20": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_21": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_21": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_22": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_22": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_23": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_23": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_WEDNESDAY_24": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_WEDNESDAY_24": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_1": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 360,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_1": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_2": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1380,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_2": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 21.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_3": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_3": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_4": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_4": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_5": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_5": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_6": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_6": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_7": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_7": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_8": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_8": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_9": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_9": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_10": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_10": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_11": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_11": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_12": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_12": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_13": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_13": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_14": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_14": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_15": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_15": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_16": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_16": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_17": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_17": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_18": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_18": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_19": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_19": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_20": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_20": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_21": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_21": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_22": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_22": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_23": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_23": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_THURSDAY_24": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_THURSDAY_24": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_1": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 360,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_1": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_2": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1380,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_2": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 21.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_3": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_3": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 17.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_4": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_4": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_5": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_5": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_6": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_6": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_7": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_7": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_8": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_8": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_9": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_9": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_10": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_10": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_11": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_11": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_12": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_12": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_13": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_13": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_14": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_14": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_15": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_15": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_16": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_16": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_17": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_17": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_18": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_18": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_19": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_19": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_20": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_20": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_21": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_21": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_22": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_22": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_23": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_23": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+},
+"TIMEOUT_FRIDAY_24": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 1440,
+"MIN": 10,
+"UNIT": "minutes",
+"TAB_ORDER": 0
+},
+"TEMPERATUR_FRIDAY_24": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 20.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+}
+},
+"LINK": {}
+},
+"VCU0000053:3": {
+"MASTER": {},
+"VALUES": {},
+"LINK": {
+"TEMPERATUR_WINDOW_OPEN_VALUE": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 12.0,
+"MAX": 30.0,
+"MIN": 6.0,
+"UNIT": "\u00b0C",
+"TAB_ORDER": 0
+}
+}
+}
+}

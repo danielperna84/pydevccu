@@ -1,0 +1,2305 @@
+{
+"VCU0000019": {
+"MASTER": {
+"STANDBY_TIME": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 5,
+"MAX": 99,
+"MIN": 1,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"LANGUAGE": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ENGLISH",
+"GERMAN"
+]
+}
+}
+},
+"VCU0000019:0": {
+"MASTER": {},
+"VALUES": {
+"UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"STICKY_UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 11,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONFIG_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LOWBAT": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_DEVICE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_PEER": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_KEY": {
+"TYPE": "INTEGER",
+"OPERATIONS": 1,
+"FLAGS": 0,
+"DEFAULT": 0,
+"MAX": 127,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:1": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:2": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:3": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:4": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:5": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:6": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:7": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:8": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:9": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:10": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:11": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:12": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:13": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:14": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:15": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:16": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:17": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:18": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:19": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000019:20": {
+"MASTER": {
+"TEXT1": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TEXT2": {
+"TYPE": "STRING",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": null,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_LONG_RELEASE": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"PRESS_CONT": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+}
+}

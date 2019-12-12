@@ -1,0 +1,1078 @@
+{
+"VCU0000276": {
+"MASTER": {
+"TRANSMIT_DEV_TRY_MAX": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 5,
+"MAX": 10.0,
+"MIN": 1.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LOCAL_RESET_DISABLE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000276:0": {
+"MASTER": {},
+"VALUES": {
+"UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"STICKY_UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 11,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONFIG_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LOWBAT": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"DUTYCYCLE": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_KEY": {
+"TYPE": "INTEGER",
+"OPERATIONS": 1,
+"FLAGS": 0,
+"DEFAULT": 0,
+"MAX": 127,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_DEVICE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_PEER": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"DEVICE_IN_BOOTLOADER": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"UPDATE_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000276:1": {
+"MASTER": {
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TRANSMIT_TRY_MAX": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 5,
+"MAX": 10.0,
+"MIN": 1.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"HUMIDITY_DESIRED_VALUE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 7.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"WATERING_DURATION": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 90.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"WATERING_TIME_1_HOUR": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 24.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"WATERING_TIME_1_MINUTE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 60.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"WATERING_TIME_2_HOUR": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 24.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"WATERING_TIME_2_MINUTE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 60.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"ECO_DAYS": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 7.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"STATE": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "SWITCH.STATE"
+},
+"ON_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 85825945.6,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"INHIBIT": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"WORKING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 2,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONTROL_MODE": {
+"TYPE": "ENUM",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 3,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"AUTO-MODE",
+"MANU-MODE",
+"HOLIDAY-MODE",
+"INACTIVE-MODE"
+],
+"CONTROL": "NONE"
+},
+"FAULT_REPORTING": {
+"TYPE": "ENUM",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": 7,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"VALVE_NO_ERROR",
+"VALVE_ERROR_ENGINE_BLOCKED",
+"VALVE_ERROR_ENGINE_NOT_CONNECTED",
+"VALVE_ERROR_ENGINE_HARDWARE",
+"VALVE_ERROR_NO_4",
+"VALVE_ERROR_NO_5",
+"VALVE_ERROR_NO_6",
+"VALVE_ERROR_NO_7"
+],
+"CONTROL": "NONE"
+},
+"AUTO_MODE": {
+"TYPE": "ACTION",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"MANU_MODE": {
+"TYPE": "ACTION",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"HOLIDAY_MODE": {
+"TYPE": "ACTION",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"INACTIVE_MODE": {
+"TYPE": "ACTION",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000276:2": {
+"MASTER": {
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TRANSMIT_TRY_MAX": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 5,
+"MAX": 10.0,
+"MIN": 1.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"HUMIDITY_DESIRED_VALUE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 7.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"WATERING_DURATION": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 90.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"WATERING_TIME_1_HOUR": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 24.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"WATERING_TIME_1_MINUTE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 60.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"WATERING_TIME_2_HOUR": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 24.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"WATERING_TIME_2_MINUTE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 60.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"ECO_DAYS": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 7.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"STATE": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "SWITCH.STATE"
+},
+"ON_TIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 85825945.6,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"INHIBIT": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"WORKING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 2,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONTROL_MODE": {
+"TYPE": "ENUM",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 3,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"AUTO-MODE",
+"MANU-MODE",
+"HOLIDAY-MODE",
+"INACTIVE-MODE"
+],
+"CONTROL": "NONE"
+},
+"FAULT_REPORTING": {
+"TYPE": "ENUM",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": 7,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"VALVE_NO_ERROR",
+"VALVE_ERROR_ENGINE_BLOCKED",
+"VALVE_ERROR_ENGINE_NOT_CONNECTED",
+"VALVE_ERROR_ENGINE_HARDWARE",
+"VALVE_ERROR_NO_4",
+"VALVE_ERROR_NO_5",
+"VALVE_ERROR_NO_6",
+"VALVE_ERROR_NO_7"
+],
+"CONTROL": "NONE"
+},
+"AUTO_MODE": {
+"TYPE": "ACTION",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"MANU_MODE": {
+"TYPE": "ACTION",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"HOLIDAY_MODE": {
+"TYPE": "ACTION",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"INACTIVE_MODE": {
+"TYPE": "ACTION",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000276:3": {
+"MASTER": {
+"TRANSMIT_TRY_MAX": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 5,
+"MAX": 10.0,
+"MIN": 1.0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"LOWBAT_SENSOR": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"HUMIDITY": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 7,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 5,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"FAULT_REPORTING": {
+"TYPE": "ENUM",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": 7,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"SENSOR_NO_ERROR",
+"SENSOR_ERROR_CONNECTION_INTERRUPT",
+"SENSOR_WARNING_SEARCH_RUN_SHORT",
+"SENSOR_WARNING_SEARCH_RUN_LONG",
+"SENSOR_ERROR_NO_4",
+"SENSOR_ERROR_NO_5",
+"SENSOR_ERROR_NO_6",
+"SENSOR_ERROR_NO_7"
+],
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000276:4": {
+"MASTER": {
+"TRANSMIT_TRY_MAX": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 5,
+"MAX": 10.0,
+"MIN": 1.0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"LOWBAT_SENSOR": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+},
+"HUMIDITY": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 7,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 5,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"FAULT_REPORTING": {
+"TYPE": "ENUM",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": 7,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"SENSOR_NO_ERROR",
+"SENSOR_ERROR_CONNECTION_INTERRUPT",
+"SENSOR_WARNING_SEARCH_RUN_SHORT",
+"SENSOR_WARNING_SEARCH_RUN_LONG",
+"SENSOR_ERROR_NO_4",
+"SENSOR_ERROR_NO_5",
+"SENSOR_ERROR_NO_6",
+"SENSOR_ERROR_NO_7"
+],
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000276:5": {
+"MASTER": {
+"TRANSMIT_TRY_MAX": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 5,
+"MAX": 10.0,
+"MIN": 1.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000276:6": {
+"MASTER": {
+"TRANSMIT_TRY_MAX": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 5,
+"MAX": 10.0,
+"MIN": 1.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000276:7": {
+"MASTER": {
+"TRANSMIT_TRY_MAX": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 5,
+"MAX": 10.0,
+"MIN": 1.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000276:8": {
+"MASTER": {
+"TRANSMIT_TRY_MAX": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 5,
+"MAX": 10.0,
+"MIN": 1.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000276:9": {
+"MASTER": {
+"TRANSMIT_TRY_MAX": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 5,
+"MAX": 10.0,
+"MIN": 1.0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"INSTALL_TEST": {
+"TYPE": "ACTION",
+"OPERATIONS": 4,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"LINK": {
+"PEER_NEEDS_BURST": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"EXPECT_AES": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+}
+}

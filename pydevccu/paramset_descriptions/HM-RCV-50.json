@@ -1,0 +1,1981 @@
+{
+"VCU0000057": {
+"MASTER": {}
+},
+"VCU0000057:0": {
+"MASTER": {
+"AES_KEY": {
+"TYPE": "INTEGER",
+"OPERATIONS": 1,
+"FLAGS": 0,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"INSTALL_MODE": {
+"TYPE": "BOOL",
+"OPERATIONS": 3,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000057:1": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:2": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:3": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:4": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:5": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:6": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:7": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:8": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:9": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:10": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:11": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:12": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:13": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:14": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:15": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:16": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:17": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:18": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:19": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:20": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:21": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:22": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:23": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:24": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:25": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:26": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:27": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:28": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:29": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:30": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:31": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:32": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:33": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:34": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:35": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:36": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:37": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:38": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:39": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:40": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:41": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:42": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:43": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:44": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:45": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:46": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:47": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:48": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:49": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+},
+"VCU0000057:50": {
+"MASTER": {},
+"VALUES": {
+"PRESS_LONG": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.LONG"
+},
+"PRESS_SHORT": {
+"TYPE": "ACTION",
+"OPERATIONS": 6,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": 0,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "BUTTON.SHORT"
+},
+"LEVEL": {
+"TYPE": "FLOAT",
+"OPERATIONS": 2,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1.0,
+"MIN": 0.0,
+"UNIT": "100%",
+"TAB_ORDER": 0,
+"CONTROL": "NONE"
+}
+},
+"LINK": {}
+}
+}

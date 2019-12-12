@@ -1,0 +1,181 @@
+{
+"VCU0000265": {
+"MASTER": {
+"CYCLIC_INFO_MSG_DIS": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 255,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LOCAL_RESET_DISABLE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TRANSMIT_DEV_TRY_MAX": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 6,
+"MAX": 10.0,
+"MIN": 1.0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000265:0": {
+"MASTER": {},
+"VALUES": {
+"UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"STICKY_UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 11,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONFIG_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"LOWBAT": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_DEVICE": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"RSSI_PEER": {
+"TYPE": "INTEGER",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"AES_KEY": {
+"TYPE": "INTEGER",
+"OPERATIONS": 1,
+"FLAGS": 0,
+"DEFAULT": 0,
+"MAX": 127,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"DEVICE_IN_BOOTLOADER": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"UPDATE_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000265:1": {
+"MASTER": {
+"AES_ACTIVE": {
+"TYPE": "BOOL",
+"OPERATIONS": 0,
+"FLAGS": 3,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"TX_MINDELAY": {
+"TYPE": "INTEGER",
+"OPERATIONS": 3,
+"FLAGS": 1,
+"DEFAULT": 8,
+"MAX": 120,
+"MIN": 8,
+"UNIT": "s",
+"TAB_ORDER": 0
+},
+"TX_THRESHOLD_PERCENT": {
+"TYPE": "INTEGER",
+"OPERATIONS": 3,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 100,
+"MIN": 10,
+"UNIT": "%",
+"TAB_ORDER": 0,
+"SPECIAL": {
+"NOT_USED": 0.0
+}
+}
+},
+"VALUES": {
+"LUX": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 200000.0,
+"MIN": 0.0,
+"UNIT": "Lux",
+"TAB_ORDER": 0,
+"CONTROL": "LUXMETER.LUX"
+}
+}
+}
+}

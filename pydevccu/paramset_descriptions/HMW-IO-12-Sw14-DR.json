@@ -1,0 +1,895 @@
+{
+"VCU0000002": {
+"MASTER": {
+"CENTRAL_ADDRESS": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 2147483647,
+"MIN": -2147483648,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000002:0": {
+"MASTER": {},
+"VALUES": {
+"UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"STICKY_UNREACH": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+},
+"CONFIG_PENDING": {
+"TYPE": "BOOL",
+"OPERATIONS": 5,
+"FLAGS": 9,
+"DEFAULT": 0,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000002:1": {
+"MASTER": {},
+"VALUES": {
+"STATE": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "SWITCH.STATE"
+}
+}
+},
+"VCU0000002:2": {
+"MASTER": {},
+"VALUES": {
+"STATE": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "SWITCH.STATE"
+}
+}
+},
+"VCU0000002:3": {
+"MASTER": {},
+"VALUES": {
+"STATE": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "SWITCH.STATE"
+}
+}
+},
+"VCU0000002:4": {
+"MASTER": {},
+"VALUES": {
+"STATE": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "SWITCH.STATE"
+}
+}
+},
+"VCU0000002:5": {
+"MASTER": {},
+"VALUES": {
+"STATE": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "SWITCH.STATE"
+}
+}
+},
+"VCU0000002:6": {
+"MASTER": {},
+"VALUES": {
+"STATE": {
+"TYPE": "BOOL",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": false,
+"MAX": true,
+"MIN": false,
+"UNIT": null,
+"TAB_ORDER": 0,
+"CONTROL": "SWITCH.STATE"
+}
+}
+},
+"VCU0000002:7": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_OUTPUT",
+"DIGITAL_OUTPUT"
+]
+},
+"PULSETIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 600.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 50000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0,
+"CONTROL": "DIGITAL_ANALOG_OUTPUT.FREQUENCY"
+}
+}
+},
+"VCU0000002:8": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_OUTPUT",
+"DIGITAL_OUTPUT"
+]
+},
+"PULSETIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 600.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 50000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0,
+"CONTROL": "DIGITAL_ANALOG_OUTPUT.FREQUENCY"
+}
+}
+},
+"VCU0000002:9": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_OUTPUT",
+"DIGITAL_OUTPUT"
+]
+},
+"PULSETIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 600.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 50000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0,
+"CONTROL": "DIGITAL_ANALOG_OUTPUT.FREQUENCY"
+}
+}
+},
+"VCU0000002:10": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_OUTPUT",
+"DIGITAL_OUTPUT"
+]
+},
+"PULSETIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 600.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 50000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0,
+"CONTROL": "DIGITAL_ANALOG_OUTPUT.FREQUENCY"
+}
+}
+},
+"VCU0000002:11": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_OUTPUT",
+"DIGITAL_OUTPUT"
+]
+},
+"PULSETIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 600.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 50000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0,
+"CONTROL": "DIGITAL_ANALOG_OUTPUT.FREQUENCY"
+}
+}
+},
+"VCU0000002:12": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_OUTPUT",
+"DIGITAL_OUTPUT"
+]
+},
+"PULSETIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 600.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 50000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0,
+"CONTROL": "DIGITAL_ANALOG_OUTPUT.FREQUENCY"
+}
+}
+},
+"VCU0000002:13": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_OUTPUT",
+"DIGITAL_OUTPUT"
+]
+},
+"PULSETIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 600.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 50000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0,
+"CONTROL": "DIGITAL_ANALOG_OUTPUT.FREQUENCY"
+}
+}
+},
+"VCU0000002:14": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_OUTPUT",
+"DIGITAL_OUTPUT"
+]
+},
+"PULSETIME": {
+"TYPE": "FLOAT",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 600.0,
+"MIN": 0.0,
+"UNIT": "s",
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 7,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 50000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0,
+"CONTROL": "DIGITAL_ANALOG_OUTPUT.FREQUENCY"
+}
+}
+},
+"VCU0000002:15": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"FREQUENCY_INPUT",
+"DIGITAL_INPUT"
+]
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 350000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000002:16": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"FREQUENCY_INPUT",
+"DIGITAL_INPUT"
+]
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 350000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000002:17": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"FREQUENCY_INPUT",
+"DIGITAL_INPUT"
+]
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 350000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000002:18": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"FREQUENCY_INPUT",
+"DIGITAL_INPUT"
+]
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 350000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000002:19": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"FREQUENCY_INPUT",
+"DIGITAL_INPUT"
+]
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 350000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000002:20": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"FREQUENCY_INPUT",
+"DIGITAL_INPUT"
+]
+}
+},
+"VALUES": {
+"FREQUENCY": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 350000.0,
+"MIN": 0.0,
+"UNIT": "mHz",
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000002:21": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_INPUT",
+"DIGITAL_INPUT"
+]
+},
+"CALIBRATION": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 127,
+"MIN": -127,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"VALUE": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1000.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000002:22": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_INPUT",
+"DIGITAL_INPUT"
+]
+},
+"CALIBRATION": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 127,
+"MIN": -127,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"VALUE": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1000.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000002:23": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_INPUT",
+"DIGITAL_INPUT"
+]
+},
+"CALIBRATION": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 127,
+"MIN": -127,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"VALUE": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1000.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000002:24": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_INPUT",
+"DIGITAL_INPUT"
+]
+},
+"CALIBRATION": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 127,
+"MIN": -127,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"VALUE": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1000.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000002:25": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_INPUT",
+"DIGITAL_INPUT"
+]
+},
+"CALIBRATION": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 127,
+"MIN": -127,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"VALUE": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1000.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+},
+"VCU0000002:26": {
+"MASTER": {
+"BEHAVIOUR": {
+"TYPE": "ENUM",
+"OPERATIONS": 0,
+"FLAGS": 5,
+"DEFAULT": 1,
+"MAX": 1,
+"MIN": 0,
+"UNIT": null,
+"TAB_ORDER": 0,
+"VALUE_LIST": [
+"ANALOG_INPUT",
+"DIGITAL_INPUT"
+]
+},
+"CALIBRATION": {
+"TYPE": "INTEGER",
+"OPERATIONS": 0,
+"FLAGS": 1,
+"DEFAULT": 0,
+"MAX": 127,
+"MIN": -127,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+},
+"VALUES": {
+"VALUE": {
+"TYPE": "FLOAT",
+"OPERATIONS": 5,
+"FLAGS": 1,
+"DEFAULT": 0.0,
+"MAX": 1000.0,
+"MIN": 0.0,
+"UNIT": null,
+"TAB_ORDER": 0
+}
+}
+}
+}
