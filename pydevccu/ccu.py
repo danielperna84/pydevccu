@@ -21,6 +21,7 @@ class RPCFunctions():
         LOG.debug("RPCFunctions.__init__")
         self.remotes = {}
         try:
+            self.knownDevices = []
             self.interface_id = "pydevccu"
             self.devices = []
             self.paramset_descriptions = {}
@@ -61,8 +62,8 @@ class RPCFunctions():
     def _askDevices(self, interface_id):
         LOG.debug("RPCFunctions._askDevices: waiting")
         time.sleep(0.5)
-        knownDevices = self.remotes[interface_id].listDevices(interface_id)
-        LOG.debug("RPCFunctions._askDevices: %s" % knownDevices)
+        self.knownDevices = self.remotes[interface_id].listDevices(interface_id)
+        LOG.debug("RPCFunctions._askDevices: %s" % self.knownDevices)
         t = threading.Thread(name='_pushDevices',
                              target=self._pushDevices,
                              args=(interface_id, ))
@@ -71,8 +72,10 @@ class RPCFunctions():
     def _pushDevices(self, interface_id):
         LOG.debug("RPCFunctions._pushDevices: waiting")
         time.sleep(0.5)
-        self.remotes[interface_id].newDevices(interface_id, self.devices)
+        newDevices = [d for d in self.devices if d[const.ATTR_ADDRESS] not in self.paramset_descriptions.keys()]
+        self.remotes[interface_id].newDevices(interface_id, newDevices)
         LOG.debug("RPCFunctions._pushDevices: pushed")
+        self.knownDevices = []
 
     def _fireEvent(self, interface_id, address, value_key, value):
         LOG.debug("RPCFunctions._fireEvent: %s, %s, %s, %s", interface_id, address, value_key, value)
