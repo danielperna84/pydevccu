@@ -61,7 +61,6 @@ class RPCFunctions():
 
     def _askDevices(self, interface_id):
         LOG.debug("RPCFunctions._askDevices: waiting")
-        time.sleep(0.5)
         self.knownDevices = self.remotes[interface_id].listDevices(interface_id)
         LOG.debug("RPCFunctions._askDevices: %s" % self.knownDevices)
         t = threading.Thread(name='_pushDevices',
@@ -71,7 +70,6 @@ class RPCFunctions():
 
     def _pushDevices(self, interface_id):
         LOG.debug("RPCFunctions._pushDevices: waiting")
-        time.sleep(0.5)
         newDevices = [d for d in self.devices if d[const.ATTR_ADDRESS] not in self.paramset_descriptions.keys()]
         self.remotes[interface_id].newDevices(interface_id, newDevices)
         LOG.debug("RPCFunctions._pushDevices: pushed")
