@@ -310,11 +310,39 @@ def guess_channels(devname, nicename):
     except:
         pass
     try:
+        return int(re.search(r'[0-9]+\ channel', nicename).group(0).split(' ')[0]), False
+    except:
+        pass
+    try:
+        return int(re.search(r'[0-9]+\ switches', nicename).group(0).split(' ')[0]), False
+    except:
+        pass
+    try:
+        return int(re.search(r'[0-9]+\ button', nicename).group(0).split(' ')[0]), False
+    except:
+        pass
+    try:
+        return int(re.search(r'Button\ [0-9]+', nicename).group(0).split(' ')[1]), False
+    except:
+        pass
+    try:
         return int(re.search(r'Sw[0-9]+\-', devname).group(0)[:-1].split("Sw")[1]), False
     except:
         pass
     try:
         return int(re.search(r'RC\-[0-9]+', devname).group(0).split('-')[1]), False
+    except:
+        pass
+    try:
+        return int(re.search(r'PB\-[0-9]+', devname).group(0).split('-')[1]), False
+    except:
+        pass
+    try:
+        return int(re.search(r'RC-Sec[0-9]+', devname).group(0).split('RC-Sec')[1]), False
+    except:
+        pass
+    try:
+        return int(re.search(r'RC-Key[0-9]+', devname).group(0).split('RC-Key')[1]), False
     except:
         pass
     if 'Dim1' in devname:
@@ -327,7 +355,7 @@ def guess_channels(devname, nicename):
         return 8, False
     if 'Re-8' in devname:
         return 8, False
-    #print("Could not guess channels for: %s" % devname)
+    print("Could not guess channels for: %s (%s)" % (devname, nicename))
     return 1, True
 
 files = os.listdir(PATH_XML)
