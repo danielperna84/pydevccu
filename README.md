@@ -26,14 +26,14 @@ s.start()
 # Get address for a HM-Sec-WSD device
 s.supportedDevices()['HM-Sec-WDS']
 # Get device description
-s.getDeviceDescription("VCU0000348")
+s.getDeviceDescription('VCU0000348')
 # Get VALUES paramset for channel 1
 s.getParamsetDescription('VCU0000348:1', 'VALUES')
 # Get current state
-s.getValue('VCU0000348:1', "STATE")
+s.getValue('VCU0000348:1', 'STATE')
 # Set state to 2
 # Set force=True because parameter does not allow write operations (it's a sensor updated by hardware in real life)
-s.setValue('VCU0000348:1', "STATE", 2, force=True)
+s.setValue('VCU0000348:1', 'STATE', 2, force=True)
 # Stop server
 s.stop()
 ```
