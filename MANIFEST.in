@@ -1,0 +1,4 @@
+include pydevccu/device_descriptions/*
+include pydevccu/paramset_descriptions/*
+exclude pydevccu/hmip_xml_to_json.py
+exclude pydevccu/hm_xml_to_json.py
