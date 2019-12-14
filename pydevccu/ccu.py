@@ -29,6 +29,7 @@ class RPCFunctions():
             self.interface_id = "pydevccu"
             self.devices = []
             self.paramset_descriptions = {}
+            self.supported_devices = {}
             self.states = {}
             script_dir = os.path.dirname(__file__)
             dd_rel_path = const.DEVICE_DESCRIPTIONS
@@ -46,6 +47,9 @@ class RPCFunctions():
             if not os.path.exists(const.STATES_DB):
                 initStates()
             self._loadStates()
+            for device in self.devices:
+                if not ':' in device.get(const.ATTR_ADDRESS):
+                    self.supported_devices[device.get(const.ATTR_TYPE)] = device.get(const.ATTR_ADDRESS)
         except Exception as err:
             LOG.debug("RPCFunctions.__init__: Exception: %s", err)
             self.devices = []
@@ -220,3 +224,6 @@ class ServerThread(threading.Thread):
 
     def getServiceMessages(self):
         return self._rpcfunctions.getServiceMessages()
+
+    def supportedDevices(self):
+        return self._rpcfunctions.supported_devices

@@ -12,6 +12,7 @@ The main objective is to provide you access to all available devices without own
 - `getParamsetDesctiption(address, paramset)`
 - `listDevices()`
 - `getServiceMessages()` (Returns dummy-error)
+- `supportedDevices()` (Proprietary, `dict` of supported devices)
 
 ## Usage
 
@@ -22,8 +23,12 @@ import pydevccu
 s = pydevccu.Server()
 # Start server
 s.start()
-# Get device description for a HM-Sec-WDS
+# Get address for a HM-Sec-WSD device
+s.supportedDevices()['HM-Sec-WDS']
+# Get device description
 s.getDeviceDescription("VCU0000348")
+# Get VALUES paramset for channel 1
+s.getParamsetDescription('VCU0000348:1', 'VALUES')
 # Get current state
 s.getValue('VCU0000348:1', "STATE")
 # Set state to 2
