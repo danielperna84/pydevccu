@@ -355,6 +355,16 @@ def guess_channels(devname, nicename):
         return 8, False
     if 'Re-8' in devname:
         return 8, False
+    if devname in ['HM-PBI-4-FM', 'ZEL STG RM FST UP4', '263 145', 'BRC-H']:
+        return 4, False
+    if 'Rotary Handle Sensor' in nicename or devname == 'HM-SCI-3-FM':
+        return 3, False
+    if nicename.endswith('Shutter Contact') or 'HM-Sen-MD' in devname or 'HM-Sec-MD' in devname or 'HM-Sec-WDS' in devname:
+        return 1, False
+    if devname in ['HM-Sec-TiS', 'ZEL STG RM FFK', '263 162', 'HM-Sec-SCo', 'HM-MD', 'HM-RC-SB-X', 'HM-Sen-DB-PCB', 'HM-Sen-EP', 'HM-Sec-SFA-SM']:
+        return 1, False
+    if 'SENSOR_FOR_CARBON_DIOXIDE' in nicename:
+        return 1, False
     print("Could not guess channels for: %s (%s)" % (devname, nicename))
     return 1, True
 
