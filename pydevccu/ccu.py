@@ -98,39 +98,47 @@ class RPCFunctions():
         paramsets = self.paramset_descriptions[address]
         paramset_values = paramsets[const.ATTR_VALUES]
         param_data = paramset_values[value_key]
+        param_type = param_data[const.PARAMSET_ATTR_TYPE]
         if not const.PARAMSET_OPERATIONS_WRITE & param_data[const.PARAMSET_ATTR_OPERATIONS]:
             LOG.warning("RPCFunctions.setValue: address=%s, value_key=%s: write operation not allowed" % (address, value_key))
             raise Exception
-        if param_data[const.PARAMSET_ATTR_TYPE] == const.PARAMSET_TYPE_ACTION:
+        if param_type == const.PARAMSET_TYPE_ACTION:
             self._fireEvent(self.interface_id, address, value_key, True)
             return ""
-        if param_data[const.PARAMSET_ATTR_TYPE] == const.PARAMSET_TYPE_BOOL:
+        if param_type == const.PARAMSET_TYPE_BOOL:
             value = bool(value)
-        if param_data[const.PARAMSET_ATTR_TYPE] == const.PARAMSET_TYPE_STRING:
+        if param_type == const.PARAMSET_TYPE_STRING:
             value = str(value)
-        if param_data[const.PARAMSET_ATTR_TYPE] in [const.PARAMSET_TYPE_INTEGER, const.PARAMSET_TYPE_ENUM]:
+        if param_type in [const.PARAMSET_TYPE_INTEGER, const.PARAMSET_TYPE_ENUM]:
             value = int(float(value))
-        if param_data[const.PARAMSET_ATTR_TYPE] == const.PARAMSET_TYPE_FLOAT:
+        if param_type == const.PARAMSET_TYPE_FLOAT:
             value = float(value)
-        if param_data[const.PARAMSET_ATTR_TYPE] in [const.PARAMSET_TYPE_INTEGER, const.PARAMSET_TYPE_ENUM]:
+        if param_type == const.PARAMSET_TYPE_ENUM:
             if value > float(param_data[const.PARAMSET_ATTR_MAX]):
                 LOG.warning("RPCFunctions.setValue: address=%s, value_key=%s: value too high" % (address, value_key))
                 raise Exception
             if value < float(param_data[const.PARAMSET_ATTR_MIN]):
                 LOG.warning("RPCFunctions.setValue: address=%s, value_key=%s: value too low" % (address, value_key))
                 raise Exception
-        if param_data[const.PARAMSET_ATTR_TYPE] == const.PARAMSET_TYPE_FLOAT:
+        if param_type in [const.PARAMSET_TYPE_FLOAT, const.PARAMSET_TYPE_INTEGER]:
             special = param_data.get(const.PARAMSET_ATTR_SPECIAL, [])
             valid = []
             for special_value in special:
                 for _, v in special_value:
                     valid.append(v)
-            if value > float(param_data[const.PARAMSET_ATTR_MAX]) and value not in valid:
-                LOG.warning("RPCFunctions.setValue: address=%s, value_key=%s: value too high and not special" % (address, value_key))
-                raise Exception
-            if value < float(param_data[const.PARAMSET_ATTR_MIN]) and value not in valid:
-                LOG.warning("RPCFunctions.setValue: address=%s, value_key=%s: value too low and not special" % (address, value_key))
-                raise Exception
+            value = float(value)
+            if param_type == const.PARAMSET_TYPE_INTEGER:
+                value = int(value)
+            if value not in valid:
+                max_val = float(param_data[const.PARAMSET_ATTR_MAX])
+                min_val = float(param_data[const.PARAMSET_ATTR_MIN])
+                if param_type == const.PARAMSET_TYPE_INTEGER:
+                    max_val = int(max_val)
+                    min_val = int(min_val)
+                if value > max_val:
+                    value = max_val
+                if value < min_val:
+                    value = min_val
         self._fireEvent(self.interface_id, address, value_key, value)
         if address not in self.states:
             self.states[address] = {}
