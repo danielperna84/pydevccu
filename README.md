@@ -20,10 +20,11 @@ The main objective is to provide you access to all available devices without own
 import pydevccu
 # Create server that listens on 127.0.0.1:2001
 # To listen on another address initialize with ("1.2.3.4", 1234) as first argument
-s = pydevccu.Server()
+# Add optional list of device names to only load these devices
+s = pydevccu.Server(devices=['HM-Sec-WDS', 'HM-CC-RT-DN', 'HM-Sec-SC-2'])
 # Start server
 s.start()
-# Get address for a HM-Sec-WSD device
+# Get address for a HM-Sec-WDS device
 s.supportedDevices()['HM-Sec-WDS']
 # Get device description
 s.getDeviceDescription('VCU0000348')

@@ -21,7 +21,7 @@ def initStates():
 
 # Object holding the methods the XML-RPC server should provide.
 class RPCFunctions():
-    def __init__(self):
+    def __init__(self, devices):
         LOG.debug("RPCFunctions.__init__")
         self.remotes = {}
         try:
@@ -31,15 +31,26 @@ class RPCFunctions():
             self.paramset_descriptions = {}
             self.supported_devices = {}
             self.states = {}
+            self.active_devices = devices
+            if self.active_devices is not None:
+                LOG.info("RPCFunctions.__init__: Limiting to devices: %s", self.active_devices)
             script_dir = os.path.dirname(__file__)
             dd_rel_path = const.DEVICE_DESCRIPTIONS
             dd_path = os.path.join(script_dir, dd_rel_path)
             for filename in os.listdir(dd_path):
+                if self.active_devices is not None:
+                    devname = filename.split('.')[0].replace('_', ' ')
+                    if devname not in self.active_devices:
+                        continue
                 with open(os.path.join(dd_path, filename)) as fptr:
                     self.devices.extend(json.load(fptr))
             pd_rel_path = const.PARAMSET_DESCRIPTIONS
             pd_path = os.path.join(script_dir, pd_rel_path)
             for filename in os.listdir(pd_path):
+                if self.active_devices is not None:
+                    devname = filename.split('.')[0].replace('_', ' ')
+                    if devname not in self.active_devices:
+                        continue
                 with open(os.path.join(pd_path, filename)) as fptr:
                     pd = json.load(fptr)
                     for k, v in pd.items():
@@ -179,12 +190,12 @@ class RequestHandler(SimpleXMLRPCRequestHandler):
 
 class ServerThread(threading.Thread):
     """XML-RPC server thread to handle messages from CCU / Homegear"""
-    def __init__(self, addr=(const.IP_LOCALHOST_V4, const.PORT_RF)):
+    def __init__(self, addr=(const.IP_LOCALHOST_V4, const.PORT_RF), devices=None):
         LOG.debug("ServerThread.__init__")
         threading.Thread.__init__(self)
         self.addr = addr
         LOG.debug("__init__: Registering RPC methods")
-        self._rpcfunctions = RPCFunctions()
+        self._rpcfunctions = RPCFunctions(devices)
         LOG.debug("ServerThread.__init__: Setting up server")
         self.server = SimpleXMLRPCServer(addr, requestHandler=RequestHandler, logRequests=False, allow_none=True)
         self.server.register_introspection_functions()
