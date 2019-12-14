@@ -107,12 +107,7 @@ PARAMSET_DESC = {
     "MIN": 0,
     "UNIT": "",
     "TAB_ORDER": 0,
-    # Plus Geraetespezifisch
 }
-
-# Spezielles
-# TYPE=FLOAT -> SPECIAL
-# TYPE=INTEGER -> SPECIAL
 
 PVAL_XML_FALSE = 'false'
 PVAL_PD_FALSE = 0
@@ -369,7 +364,6 @@ def guess_channels(devname, nicename):
     return 1, True
 
 files = os.listdir(PATH_XML)
-#files = ['hm_xml/rf_s.xml']
 for filename in files:
     if filename == '.gitkeep':
         continue
@@ -396,8 +390,6 @@ for filename in files:
             continue
         dev_desc = []
         paramsets = {}
-        #print(filename)
-        #print(devname)
         d_dict = copy.deepcopy(DEV_DESC_DEV)
         d_dict["TYPE"] = devname
         address = "VCU" + format(nextid, '07d')
@@ -462,7 +454,6 @@ for filename in files:
                         for ps in p.findall("subset"):
                             p = paramset_defs.get(ps.get('ref'))
                             if p is None:
-                                #print("Couldn't find definition for paramset: %s (%s)" % (ps.get('ref'), filename))
                                 continue
                     paramsets[s_dict["ADDRESS"]][ptype], direction = paramset_to_dict(p)
                     #if not s_dict["DIRECTION"]:
