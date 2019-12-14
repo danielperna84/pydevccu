@@ -7,8 +7,8 @@ import json
 from xmlrpc.server import SimpleXMLRPCServer
 from xmlrpc.server import SimpleXMLRPCRequestHandler
 
-from pydevccu import const
-from pydevccu.proxy import LockingServerProxy
+from . import const
+from .proxy import LockingServerProxy
 
 LOG = logging.getLogger(__name__)
 if sys.stdout.isatty():
@@ -60,7 +60,6 @@ class RPCFunctions():
             json.dump(self.states, fptr)
 
     def _askDevices(self, interface_id):
-        LOG.debug("RPCFunctions._askDevices: waiting")
         self.knownDevices = self.remotes[interface_id].listDevices(interface_id)
         LOG.debug("RPCFunctions._askDevices: %s", self.knownDevices)
         t = threading.Thread(name='_pushDevices',
@@ -69,9 +68,9 @@ class RPCFunctions():
         t.start()
 
     def _pushDevices(self, interface_id):
-        LOG.debug("RPCFunctions._pushDevices: waiting")
-        newDevices = [d for d in self.devices if d[const.ATTR_ADDRESS] not in self.paramset_descriptions.keys()]
-        self.remotes[interface_id].newDevices(interface_id, newDevices)
+        #newDevices = [d for d in self.devices if d[const.ATTR_ADDRESS] not in self.paramset_descriptions.keys()]
+        #self.remotes[interface_id].newDevices(interface_id, newDevices)
+        self.remotes[interface_id].newDevices(interface_id, self.devices)
         LOG.debug("RPCFunctions._pushDevices: pushed")
         self.knownDevices = []
 
@@ -93,13 +92,13 @@ class RPCFunctions():
         except:
             return self.paramset_descriptions[address][const.ATTR_VALUES][value_key][const.PARAMSET_ATTR_DEFAULT]
 
-    def setValue(self, address, value_key, value):
+    def setValue(self, address, value_key, value, force=False):
         LOG.debug("RPCFunctions.setValue: address=%s, value_key=%s, value=%s", address, value_key, value)
         paramsets = self.paramset_descriptions[address]
         paramset_values = paramsets[const.ATTR_VALUES]
         param_data = paramset_values[value_key]
         param_type = param_data[const.PARAMSET_ATTR_TYPE]
-        if not const.PARAMSET_OPERATIONS_WRITE & param_data[const.PARAMSET_ATTR_OPERATIONS]:
+        if not const.PARAMSET_OPERATIONS_WRITE & param_data[const.PARAMSET_ATTR_OPERATIONS] and not force:
             LOG.warning(
                 "RPCFunctions.setValue: address=%s, value_key=%s: write operation not allowed", address, value_key)
             raise Exception
@@ -202,3 +201,22 @@ class ServerThread(threading.Thread):
         LOG.debug("ServerThread.stop: Stopping ServerThread")
         self.server.server_close()
         LOG.info("Server stopped")
+
+    # Convenience methods at server scope
+    def setValue(self, address, value_key, value, force=False):
+        return self._rpcfunctions.setValue(address, value_key, value, force)
+
+    def getValue(self, address, value_key):
+        return self._rpcfunctions.getValue(address, value_key)
+
+    def getDeviceDescription(self, address):
+        return self._rpcfunctions.getDeviceDescription(address)
+
+    def getParamsetDescription(self, address, paramset):
+        return self._rpcfunctions.getParamsetDescription(address, paramset)
+
+    def listDevices(self):
+        return self._rpcfunctions.listDevices()
+
+    def getServiceMessages(self):
+        return self._rpcfunctions.getServiceMessages()
