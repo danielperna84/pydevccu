@@ -91,6 +91,8 @@ class RPCFunctions():
 
     def _fireEvent(self, interface_id, address, value_key, value):
         LOG.debug("RPCFunctions._fireEvent: %s, %s, %s, %s", interface_id, address, value_key, value)
+        for interface_id, proxy in self.remotes.items():
+            proxy.event(interface_id, address, value_key, value)
 
     def listDevices(self, interface_id=None):
         LOG.debug("RPCFunctions.listDevices: interface_id = %s", interface_id)
@@ -98,13 +100,13 @@ class RPCFunctions():
 
     def getServiceMessages(self):
         LOG.debug("RPCFunctions.getServiceMessages")
-        return [['VCU0000001:1', 'ERROR', 7]]
+        return [['VCU0000001:1', const.ATTR_ERROR, 7]]
 
     def _getValue(self, address, value_key):
         try:
             return self.states[address][value_key]
         except:
-            return self.paramset_descriptions[address][const.ATTR_VALUES][value_key][const.PARAMSET_ATTR_DEFAULT]
+            return self.paramset_descriptions[address][const.PARAMSET_ATTR_VALUES][value_key][const.PARAMSET_ATTR_DEFAULT]
 
     def getValue(self, address, value_key):
         LOG.debug("RPCFunctions.getValue: address=%s, value_key=%s", address, value_key)
@@ -113,9 +115,9 @@ class RPCFunctions():
     def setValue(self, address, value_key, value, force=False):
         LOG.debug("RPCFunctions.setValue: address=%s, value_key=%s, value=%s", address, value_key, value)
         paramsets = self.paramset_descriptions[address]
-        paramset_values = paramsets[const.ATTR_VALUES]
+        paramset_values = paramsets[const.PARAMSET_ATTR_VALUES]
         param_data = paramset_values[value_key]
-        param_type = param_data[const.PARAMSET_ATTR_TYPE]
+        param_type = param_data[const.ATTR_TYPE]
         if not const.PARAMSET_OPERATIONS_WRITE & param_data[const.PARAMSET_ATTR_OPERATIONS] and not force:
             LOG.warning(
                 "RPCFunctions.setValue: address=%s, value_key=%s: write operation not allowed", address, value_key)
@@ -179,10 +181,13 @@ class RPCFunctions():
         if mode is not None:
             LOG.debug("RPCFunctions.getParamset: mode argument not supported")
             raise Exception
-        if paramset not in [const.ATTR_MASTER, const.ATTR_VALUES]:
+        if paramset not in [const.PARAMSET_ATTR_MASTER, const.PARAMSET_ATTR_VALUES]:
             raise Exception
         data = {}
-        for parameter in self.paramset_descriptions[address][paramset].keys():
+        pd = self.paramset_descriptions[address][paramset]
+        for parameter in pd.keys():
+            if pd[parameter][const.ATTR_FLAGS] & const.PARAMSET_FLAG_INTERNAL:
+                continue
             data[parameter] = self._getValue(address, parameter)
         return data
 
