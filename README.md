@@ -10,6 +10,7 @@ The main objective is to provide you access to all available devices without own
 - `getValue(address, value_key)`
 - `getDeviceDescription(address)`
 - `getParamsetDesctiption(address, paramset)`
+- `getParamset(address, paramset)` (The `mode` argument of a real CCU is not supported)
 - `listDevices()`
 - `getServiceMessages()` (Returns dummy-error)
 - `supportedDevices()` (Proprietary, `dict` of supported devices)
