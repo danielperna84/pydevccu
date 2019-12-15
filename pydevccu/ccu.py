@@ -100,12 +100,15 @@ class RPCFunctions():
         LOG.debug("RPCFunctions.getServiceMessages")
         return [['VCU0000001:1', 'ERROR', 7]]
 
-    def getValue(self, address, value_key):
-        LOG.debug("RPCFunctions.getValue: address=%s, value_key=%s", address, value_key)
+    def _getValue(self, address, value_key):
         try:
             return self.states[address][value_key]
         except:
             return self.paramset_descriptions[address][const.ATTR_VALUES][value_key][const.PARAMSET_ATTR_DEFAULT]
+
+    def getValue(self, address, value_key):
+        LOG.debug("RPCFunctions.getValue: address=%s, value_key=%s", address, value_key)
+        return self._getValue(address, value_key)
 
     def setValue(self, address, value_key, value, force=False):
         LOG.debug("RPCFunctions.setValue: address=%s, value_key=%s, value=%s", address, value_key, value)
@@ -171,6 +174,18 @@ class RPCFunctions():
         LOG.debug("RPCFunctions.getParamsetDescription: address=%s, paramset=%s", address, paramset)
         return self.paramset_descriptions[address][paramset]
 
+    def getParamset(self, address, paramset, mode=None):
+        LOG.debug("RPCFunctions.getParamset: address=%s, paramset=%s", address, paramset)
+        if mode is not None:
+            LOG.debug("RPCFunctions.getParamset: mode argument not supported")
+            raise Exception
+        if paramset not in [const.ATTR_MASTER, const.ATTR_VALUES]:
+            raise Exception
+        data = {}
+        for parameter in self.paramset_descriptions[address][paramset].keys():
+            data[parameter] = self._getValue(address, parameter)
+        return data
+
     def init(self, url, interface_id=None):
         LOG.debug("RPCFunctions.init: url=%s, interface_id=%s", url, interface_id)
         if interface_id:
@@ -229,6 +244,9 @@ class ServerThread(threading.Thread):
 
     def getParamsetDescription(self, address, paramset):
         return self._rpcfunctions.getParamsetDescription(address, paramset)
+
+    def getParamset(self, address, paramset):
+        return self._rpcfunctions.getParamset(address, paramset)
 
     def listDevices(self):
         return self._rpcfunctions.listDevices()

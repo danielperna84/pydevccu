@@ -17,6 +17,7 @@ DEVICE_DESCRIPTIONS = "device_descriptions"
 PARAMSET_DESCRIPTIONS = "paramset_descriptions"
 STATES_DB = "states_db.json"
 
+ATTR_MASTER = 'MASTER'
 ATTR_VALUES = 'VALUES'
 ATTR_ADDRESS = 'ADDRESS'
 ATTR_TYPE = 'TYPE'
