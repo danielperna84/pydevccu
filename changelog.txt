@@ -1,4 +1,4 @@
-Version 0.0.2 ()
+Version 0.0.2 (2019-12-16)
 - Add `getParamset` method
 - Add `devices` argument for Server-object
 - Fire events when `setValue` has been used
