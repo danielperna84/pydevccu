@@ -1,8 +1,5 @@
 import xmlrpc.client
 import threading
-import logging
-
-LOG = logging.getLogger(__name__)
 
 class LockingServerProxy(xmlrpc.client.ServerProxy):
     """
