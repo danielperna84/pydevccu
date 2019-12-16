@@ -13,7 +13,6 @@ from .proxy import LockingServerProxy
 LOG = logging.getLogger(__name__)
 if sys.stdout.isatty():
     logging.basicConfig(level=logging.DEBUG)
-    LOG.addHandler(logging.StreamHandler(sys.stdout))
 
 def initStates():
     with open(const.STATES_DB, 'w') as fptr:
@@ -83,11 +82,20 @@ class RPCFunctions():
         t.start()
 
     def _pushDevices(self, interface_id):
-        #newDevices = [d for d in self.devices if d[const.ATTR_ADDRESS] not in self.paramset_descriptions.keys()]
-        #self.remotes[interface_id].newDevices(interface_id, newDevices)
-        self.remotes[interface_id].newDevices(interface_id, self.devices)
+        newDevices = []
+        deleteDevices = []
+        knownDeviceAddresses = []
+        for device in self.knownDevices:
+            if device[const.ATTR_ADDRESS] not in self.paramset_descriptions.keys():
+                deleteDevices.append(device)
+            else:
+                knownDeviceAddresses.append(device[const.ATTR_ADDRESS])
+        for device in self.devices:
+            if device[const.ATTR_ADDRESS] not in knownDeviceAddresses:
+                newDevices.append(device)
+        self.remotes[interface_id].newDevices(interface_id, newDevices)
+        self.remotes[interface_id].deleteDevices(interface_id, deleteDevices)
         LOG.debug("RPCFunctions._pushDevices: pushed")
-        self.knownDevices = []
 
     def _fireEvent(self, interface_id, address, value_key, value):
         LOG.debug("RPCFunctions._fireEvent: %s, %s, %s, %s", interface_id, address, value_key, value)
@@ -113,7 +121,7 @@ class RPCFunctions():
         return self._getValue(address, value_key)
 
     def setValue(self, address, value_key, value, force=False):
-        LOG.debug("RPCFunctions.setValue: address=%s, value_key=%s, value=%s", address, value_key, value)
+        LOG.debug("RPCFunctions.setValue: address=%s, value_key=%s, value=%s, force=%s", address, value_key, value, force)
         paramsets = self.paramset_descriptions[address]
         paramset_values = paramsets[const.PARAMSET_ATTR_VALUES]
         param_data = paramset_values[value_key]
@@ -193,7 +201,7 @@ class RPCFunctions():
 
     def init(self, url, interface_id=None):
         LOG.debug("RPCFunctions.init: url=%s, interface_id=%s", url, interface_id)
-        if interface_id:
+        if interface_id is not None:
             try:
                 self.remotes[interface_id] = LockingServerProxy(url)
                 t = threading.Thread(name='_askDevices',
@@ -202,6 +210,14 @@ class RPCFunctions():
                 t.start()
             except Exception as err:
                 LOG.debug("RPCFunctions.init:Exception: %s", err)
+        else:
+            deletedremote = None
+            for remote in self.remotes:
+                if self.remotes[remote]._ServerProxy__host in url:
+                    deletedremote = remote
+                    break
+            if deletedremote is not None:
+                del self.remotes[deletedremote]
         return ""
 
 class RequestHandler(SimpleXMLRPCRequestHandler):

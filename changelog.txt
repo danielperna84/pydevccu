@@ -2,6 +2,7 @@ Version 0.0.2 ()
 - Add `getParamset` method
 - Add `devices` argument for Server-object
 - Fire events when `setValue` has been used
+- Improve (de)init
 - Code cleanup
 
 Version 0.0.1 (2019-12-14)
