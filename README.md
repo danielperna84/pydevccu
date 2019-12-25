@@ -9,8 +9,9 @@ The main objective is to provide you access to all available devices without own
 - `setValue(address, value_key, value, force=False)`
 - `getValue(address, value_key)`
 - `getDeviceDescription(address)`
-- `getParamsetDesctiption(address, paramset)`
-- `getParamset(address, paramset)` (The `mode` argument of a real CCU is not supported)
+- `getParamsetDesctiption(address, paramset_key)`
+- `getParamset(address, paramset_key)` (The `mode` argument of a real CCU is not supported)
+- `putParamset(address, paramset_key, paramset, force=False)` (The `rx_mode` argument of a real CCU is not supported)
 - `listDevices()`
 - `getServiceMessages()` (Returns dummy-error)
 - `supportedDevices()` (Proprietary, `dict` of supported devices)
@@ -36,6 +37,8 @@ s.getValue('VCU0000348:1', 'STATE')
 # Set state to 2
 # Set force=True because parameter does not allow write operations (it's a sensor updated by hardware in real life)
 s.setValue('VCU0000348:1', 'STATE', 2, force=True)
+# Set state to 1 using the putParamset method
+s.putParamset('VCU0000348:1', 'VALUES', {'STATE': 1}, force=True)
 # Stop server
 s.stop()
 ```
