@@ -196,7 +196,10 @@ class RPCFunctions():
         for parameter in pd.keys():
             if pd[parameter][const.ATTR_FLAGS] & const.PARAMSET_FLAG_INTERNAL:
                 continue
-            data[parameter] = self._getValue(address, parameter)
+            if paramset == const.PARAMSET_ATTR_VALUES:
+                data[parameter] = self._getValue(address, parameter)
+            else:
+                data[parameter] = self.paramset_descriptions[address][const.PARAMSET_ATTR_MASTER][parameter][const.PARAMSET_ATTR_DEFAULT]
         return data
 
     def init(self, url, interface_id=None):
