@@ -16,6 +16,7 @@ PORT_GROUPS_TLS = 49292
 DEVICE_DESCRIPTIONS = "device_descriptions"
 PARAMSET_DESCRIPTIONS = "paramset_descriptions"
 STATES_DB = "states_db.json"
+PARAMSETS_DB = "paramsets_db.json"
 
 ATTR_ADDRESS = 'ADDRESS'
 ATTR_TYPE = 'TYPE'

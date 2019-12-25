@@ -18,6 +18,10 @@ def initStates():
     with open(const.STATES_DB, 'w') as fptr:
         fptr.write("{}")
 
+def initParamsets():
+    with open(const.PARAMSETS_DB, 'w') as fptr:
+        fptr.write("{}")
+
 # Object holding the methods the XML-RPC server should provide.
 class RPCFunctions():
     def __init__(self, devices):
@@ -30,6 +34,7 @@ class RPCFunctions():
             self.paramset_descriptions = {}
             self.supported_devices = {}
             self.states = {}
+            self.paramsets = {}
             self.active_devices = devices
             if self.active_devices is not None:
                 LOG.info("RPCFunctions.__init__: Limiting to devices: %s", self.active_devices)
@@ -57,6 +62,9 @@ class RPCFunctions():
             if not os.path.exists(const.STATES_DB):
                 initStates()
             self._loadStates()
+            if not os.path.exists(const.PARAMSETS_DB):
+                initParamsets()
+            self._loadParamsets()
             for device in self.devices:
                 if not ':' in device.get(const.ATTR_ADDRESS):
                     self.supported_devices[device.get(const.ATTR_TYPE)] = device.get(const.ATTR_ADDRESS)
@@ -72,6 +80,15 @@ class RPCFunctions():
         LOG.debug("Saving states")
         with open(const.STATES_DB, 'w') as fptr:
             json.dump(self.states, fptr)
+
+    def _loadParamsets(self):
+        with open(const.PARAMSETS_DB) as fptr:
+            self.paramsets = json.load(fptr)
+
+    def _saveParamsets(self):
+        LOG.debug("Saving paramsets")
+        with open(const.PARAMSETS_DB, 'w') as fptr:
+            json.dump(self.paramsets, fptr)
 
     def _askDevices(self, interface_id):
         self.knownDevices = self.remotes[interface_id].listDevices(interface_id)
@@ -173,6 +190,15 @@ class RPCFunctions():
         self.states[address][value_key] = value
         return ""
 
+    def putParamset(self, address, paramset_key, paramset, rx_mode=None, force=False):
+        LOG.debug("RPCFunctions.putParamset: address=%s, paramset_key=%s, paramset=%s, force=%s", address, paramset_key, paramset, force)
+        if address not in self.paramsets:
+            self.paramsets[address] = {}
+        if paramset_key not in self.paramsets[address]:
+            self.paramsets[address][paramset_key] = {}
+        for parameter, value in paramset.items():
+            self.paramsets[address][paramset_key][parameter] = value
+
     def getDeviceDescription(self, address):
         LOG.debug("RPCFunctions.getDeviceDescription: address=%s", address)
         for device in self.devices:
@@ -180,26 +206,29 @@ class RPCFunctions():
                 return device
         raise Exception
 
-    def getParamsetDescription(self, address, paramset):
-        LOG.debug("RPCFunctions.getParamsetDescription: address=%s, paramset=%s", address, paramset)
-        return self.paramset_descriptions[address][paramset]
+    def getParamsetDescription(self, address, paramset_type):
+        LOG.debug("RPCFunctions.getParamsetDescription: address=%s, paramset_type=%s", address, paramset_type)
+        return self.paramset_descriptions[address][paramset_type]
 
-    def getParamset(self, address, paramset, mode=None):
-        LOG.debug("RPCFunctions.getParamset: address=%s, paramset=%s", address, paramset)
+    def getParamset(self, address, paramset_key, mode=None):
+        LOG.debug("RPCFunctions.getParamset: address=%s, paramset_key=%s", address, paramset_key)
         if mode is not None:
             LOG.debug("RPCFunctions.getParamset: mode argument not supported")
             raise Exception
-        if paramset not in [const.PARAMSET_ATTR_MASTER, const.PARAMSET_ATTR_VALUES]:
+        if paramset_key not in [const.PARAMSET_ATTR_MASTER, const.PARAMSET_ATTR_VALUES]:
             raise Exception
         data = {}
-        pd = self.paramset_descriptions[address][paramset]
+        pd = self.paramset_descriptions[address][paramset_key]
         for parameter in pd.keys():
             if pd[parameter][const.ATTR_FLAGS] & const.PARAMSET_FLAG_INTERNAL:
                 continue
-            if paramset == const.PARAMSET_ATTR_VALUES:
+            if paramset_key == const.PARAMSET_ATTR_VALUES:
                 data[parameter] = self._getValue(address, parameter)
             else:
-                data[parameter] = self.paramset_descriptions[address][const.PARAMSET_ATTR_MASTER][parameter][const.PARAMSET_ATTR_DEFAULT]
+                try:
+                    data[parameter] = self.paramsets[address][const.PARAMSET_ATTR_MASTER][parameter]
+                except:
+                    data[parameter] = self.paramset_descriptions[address][const.PARAMSET_ATTR_MASTER][parameter][const.PARAMSET_ATTR_DEFAULT]
         return data
 
     def init(self, url, interface_id=None):
@@ -250,6 +279,7 @@ class ServerThread(threading.Thread):
     def stop(self):
         """Shut down our XML-RPC server."""
         self._rpcfunctions._saveStates()
+        self._rpcfunctions._saveParamsets()
         LOG.info("Shutting down server")
         self.server.shutdown()
         LOG.debug("ServerThread.stop: Stopping ServerThread")
@@ -271,6 +301,9 @@ class ServerThread(threading.Thread):
 
     def getParamset(self, address, paramset):
         return self._rpcfunctions.getParamset(address, paramset)
+
+    def putParamset(self, address, paramset_key, paramset, force=False):
+        return self._rpcfunctions.putParamset(address, paramset_key, paramset, force)
 
     def listDevices(self):
         return self._rpcfunctions.listDevices()
