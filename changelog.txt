@@ -1,5 +1,5 @@
 Version 0.0.3 ()
-- Fix `getParamset` for `MASTER`, returns default
+- Fix `getParamset` for `MASTER`, returns default or value from `putParamset`
 - Add basic `putParamset` method
 
 Version 0.0.2 (2019-12-16)
