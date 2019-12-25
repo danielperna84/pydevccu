@@ -14,10 +14,6 @@ LOG = logging.getLogger(__name__)
 if sys.stdout.isatty():
     logging.basicConfig(level=logging.DEBUG)
 
-def initStates():
-    with open(const.STATES_DB, 'w') as fptr:
-        fptr.write("{}")
-
 def initParamsets():
     with open(const.PARAMSETS_DB, 'w') as fptr:
         fptr.write("{}")
@@ -33,7 +29,6 @@ class RPCFunctions():
             self.devices = []
             self.paramset_descriptions = {}
             self.supported_devices = {}
-            self.states = {}
             self.paramsets = {}
             self.active_devices = devices
             if self.active_devices is not None:
@@ -59,9 +54,6 @@ class RPCFunctions():
                     pd = json.load(fptr)
                     for k, v in pd.items():
                         self.paramset_descriptions[k] = v
-            if not os.path.exists(const.STATES_DB):
-                initStates()
-            self._loadStates()
             if not os.path.exists(const.PARAMSETS_DB):
                 initParamsets()
             self._loadParamsets()
@@ -71,15 +63,6 @@ class RPCFunctions():
         except Exception as err:
             LOG.debug("RPCFunctions.__init__: Exception: %s", err)
             self.devices = []
-
-    def _loadStates(self):
-        with open(const.STATES_DB) as fptr:
-            self.states = json.load(fptr)
-
-    def _saveStates(self):
-        LOG.debug("Saving states")
-        with open(const.STATES_DB, 'w') as fptr:
-            json.dump(self.states, fptr)
 
     def _loadParamsets(self):
         with open(const.PARAMSETS_DB) as fptr:
@@ -127,77 +110,70 @@ class RPCFunctions():
         LOG.debug("RPCFunctions.getServiceMessages")
         return [['VCU0000001:1', const.ATTR_ERROR, 7]]
 
-    def _getValue(self, address, value_key):
-        try:
-            return self.states[address][value_key]
-        except:
-            return self.paramset_descriptions[address][const.PARAMSET_ATTR_VALUES][value_key][const.PARAMSET_ATTR_DEFAULT]
-
     def getValue(self, address, value_key):
         LOG.debug("RPCFunctions.getValue: address=%s, value_key=%s", address, value_key)
-        return self._getValue(address, value_key)
+        return self.getParamset(address, const.PARAMSET_ATTR_VALUES).get(value_key)
 
     def setValue(self, address, value_key, value, force=False):
         LOG.debug("RPCFunctions.setValue: address=%s, value_key=%s, value=%s, force=%s", address, value_key, value, force)
-        paramsets = self.paramset_descriptions[address]
-        paramset_values = paramsets[const.PARAMSET_ATTR_VALUES]
-        param_data = paramset_values[value_key]
-        param_type = param_data[const.ATTR_TYPE]
-        if not const.PARAMSET_OPERATIONS_WRITE & param_data[const.PARAMSET_ATTR_OPERATIONS] and not force:
-            LOG.warning(
-                "RPCFunctions.setValue: address=%s, value_key=%s: write operation not allowed", address, value_key)
-            raise Exception
-        if param_type == const.PARAMSET_TYPE_ACTION:
-            self._fireEvent(self.interface_id, address, value_key, True)
-            return ""
-        if param_type == const.PARAMSET_TYPE_BOOL:
-            value = bool(value)
-        if param_type == const.PARAMSET_TYPE_STRING:
-            value = str(value)
-        if param_type in [const.PARAMSET_TYPE_INTEGER, const.PARAMSET_TYPE_ENUM]:
-            value = int(float(value))
-        if param_type == const.PARAMSET_TYPE_FLOAT:
-            value = float(value)
-        if param_type == const.PARAMSET_TYPE_ENUM:
-            if value > float(param_data[const.PARAMSET_ATTR_MAX]):
-                LOG.warning("RPCFunctions.setValue: address=%s, value_key=%s: value too high", address, value_key)
-                raise Exception
-            if value < float(param_data[const.PARAMSET_ATTR_MIN]):
-                LOG.warning("RPCFunctions.setValue: address=%s, value_key=%s: value too low", address, value_key)
-                raise Exception
-        if param_type in [const.PARAMSET_TYPE_FLOAT, const.PARAMSET_TYPE_INTEGER]:
-            special = param_data.get(const.PARAMSET_ATTR_SPECIAL, [])
-            valid = []
-            for special_value in special:
-                for _, v in special_value:
-                    valid.append(v)
-            value = float(value)
-            if param_type == const.PARAMSET_TYPE_INTEGER:
-                value = int(value)
-            if value not in valid:
-                max_val = float(param_data[const.PARAMSET_ATTR_MAX])
-                min_val = float(param_data[const.PARAMSET_ATTR_MIN])
-                if param_type == const.PARAMSET_TYPE_INTEGER:
-                    max_val = int(max_val)
-                    min_val = int(min_val)
-                if value > max_val:
-                    value = max_val
-                if value < min_val:
-                    value = min_val
-        self._fireEvent(self.interface_id, address, value_key, value)
-        if address not in self.states:
-            self.states[address] = {}
-        self.states[address][value_key] = value
+        paramset = {value_key: value}
+        self.putParamset(address, const.PARAMSET_ATTR_VALUES, paramset, force=force)
         return ""
 
-    def putParamset(self, address, paramset_key, paramset, rx_mode=None, force=False):
+    def putParamset(self, address, paramset_key, paramset, force=False, rx_mode=None):
         LOG.debug("RPCFunctions.putParamset: address=%s, paramset_key=%s, paramset=%s, force=%s", address, paramset_key, paramset, force)
-        if address not in self.paramsets:
-            self.paramsets[address] = {}
-        if paramset_key not in self.paramsets[address]:
-            self.paramsets[address][paramset_key] = {}
-        for parameter, value in paramset.items():
-            self.paramsets[address][paramset_key][parameter] = value
+        paramsets = self.paramset_descriptions[address]
+        paramset_values = paramsets[paramset_key]
+        for value_key, value in paramset.items():
+            param_data = paramset_values[value_key]
+            param_type = param_data[const.ATTR_TYPE]
+            if not const.PARAMSET_OPERATIONS_WRITE & param_data[const.PARAMSET_ATTR_OPERATIONS] and not force:
+                LOG.warning(
+                    "RPCFunctions.putParamset: address=%s, value_key=%s: write operation not allowed", address, value_key)
+                raise Exception
+            if param_type == const.PARAMSET_TYPE_ACTION:
+                self._fireEvent(self.interface_id, address, value_key, True)
+                return ""
+            if param_type == const.PARAMSET_TYPE_BOOL:
+                value = bool(value)
+            if param_type == const.PARAMSET_TYPE_STRING:
+                value = str(value)
+            if param_type in [const.PARAMSET_TYPE_INTEGER, const.PARAMSET_TYPE_ENUM]:
+                value = int(float(value))
+            if param_type == const.PARAMSET_TYPE_FLOAT:
+                value = float(value)
+            if param_type == const.PARAMSET_TYPE_ENUM:
+                if value > float(param_data[const.PARAMSET_ATTR_MAX]):
+                    LOG.warning("RPCFunctions.putParamset: address=%s, value_key=%s: value too high", address, value_key)
+                    raise Exception
+                if value < float(param_data[const.PARAMSET_ATTR_MIN]):
+                    LOG.warning("RPCFunctions.putParamset: address=%s, value_key=%s: value too low", address, value_key)
+                    raise Exception
+            if param_type in [const.PARAMSET_TYPE_FLOAT, const.PARAMSET_TYPE_INTEGER]:
+                special = param_data.get(const.PARAMSET_ATTR_SPECIAL, [])
+                valid = []
+                for special_value in special:
+                    for _, v in special_value:
+                        valid.append(v)
+                value = float(value)
+                if param_type == const.PARAMSET_TYPE_INTEGER:
+                    value = int(value)
+                if value not in valid:
+                    max_val = float(param_data[const.PARAMSET_ATTR_MAX])
+                    min_val = float(param_data[const.PARAMSET_ATTR_MIN])
+                    if param_type == const.PARAMSET_TYPE_INTEGER:
+                        max_val = int(max_val)
+                        min_val = int(min_val)
+                    if value > max_val:
+                        value = max_val
+                    if value < min_val:
+                        value = min_val
+            if address not in self.paramsets:
+                self.paramsets[address] = {}
+            if paramset_key not in self.paramsets[address]:
+                self.paramsets[address][paramset_key] = {}
+            self.paramsets[address][paramset_key][value_key] = value
+            self._fireEvent(self.interface_id, address, value_key, value)
 
     def getDeviceDescription(self, address):
         LOG.debug("RPCFunctions.getDeviceDescription: address=%s", address)
@@ -222,13 +198,10 @@ class RPCFunctions():
         for parameter in pd.keys():
             if pd[parameter][const.ATTR_FLAGS] & const.PARAMSET_FLAG_INTERNAL:
                 continue
-            if paramset_key == const.PARAMSET_ATTR_VALUES:
-                data[parameter] = self._getValue(address, parameter)
-            else:
-                try:
-                    data[parameter] = self.paramsets[address][const.PARAMSET_ATTR_MASTER][parameter]
-                except:
-                    data[parameter] = self.paramset_descriptions[address][const.PARAMSET_ATTR_MASTER][parameter][const.PARAMSET_ATTR_DEFAULT]
+            try:
+                data[parameter] = self.paramsets[address][paramset_key][parameter]
+            except:
+                data[parameter] = self.paramset_descriptions[address][paramset_key][parameter][const.PARAMSET_ATTR_DEFAULT]
         return data
 
     def init(self, url, interface_id=None):
@@ -278,7 +251,6 @@ class ServerThread(threading.Thread):
 
     def stop(self):
         """Shut down our XML-RPC server."""
-        self._rpcfunctions._saveStates()
         self._rpcfunctions._saveParamsets()
         LOG.info("Shutting down server")
         self.server.shutdown()
@@ -302,8 +274,8 @@ class ServerThread(threading.Thread):
     def getParamset(self, address, paramset):
         return self._rpcfunctions.getParamset(address, paramset)
 
-    def putParamset(self, address, paramset_key, paramset, force=False):
-        return self._rpcfunctions.putParamset(address, paramset_key, paramset, force)
+    def putParamset(self, address, paramset_key, paramset, force=False, rx_mode=None):
+        return self._rpcfunctions.putParamset(address, paramset_key, paramset, force, rx_mode)
 
     def listDevices(self):
         return self._rpcfunctions.listDevices()
