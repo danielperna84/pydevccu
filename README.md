@@ -23,7 +23,8 @@ import pydevccu
 # Create server that listens on 127.0.0.1:2001
 # To listen on another address initialize with ("1.2.3.4", 1234) as first argument
 # Add optional list of device names to only load these devices
-s = pydevccu.Server(devices=['HM-Sec-WDS', 'HM-CC-RT-DN', 'HM-Sec-SC-2'])
+# Enable paramset persistance (will be saved to paramset_db.json)
+s = pydevccu.Server(devices=['HM-Sec-WDS', 'HM-CC-RT-DN', 'HM-Sec-SC-2'], persistance=True)
 # Start server
 s.start()
 # Get address for a HM-Sec-WDS device

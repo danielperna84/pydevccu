@@ -20,12 +20,13 @@ def initParamsets():
 
 # Object holding the methods the XML-RPC server should provide.
 class RPCFunctions():
-    def __init__(self, devices):
+    def __init__(self, devices, persistance):
         LOG.debug("RPCFunctions.__init__")
         self.remotes = {}
         try:
             self.knownDevices = []
             self.interface_id = "pydevccu"
+            self.persistance = persistance
             self.devices = []
             self.paramset_descriptions = {}
             self.supported_devices = {}
@@ -54,7 +55,7 @@ class RPCFunctions():
                     pd = json.load(fptr)
                     for k, v in pd.items():
                         self.paramset_descriptions[k] = v
-            if not os.path.exists(const.PARAMSETS_DB):
+            if not os.path.exists(const.PARAMSETS_DB) and persistance:
                 initParamsets()
             self._loadParamsets()
             for device in self.devices:
@@ -65,13 +66,15 @@ class RPCFunctions():
             self.devices = []
 
     def _loadParamsets(self):
-        with open(const.PARAMSETS_DB) as fptr:
-            self.paramsets = json.load(fptr)
+        if self.persistance:
+            with open(const.PARAMSETS_DB) as fptr:
+                self.paramsets = json.load(fptr)
 
     def _saveParamsets(self):
         LOG.debug("Saving paramsets")
-        with open(const.PARAMSETS_DB, 'w') as fptr:
-            json.dump(self.paramsets, fptr)
+        if self.persistance:
+            with open(const.PARAMSETS_DB, 'w') as fptr:
+                json.dump(self.paramsets, fptr)
 
     def _askDevices(self, interface_id):
         self.knownDevices = self.remotes[interface_id].listDevices(interface_id)
@@ -231,12 +234,12 @@ class RequestHandler(SimpleXMLRPCRequestHandler):
 
 class ServerThread(threading.Thread):
     """XML-RPC server thread to handle messages from CCU / Homegear"""
-    def __init__(self, addr=(const.IP_LOCALHOST_V4, const.PORT_RF), devices=None):
+    def __init__(self, addr=(const.IP_LOCALHOST_V4, const.PORT_RF), devices=None, persistance=False):
         LOG.debug("ServerThread.__init__")
         threading.Thread.__init__(self)
         self.addr = addr
         LOG.debug("__init__: Registering RPC methods")
-        self._rpcfunctions = RPCFunctions(devices)
+        self._rpcfunctions = RPCFunctions(devices, persistance)
         LOG.debug("ServerThread.__init__: Setting up server")
         self.server = SimpleXMLRPCServer(addr, requestHandler=RequestHandler, logRequests=False, allow_none=True)
         self.server.register_introspection_functions()

@@ -1,3 +1,6 @@
+Version 0.0.4
+- Paramset persistance has to be enabled if required
+
 Version 0.0.3 (2019-12-25)
 - Fix `getParamset` for `MASTER`, returns default or value from `putParamset`
 - Add `putParamset` method
