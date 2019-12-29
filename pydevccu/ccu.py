@@ -101,6 +101,7 @@ class RPCFunctions():
         LOG.debug("RPCFunctions._pushDevices: pushed")
 
     def _fireEvent(self, interface_id, address, value_key, value):
+        address = address.upper()
         LOG.debug("RPCFunctions._fireEvent: %s, %s, %s, %s", interface_id, address, value_key, value)
         for interface_id, proxy in self.remotes.items():
             proxy.event(interface_id, address, value_key, value)
@@ -114,16 +115,19 @@ class RPCFunctions():
         return [['VCU0000001:1', const.ATTR_ERROR, 7]]
 
     def getValue(self, address, value_key):
+        address = address.upper()
         LOG.debug("RPCFunctions.getValue: address=%s, value_key=%s", address, value_key)
-        return self.getParamset(address, const.PARAMSET_ATTR_VALUES).get(value_key)
+        return self.getParamset(address, const.PARAMSET_ATTR_VALUES)[value_key]
 
     def setValue(self, address, value_key, value, force=False):
+        address = address.upper()
         LOG.debug("RPCFunctions.setValue: address=%s, value_key=%s, value=%s, force=%s", address, value_key, value, force)
         paramset = {value_key: value}
         self.putParamset(address, const.PARAMSET_ATTR_VALUES, paramset, force=force)
         return ""
 
     def putParamset(self, address, paramset_key, paramset, force=False, rx_mode=None):
+        address = address.upper()
         LOG.debug("RPCFunctions.putParamset: address=%s, paramset_key=%s, paramset=%s, force=%s", address, paramset_key, paramset, force)
         paramsets = self.paramset_descriptions[address]
         paramset_values = paramsets[paramset_key]
@@ -179,6 +183,7 @@ class RPCFunctions():
             self._fireEvent(self.interface_id, address, value_key, value)
 
     def getDeviceDescription(self, address):
+        address = address.upper()
         LOG.debug("RPCFunctions.getDeviceDescription: address=%s", address)
         for device in self.devices:
             if device.get(const.ATTR_ADDRESS) == address:
@@ -186,10 +191,12 @@ class RPCFunctions():
         raise Exception
 
     def getParamsetDescription(self, address, paramset_type):
+        address = address.upper()
         LOG.debug("RPCFunctions.getParamsetDescription: address=%s, paramset_type=%s", address, paramset_type)
         return self.paramset_descriptions[address][paramset_type]
 
     def getParamset(self, address, paramset_key, mode=None):
+        address = address.upper()
         LOG.debug("RPCFunctions.getParamset: address=%s, paramset_key=%s", address, paramset_key)
         if mode is not None:
             LOG.debug("RPCFunctions.getParamset: mode argument not supported")
