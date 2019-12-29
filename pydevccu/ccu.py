@@ -31,6 +31,7 @@ class RPCFunctions():
             self.paramset_descriptions = {}
             self.supported_devices = {}
             self.paramsets = {}
+            self.paramset_callbacks = []
             self.active_devices = devices
             if self.active_devices is not None:
                 LOG.info("RPCFunctions.__init__: Limiting to devices: %s", self.active_devices)
@@ -103,6 +104,8 @@ class RPCFunctions():
     def _fireEvent(self, interface_id, address, value_key, value):
         address = address.upper()
         LOG.debug("RPCFunctions._fireEvent: %s, %s, %s, %s", interface_id, address, value_key, value)
+        for callback in self.paramset_callbacks:
+            callback(interface_id, address, value_key, value)
         for interface_id, proxy in self.remotes.items():
             proxy.event(interface_id, address, value_key, value)
 
