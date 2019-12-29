@@ -3,7 +3,9 @@ Virtual HomeMatic CCU XML-RPC Server with fake devices for development.
 
 If you develop applications that communicate with a CCU (or Homegear) via XML-RPC, you can use this server instead of a real CCU. It currently provides all HomeMatic Wired and HomeMatic Wireless devices (allthough some devices with multiple similar channels with just a single channel). HomeMatic IP devices will follow.  
 
-The main objective is to provide you access to all available devices without owning them, as well as not stressing your CCU / messing with your devices while testing your work. It should also be possible to use this for automated testing / CI.
+The main objective is to provide you access to all available devices without owning them, as well as not stressing your CCU / messing with your devices while testing your work. It should also be possible to use this for automated testing / CI.  
+
+The `init` method used to subscribe to events is available and functional. Events will be fired when you use the `setValue` or `putParamset` methods to change parameters of a device.
 
 ## Methods
 - `setValue(address, value_key, value, force=False)`
@@ -13,8 +15,11 @@ The main objective is to provide you access to all available devices without own
 - `getParamset(address, paramset_key)` (The `mode` argument of a real CCU is not supported)
 - `putParamset(address, paramset_key, paramset, force=False)` (The `rx_mode` argument of a real CCU is not supported)
 - `listDevices()`
+- `init(url, interface_id)`
 - `getServiceMessages()` (Returns dummy-error)
 - `supportedDevices()` (Proprietary, `dict` of supported devices)
+
+For more information about the methods refer to the official [HomeMatic XML-RPC API](https://www.eq-3.de/Downloads/eq3/download%20bereich/hm_web_ui_doku/HM_XmlRpc_API.pdf) (german).
 
 ## Usage
 
