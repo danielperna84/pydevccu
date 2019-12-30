@@ -424,7 +424,6 @@ for filename in files:
             if count_unknown:
                 paramsets['unknown'] = True
             for i in range(count):
-                c_direction = CHAN_DIRECTION_NONE
                 direction = CHAN_DIRECTION_NONE
                 s_dict = copy.deepcopy(DEV_DESC_CHAN)
                 s_dict["TYPE"] = channel.get("type")
@@ -456,8 +455,8 @@ for filename in files:
                             if p is None:
                                 continue
                     paramsets[s_dict["ADDRESS"]][ptype], direction = paramset_to_dict(p)
-                    #if not s_dict["DIRECTION"]:
-                    #    s_dict["DIRECTION"] = direction
+                    if not s_dict["DIRECTION"]:
+                        s_dict["DIRECTION"] = direction
                 link_roles = channel.find("link_roles")
                 if link_roles is not None:
                     lsr = []
@@ -468,6 +467,12 @@ for filename in files:
                     for s in link_roles.findall("source"):
                         lsr.append(s.get("name"))
                     s_dict["LINK_SOURCE_ROLES"] = " ".join(lsr)
+                if s_dict["LINK_TARGET_ROLES"]:
+                    s_dict["DIRECTION"] = CHAN_DIRECTION_RECEIVER
+                if s_dict["LINK_SOURCE_ROLES"]:
+                    s_dict["DIRECTION"] = CHAN_DIRECTION_SENDER
+                if s_dict["LINK_TARGET_ROLES"] and s_dict["LINK_SOURCE_ROLES"]:
+                    s_dict["DIRECTION"] = CHAN_DIRECTION_NONE
                 dev_desc.append(s_dict)
         dd_filename = "%s.json" % devname
         dd_filename = dd_filename.replace(" ", "_")
