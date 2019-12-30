@@ -33,7 +33,7 @@ class HM_Sec_SC_2(object):
                 current_state = self.rpcfunctions.getValue(self.address, "STATE")
                 if self.counter % 5 == 0:
                     self.lowbat = not self.lowbat
+                    self.rpcfunctions._fireEvent(self.name, self.address, "LOWBAT", self.lowbat)
                 self.rpcfunctions.setValue(self.address, "STATE", not current_state, force=True)
-                self.rpcfunctions._fireEvent(self.name, self.address, "LOWBAT", self.lowbat)
                 self.counter += 1
             time.sleep(self.interval)
