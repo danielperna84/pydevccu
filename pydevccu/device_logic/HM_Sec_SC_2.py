@@ -1,6 +1,6 @@
 """
 Logic module for HM-Sec-SC-2 (VCU0000240).
-Switch between open / closed every, toggle LOWBAT every 5 events.
+Switch between open / closed, toggle LOWBAT every 5 events.
 """
 
 import sys
