@@ -33,7 +33,7 @@ import pydevccu
 # Add optional list of device names to only load these devices
 # Enable paramset persistance (will be saved to paramset_db.json)
 # Enable automated device logic (only if module for device is available), firing events at intervals of 30 seconds
-s = pydevccu.Server(devices=['HM-Sec-WDS', 'HM-CC-RT-DN', 'HM-Sec-SC-2'], persistance=True, logic={"startupdelay": 5, "interval": 30})
+s = pydevccu.Server(devices=['HM-Sec-WDS', 'HM-Sen-MDIR-WM55', 'HM-Sec-SC-2'], persistance=True, logic={"startupdelay": 5, "interval": 30})
 # Start server
 s.start()
 # Get address for a HM-Sec-WDS device
@@ -49,6 +49,8 @@ s.getValue('VCU0000348:1', 'STATE')
 s.setValue('VCU0000348:1', 'STATE', 2, force=True)
 # Set state to 1 using the putParamset method
 s.putParamset('VCU0000348:1', 'VALUES', {'STATE': 1}, force=True)
+# Trigger PRESS_SHORT event for HM-Sen-MDIR-WM55 on channel 2
+s.setValue("VCU0000274:2", "PRESS_SHORT", True)
 # Stop server
 s.stop()
 ```
