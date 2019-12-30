@@ -368,7 +368,7 @@ for filename in files:
         if devname == 'CENTRAL':
             continue
         if '/' in devname:
-            print("Skipping: %s (%s)", (devname, filename))
+            print("Skipping: %s (%s)" % (devname, filename))
             continue
         dev_desc = []
         paramsets = {}
