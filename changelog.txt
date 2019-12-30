@@ -1,3 +1,6 @@
+Version 0.0.5 ()
+- Add channel direction for non-IP devices (Issue #1)
+
 Version 0.0.4 (2019-12-30)
 - Paramset persistance has to be enabled if required
 - Raise exception in `getValue` if queried parameter does not exist
