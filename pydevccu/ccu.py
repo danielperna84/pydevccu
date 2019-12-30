@@ -9,6 +9,7 @@ from xmlrpc.server import SimpleXMLRPCRequestHandler
 
 from . import const
 from .proxy import LockingServerProxy
+from . import device_logic
 
 LOG = logging.getLogger(__name__)
 if sys.stdout.isatty():
@@ -20,10 +21,11 @@ def initParamsets():
 
 # Object holding the methods the XML-RPC server should provide.
 class RPCFunctions():
-    def __init__(self, devices, persistance):
+    def __init__(self, devices, persistance, logic):
         LOG.debug("RPCFunctions.__init__")
         self.remotes = {}
         try:
+            self.active = False
             self.knownDevices = []
             self.interface_id = "pydevccu"
             self.persistance = persistance
@@ -33,6 +35,7 @@ class RPCFunctions():
             self.paramsets = {}
             self.paramset_callbacks = []
             self.active_devices = devices
+            self.logic_devices = []
             if self.active_devices is not None:
                 LOG.info("RPCFunctions.__init__: Limiting to devices: %s", self.active_devices)
             script_dir = os.path.dirname(__file__)
@@ -56,6 +59,15 @@ class RPCFunctions():
                     pd = json.load(fptr)
                     for k, v in pd.items():
                         self.paramset_descriptions[k] = v
+                if logic and devname in device_logic.DEVICE_MAP.keys():
+                    logic_module = device_logic.DEVICE_MAP.get(devname)
+                    logic_device = logic_module(self, **logic)
+                    logic_device.active = True
+                    self.logic_devices.append(logic_device)
+                    logic_thread = threading.Thread(name=logic_device.name,
+                                                    target=logic_device.work,
+                                                    daemon=True)
+                    logic_thread.start()
             if not os.path.exists(const.PARAMSETS_DB) and persistance:
                 initParamsets()
             self._loadParamsets()
@@ -244,14 +256,16 @@ class RequestHandler(SimpleXMLRPCRequestHandler):
 
 class ServerThread(threading.Thread):
     """XML-RPC server thread to handle messages from CCU / Homegear"""
-    def __init__(self, addr=(const.IP_LOCALHOST_V4, const.PORT_RF), devices=None, persistance=False):
+    def __init__(self, addr=(const.IP_LOCALHOST_V4, const.PORT_RF),
+                 devices=None, persistance=False, logic=False):
         LOG.debug("ServerThread.__init__")
         threading.Thread.__init__(self)
         self.addr = addr
         LOG.debug("__init__: Registering RPC methods")
-        self._rpcfunctions = RPCFunctions(devices, persistance)
+        self._rpcfunctions = RPCFunctions(devices, persistance, logic)
         LOG.debug("ServerThread.__init__: Setting up server")
-        self.server = SimpleXMLRPCServer(addr, requestHandler=RequestHandler, logRequests=False, allow_none=True)
+        self.server = SimpleXMLRPCServer(addr, requestHandler=RequestHandler,
+                                         logRequests=False, allow_none=True)
         self.server.register_introspection_functions()
         self.server.register_multicall_functions()
         LOG.debug("ServerThread.__init__: Registering RPC functions")
@@ -260,10 +274,14 @@ class ServerThread(threading.Thread):
 
     def run(self):
         LOG.info("Starting server at http://%s:%i", self.addr[0], self.addr[1])
+        self._rpcfunctions.active = True
         self.server.serve_forever()
 
     def stop(self):
         """Shut down our XML-RPC server."""
+        self._rpcfunctions.active = False
+        for logic_device in self._rpcfunctions.logic_devices:
+            logic_device.active = False
         self._rpcfunctions._saveParamsets()
         LOG.info("Shutting down server")
         self.server.shutdown()
