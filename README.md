@@ -52,3 +52,7 @@ s.putParamset('VCU0000348:1', 'VALUES', {'STATE': 1}, force=True)
 # Stop server
 s.stop()
 ```
+
+## Installation
+
+`pip install pydevccu`
