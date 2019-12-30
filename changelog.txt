@@ -1,5 +1,6 @@
-Version 0.0.5 ()
+Version 0.0.5 (2019-12-31)
 - Add channel direction for non-IP devices (Issue #1)
+- Add automated device logic for HM-Sen-MDIR-WM55
 
 Version 0.0.4 (2019-12-30)
 - Paramset persistance has to be enabled if required
