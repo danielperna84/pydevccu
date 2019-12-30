@@ -264,24 +264,6 @@ def paramset_to_dict(node):
                     paramset[param_id]["OPERATIONS"] = paramset[param_id]["OPERATIONS"] | PARAM_OPERATION_WRITE
                 if PARAM_OPERATION_EVENT_XML in operations:
                     paramset[param_id]["OPERATIONS"] = paramset[param_id]["OPERATIONS"] | PARAM_OPERATION_EVENT
-            #if parameter.find("physical") is None:
-            #    continue
-            #if parameter.find("physical").find("set") is None:
-            #    continue
-            #if parameter.find("physical").find("set").get("request") is None:
-            #    continue
-            #request = parameter.find("physical").find("set").get("request")
-            # if direction == CHAN_DIRECTION_NONE:
-            #     for frame in frames.findall("frame"):
-            #         if frame.get('id') == request:
-            #             d = frame.get('direction')
-            #             print(d)
-            #             if d == FRAME_DIRECTION_TO_DEVICE_XML:
-            #                 direction = CHAN_DIRECTION_RECEIVER
-            #                 break
-            #             elif d == FRAME_DIRECTION_FROM_DEVICE_XML:
-            #                 direction = CHAN_DIRECTION_SENDER
-            #                 break
     return paramset, direction
 
 def get_rx_mode(node, default_rx=0):
