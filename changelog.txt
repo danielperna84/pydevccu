@@ -1,4 +1,4 @@
-Version 0.0.4
+Version 0.0.4 (2019-12-30)
 - Paramset persistance has to be enabled if required
 - Raise exception in `getValue` if queried parameter does not exist
 - Device addresses are now case insensitive
