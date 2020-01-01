@@ -84,6 +84,41 @@ class RPCFunctions():
             self.active_devices.append(devname)
         return added_devices
 
+    def _removeDevices(self, devices=None):
+        remove_devices = devices
+        if remove_devices is None:
+            remove_devices = self.active_devices[:]
+        addresses = []
+        for devname in remove_devices:
+            if devname in self.active_devices:
+                self.active_devices.remove(devname)
+            if devname in self.supported_devices:
+                del self.supported_devices[devname]
+            for dd in self.devices:
+                del_address = None
+                address = dd.get(const.ATTR_ADDRESS)
+                try:
+                    if not ':' in address and dd.get(const.ATTR_TYPE) == devname:
+                        del_address = address
+                    elif ':' in address and dd.get(const.ATTR_PARENT_TYPE) == devname:
+                        del_address = address
+                    if del_address is None:
+                        continue
+                    addresses.append(del_address)
+                    if del_address in self.paramset_descriptions:
+                        del self.paramset_descriptions[del_address]
+                    if del_address in self.paramsets:
+                        del self.paramsets[del_address]
+                except Exception as err:
+                    LOG.warning("_removeDevices: Failed to remove %s: %s", devname, err)
+        for logic_device in self.logic_devices:
+            if logic_device.name == devname:
+                logic_device.active = False
+                self.logic_devices.remove(logic_device)
+        self.devices = [d for d in self.devices if d.get(const.ATTR_ADDRESS) not in addresses]
+        for interface_id, proxy in self.remotes.items():
+            proxy.deleteDevices(interface_id, addresses)
+
     def _loadParamsets(self):
         if self.persistance:
             with open(const.PARAMSETS_DB) as fptr:
@@ -109,7 +144,7 @@ class RPCFunctions():
         knownDeviceAddresses = []
         for device in self.knownDevices:
             if device[const.ATTR_ADDRESS] not in self.paramset_descriptions.keys():
-                deleteDevices.append(device)
+                deleteDevices.append(device[const.ATTR_ADDRESS])
             else:
                 knownDeviceAddresses.append(device[const.ATTR_ADDRESS])
         for device in self.devices:
@@ -330,3 +365,6 @@ class ServerThread(threading.Thread):
         for interface_id, proxy in self._rpcfunctions.remotes.items():
             LOG.debug("addDevices: Pushing new devices to %s", interface_id)
             proxy.newDevices(interface_id, devices)
+
+    def removeDevices(self, devices=None):
+        self._rpcfunctions._removeDevices(devices)

@@ -21,6 +21,8 @@ The _startupdelay_ randomizes when the eventloop will initially start from 0 to 
 - `init(url, interface_id)`
 - `getServiceMessages()` (Returns dummy-error)
 - `supportedDevices()` (Proprietary, `dict` of supported devices)
+- `addDevices(devices)` (Proprietary, add additional devices during runtime. `devices` is a list of device names, like when initializing the server)
+- `removeDevices(devices)` (Proprietary, remove devices during runtime. `devices` is a list of device names, like when initializing the server)
 
 For more information about the methods refer to the official [HomeMatic XML-RPC API](https://www.eq-3.de/Downloads/eq3/download%20bereich/hm_web_ui_doku/HM_XmlRpc_API.pdf) (german).
 
@@ -51,6 +53,10 @@ s.setValue('VCU0000348:1', 'STATE', 2, force=True)
 s.putParamset('VCU0000348:1', 'VALUES', {'STATE': 1}, force=True)
 # Trigger PRESS_SHORT event for HM-Sen-MDIR-WM55 on channel 2
 s.setValue("VCU0000274:2", "PRESS_SHORT", True)
+# Add a HM-CC-RT-DN device during runtime
+s.addDevices(devices=['HM-CC-RT-DN'])
+# Remove the HM-Sec-SC-2
+s.removeDevices(devices=['HM-Sec-SC-2'])
 # Stop server
 s.stop()
 ```
