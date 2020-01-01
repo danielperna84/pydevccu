@@ -34,49 +34,55 @@ class RPCFunctions():
             self.supported_devices = {}
             self.paramsets = {}
             self.paramset_callbacks = []
-            self.active_devices = devices
+            self.active_devices = []
+            self.logic = logic
             self.logic_devices = []
-            if self.active_devices is not None:
-                LOG.info("RPCFunctions.__init__: Limiting to devices: %s", self.active_devices)
-            script_dir = os.path.dirname(__file__)
-            dd_rel_path = const.DEVICE_DESCRIPTIONS
-            dd_path = os.path.join(script_dir, dd_rel_path)
-            for filename in os.listdir(dd_path):
-                if self.active_devices is not None:
-                    devname = filename.split('.')[0].replace('_', ' ')
-                    if devname not in self.active_devices:
-                        continue
-                with open(os.path.join(dd_path, filename)) as fptr:
-                    self.devices.extend(json.load(fptr))
-            pd_rel_path = const.PARAMSET_DESCRIPTIONS
-            pd_path = os.path.join(script_dir, pd_rel_path)
-            for filename in os.listdir(pd_path):
-                if self.active_devices is not None:
-                    devname = filename.split('.')[0].replace('_', ' ')
-                    if devname not in self.active_devices:
-                        continue
-                with open(os.path.join(pd_path, filename)) as fptr:
-                    pd = json.load(fptr)
-                    for k, v in pd.items():
-                        self.paramset_descriptions[k] = v
-                if logic and devname in device_logic.DEVICE_MAP.keys():
-                    logic_module = device_logic.DEVICE_MAP.get(devname)
-                    logic_device = logic_module(self, **logic)
-                    logic_device.active = True
-                    self.logic_devices.append(logic_device)
-                    logic_thread = threading.Thread(name=logic_device.name,
-                                                    target=logic_device.work,
-                                                    daemon=True)
-                    logic_thread.start()
+            self._loadDevices(devices)
             if not os.path.exists(const.PARAMSETS_DB) and persistance:
                 initParamsets()
             self._loadParamsets()
-            for device in self.devices:
-                if not ':' in device.get(const.ATTR_ADDRESS):
-                    self.supported_devices[device.get(const.ATTR_TYPE)] = device.get(const.ATTR_ADDRESS)
         except Exception as err:
             LOG.debug("RPCFunctions.__init__: Exception: %s", err)
             self.devices = []
+
+    def _loadDevices(self, devices=None):
+        added_devices = []
+        if devices is not None:
+            LOG.info("RPCFunctions._loadDevices: Limiting to devices: %s", devices)
+        script_dir = os.path.dirname(__file__)
+        dd_path = os.path.join(script_dir, const.DEVICE_DESCRIPTIONS)
+        pd_path = os.path.join(script_dir, const.PARAMSET_DESCRIPTIONS)
+        for filename in os.listdir(dd_path):
+            devname = filename.split('.')[0].replace('_', ' ')
+            if devname in self.active_devices:
+                continue
+            if devices is not None:
+                if devname not in devices:
+                    continue
+            with open(os.path.join(dd_path, filename)) as fptr:
+                dd = json.load(fptr)
+                self.devices.extend(dd)
+                added_devices.extend(dd)
+                for device in dd:
+                    d_addr = device.get(const.ATTR_ADDRESS)
+                    if not ':' in d_addr:
+                        self.supported_devices[devname] = d_addr
+                        break
+            with open(os.path.join(pd_path, filename)) as fptr:
+                pd = json.load(fptr)
+                for k, v in pd.items():
+                    self.paramset_descriptions[k] = v
+            if self.logic and devname in device_logic.DEVICE_MAP.keys():
+                logic_module = device_logic.DEVICE_MAP.get(devname)
+                logic_device = logic_module(self, **self.logic)
+                logic_device.active = True
+                self.logic_devices.append(logic_device)
+                logic_thread = threading.Thread(name=logic_device.name,
+                                                target=logic_device.work,
+                                                daemon=True)
+                logic_thread.start()
+            self.active_devices.append(devname)
+        return added_devices
 
     def _loadParamsets(self):
         if self.persistance:
