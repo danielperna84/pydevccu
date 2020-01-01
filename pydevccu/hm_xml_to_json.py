@@ -128,10 +128,12 @@ INT_MIN = -2147483648
 
 # Clear old data
 for filename in os.listdir(PATH_JSON_DEVICE_DESCRIPTIONS):
-    os.unlink(os.path.join(PATH_JSON_DEVICE_DESCRIPTIONS, filename))
+    if filename != 'HM-CC-VG-1.json':
+        os.unlink(os.path.join(PATH_JSON_DEVICE_DESCRIPTIONS, filename))
 for filename in os.listdir(PATH_JSON_PARAMSET_DESCRIPTIONS):
-    os.unlink(os.path.join(PATH_JSON_PARAMSET_DESCRIPTIONS, filename))
-nextid = len(os.listdir(PATH_JSON_DEVICE_DESCRIPTIONS)) + START_ID
+    if filename != 'HM-CC-VG-1.json':
+        os.unlink(os.path.join(PATH_JSON_PARAMSET_DESCRIPTIONS, filename))
+nextid = len(os.listdir(PATH_JSON_DEVICE_DESCRIPTIONS)) + START_ID - 1
 
 def logical_to_dict(node):
     data = {}
