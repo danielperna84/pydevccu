@@ -1,3 +1,7 @@
+Version 0.0.6 (2020-)
+- Code cleanup / optimization
+- Add `addDevices` method to server object
+
 Version 0.0.5 (2019-12-31)
 - Add channel direction for non-IP devices (Issue #1)
 - Add automated device logic for HM-Sen-MDIR-WM55

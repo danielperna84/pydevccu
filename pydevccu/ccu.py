@@ -326,4 +326,7 @@ class ServerThread(threading.Thread):
         return self._rpcfunctions.supported_devices
 
     def addDevices(self, devices=None):
-        return self._rpcfunctions._loadDevices(devices=devices)
+        devices = self._rpcfunctions._loadDevices(devices=devices)
+        for interface_id, proxy in self._rpcfunctions.remotes.items():
+            LOG.debug("addDevices: Pushing new devices to %s", interface_id)
+            proxy.newDevices(interface_id, devices)
