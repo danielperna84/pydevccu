@@ -115,8 +115,10 @@ class RPCFunctions():
         for device in self.devices:
             if device[const.ATTR_ADDRESS] not in knownDeviceAddresses:
                 newDevices.append(device)
-        self.remotes[interface_id].newDevices(interface_id, newDevices)
-        self.remotes[interface_id].deleteDevices(interface_id, deleteDevices)
+        if newDevices:
+            self.remotes[interface_id].newDevices(interface_id, newDevices)
+        if deleteDevices:
+            self.remotes[interface_id].deleteDevices(interface_id, deleteDevices)
         LOG.debug("RPCFunctions._pushDevices: pushed")
 
     def _fireEvent(self, interface_id, address, value_key, value):
@@ -322,3 +324,6 @@ class ServerThread(threading.Thread):
 
     def supportedDevices(self):
         return self._rpcfunctions.supported_devices
+
+    def addDevices(self, devices=None):
+        return self._rpcfunctions._loadDevices(devices=devices)
