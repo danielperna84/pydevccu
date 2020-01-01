@@ -1,4 +1,4 @@
-Version 0.0.6 (2020-)
+Version 0.0.6 (2020-01-02)
 - Code cleanup / optimization
 - Add `addDevices` method to server object
 - Add `removeDevices` method to server object
