@@ -1,6 +1,11 @@
+"""
+ServerProxy implementation with lock when request is executing
+"""
+
 import xmlrpc.client
 import threading
 
+# pylint: disable=too-few-public-methods
 class LockingServerProxy(xmlrpc.client.ServerProxy):
     """
     ServerProxy implementation with lock when request is executing
@@ -20,9 +25,10 @@ class LockingServerProxy(xmlrpc.client.ServerProxy):
 
         with self.lock:
             parent = xmlrpc.client.ServerProxy
-            # pylint: disable=E1101
+            # pylint: disable=protected-access
             return parent._ServerProxy__request(self, *args, **kwargs)
 
+    # pylint: disable=arguments-differ
     def __getattr__(self, *args, **kwargs):
         """
         Magic method dispatcher

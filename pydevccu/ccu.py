@@ -1,4 +1,4 @@
-# pylint: disable=line-too-long,too-many-branches,missing-function-docstring,missing-module-docstring,missing-class-docstring,invalid-name,broad-except,bare-except,protected-access
+# pylint: disable=missing-module-docstring,missing-class-docstring,missing-function-docstring,protected-access,line-too-long,broad-except,bare-except,invalid-name
 import os
 import sys
 import logging
@@ -19,8 +19,11 @@ def initParamsets():
     with open(const.PARAMSETS_DB, 'w') as fptr:
         fptr.write("{}")
 
-# Object holding the methods the XML-RPC server should provide.
+# pylint: disable=too-many-instance-attributes
 class RPCFunctions():
+    """
+    Object holding the methods the XML-RPC server should provide.
+    """
     def __init__(self, devices, persistance, logic):
         LOG.debug("RPCFunctions.__init__")
         self.remotes = {}
@@ -45,6 +48,7 @@ class RPCFunctions():
             LOG.debug("RPCFunctions.__init__: Exception: %s", err)
             self.devices = []
 
+    # pylint: disable=too-many-locals
     def _loadDevices(self, devices=None):
         added_devices = []
         if devices is not None:
@@ -84,6 +88,7 @@ class RPCFunctions():
             self.active_devices.append(devname)
         return added_devices
 
+    # pylint: disable=too-many-branches
     def _removeDevices(self, devices=None):
         remove_devices = devices
         if remove_devices is None:
@@ -111,10 +116,10 @@ class RPCFunctions():
                         del self.paramsets[del_address]
                 except Exception as err:
                     LOG.warning("_removeDevices: Failed to remove %s: %s", devname, err)
-        for logic_device in self.logic_devices:
-            if logic_device.name == devname:
-                logic_device.active = False
-                self.logic_devices.remove(logic_device)
+            for logic_device in self.logic_devices:
+                if logic_device.name == devname:
+                    logic_device.active = False
+                    self.logic_devices.remove(logic_device)
         self.devices = [d for d in self.devices if d.get(const.ATTR_ADDRESS) not in addresses]
         for interface_id, proxy in self.remotes.items():
             proxy.deleteDevices(interface_id, addresses)
@@ -161,13 +166,14 @@ class RPCFunctions():
         LOG.debug("RPCFunctions._fireEvent: %s, %s, %s, %s", interface_id, address, value_key, value)
         for callback in self.paramset_callbacks:
             callback(interface_id, address, value_key, value)
-        for interface_id, proxy in self.remotes.items():
-            proxy.event(interface_id, address, value_key, value)
+        for pinterface_id, proxy in self.remotes.items():
+            proxy.event(pinterface_id, address, value_key, value)
 
     def listDevices(self, interface_id=None):
         LOG.debug("RPCFunctions.listDevices: interface_id = %s", interface_id)
         return self.devices
 
+    # pylint: disable=no-self-use
     def getServiceMessages(self):
         LOG.debug("RPCFunctions.getServiceMessages")
         return [['VCU0000001:1', const.ATTR_ERROR, 7]]
@@ -184,7 +190,8 @@ class RPCFunctions():
         self.putParamset(address, const.PARAMSET_ATTR_VALUES, paramset, force=force)
         return ""
 
-    def putParamset(self, address, paramset_key, paramset, force=False, rx_mode=None):
+    # pylint: disable=too-many-arguments
+    def putParamset(self, address, paramset_key, paramset, force=False):
         address = address.upper()
         LOG.debug("RPCFunctions.putParamset: address=%s, paramset_key=%s, paramset=%s, force=%s", address, paramset_key, paramset, force)
         paramsets = self.paramset_descriptions[address]
@@ -198,7 +205,7 @@ class RPCFunctions():
                 raise Exception
             if param_type == const.PARAMSET_TYPE_ACTION:
                 self._fireEvent(self.interface_id, address, value_key, True)
-                return ""
+                return
             if param_type == const.PARAMSET_TYPE_BOOL:
                 value = bool(value)
             if param_type == const.PARAMSET_TYPE_STRING:
@@ -348,8 +355,8 @@ class ServerThread(threading.Thread):
     def getParamset(self, address, paramset):
         return self._rpcfunctions.getParamset(address, paramset)
 
-    def putParamset(self, address, paramset_key, paramset, force=False, rx_mode=None):
-        return self._rpcfunctions.putParamset(address, paramset_key, paramset, force, rx_mode)
+    def putParamset(self, address, paramset_key, paramset, force=False):
+        return self._rpcfunctions.putParamset(address, paramset_key, paramset, force)
 
     def listDevices(self):
         return self._rpcfunctions.listDevices()

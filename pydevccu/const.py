@@ -1,3 +1,7 @@
+"""
+Constants used in pydevccu
+"""
+
 IP_LOCALHOST_V4 = '127.0.0.1'
 IP_LOCALHOST_V6 = '::1'
 IP_ANY_V4 = '0.0.0.0'
