@@ -1,0 +1,130 @@
+{
+"VCU7171997": {
+"MASTER": {
+"HBWEA_ALTITUDE": {
+"DEFAULT": 0,
+"FLAGS": 1,
+"ID": "HBWEA_ALTITUDE",
+"MAX": 10000,
+"MIN": 0,
+"OPERATIONS": 3,
+"TAB_ORDER": 0,
+"TYPE": "INTEGER",
+"UNIT": "m"
+}
+}
+},
+"VCU7171997:0": {
+"MASTER": {},
+"VALUES": {
+"CONFIG_PENDING": {
+"DEFAULT": false,
+"FLAGS": 9,
+"ID": "CONFIG_PENDING",
+"MAX": true,
+"MIN": false,
+"OPERATIONS": 5,
+"TAB_ORDER": 2,
+"TYPE": "BOOL",
+"UNIT": ""
+},
+"LOWBAT": {
+"DEFAULT": false,
+"FLAGS": 9,
+"ID": "LOWBAT",
+"MAX": true,
+"MIN": false,
+"OPERATIONS": 5,
+"TAB_ORDER": 3,
+"TYPE": "BOOL",
+"UNIT": ""
+},
+"RSSI_DEVICE": {
+"DEFAULT": 0,
+"FLAGS": 1,
+"ID": "RSSI_DEVICE",
+"MAX": 2147483647,
+"MIN": -2147483648,
+"OPERATIONS": 5,
+"TAB_ORDER": 4,
+"TYPE": "INTEGER",
+"UNIT": ""
+},
+"RSSI_PEER": {
+"DEFAULT": 0,
+"FLAGS": 1,
+"ID": "RSSI_PEER",
+"MAX": 2147483647,
+"MIN": -2147483648,
+"OPERATIONS": 5,
+"TAB_ORDER": 5,
+"TYPE": "INTEGER",
+"UNIT": ""
+},
+"STICKY_UNREACH": {
+"DEFAULT": false,
+"FLAGS": 25,
+"ID": "STICKY_UNREACH",
+"MAX": true,
+"MIN": false,
+"OPERATIONS": 7,
+"TAB_ORDER": 1,
+"TYPE": "BOOL",
+"UNIT": ""
+},
+"UNREACH": {
+"DEFAULT": false,
+"FLAGS": 9,
+"ID": "UNREACH",
+"MAX": true,
+"MIN": false,
+"OPERATIONS": 5,
+"TAB_ORDER": 0,
+"TYPE": "BOOL",
+"UNIT": ""
+}
+}
+},
+"VCU7171997:1": {
+"LINK": {},
+"MASTER": {},
+"VALUES": {
+"AIR_PRESSURE": {
+"AutoconfRoles": "WEATHER",
+"DEFAULT": 0.0,
+"FLAGS": 1,
+"ID": "AIR_PRESSURE",
+"MAX": 1100.0,
+"MIN": 500.0,
+"OPERATIONS": 5,
+"TAB_ORDER": 2,
+"TYPE": "FLOAT",
+"UNIT": "hPa"
+},
+"HUMIDITY": {
+"AutoconfRoles": "WEATHER",
+"DEFAULT": 0,
+"FLAGS": 1,
+"ID": "HUMIDITY",
+"MAX": 99,
+"MIN": 0,
+"OPERATIONS": 5,
+"TAB_ORDER": 1,
+"TYPE": "INTEGER",
+"UNIT": "%"
+},
+"TEMPERATURE": {
+"AutoconfRoles": "WEATHER",
+"DEFAULT": 0.0,
+"FLAGS": 1,
+"ID": "TEMPERATURE",
+"MAX": 80.0,
+"MIN": -40.0,
+"OPERATIONS": 5,
+"TAB_ORDER": 0,
+"TYPE": "FLOAT",
+"UNIT": "°C"
+}
+}
+}
+}
