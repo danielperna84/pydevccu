@@ -300,6 +300,10 @@ class RPCFunctions():
                 del self.remotes[deletedremote]
         return ""
 
+    def getVersion(self):
+        LOG.debug("RPCFunctions.getVersion")
+        return "pydevccu {}".format(const.VERSION)
+
 class RequestHandler(SimpleXMLRPCRequestHandler):
     """We handle requests to / and /RPC2"""
     rpc_paths = ('/', '/RPC2',)
