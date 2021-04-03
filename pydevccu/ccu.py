@@ -159,7 +159,8 @@ class RPCFunctions():
             self.remotes[interface_id].newDevices(interface_id, newDevices)
         if deleteDevices:
             self.remotes[interface_id].deleteDevices(interface_id, deleteDevices)
-        LOG.debug("RPCFunctions._pushDevices: pushed")
+        LOG.debug("RPCFunctions._pushDevices: pushed new: %i, deleted: %i",
+                  len(newDevices), len(deleteDevices))
 
     def _fireEvent(self, interface_id, address, value_key, value):
         address = address.upper()
