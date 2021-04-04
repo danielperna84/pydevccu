@@ -305,6 +305,26 @@ class RPCFunctions():
         LOG.debug("RPCFunctions.getVersion")
         return "pydevccu {}".format(const.VERSION)
 
+    def getMetadata(self, object_id, data_id):
+        LOG.debug("RPCFunctions.getMetadata: object_id=%s, data_id=%s", object_id, data_id)
+        address = object_id.upper()
+        for device in self.devices:
+            if device.get(const.ATTR_ADDRESS) == address:
+                if data_id in device:
+                    return device.get(data_id)
+                if not return_value and data_id == const.ATTR_NAME:
+                    if device.get(const.ATTR_CHILDREN):
+                        return "{} {}".format(
+                            device.get(const.ATTR_TYPE),
+                            device.get(const.ATTR_ADDRESS)
+                        )
+                    else:
+                        return "{} {}".format(
+                            device.get(const.ATTR_PARENT_TYPE),
+                            device.get(const.ATTR_ADDRESS)
+                        )
+        raise Exception
+
 class RequestHandler(SimpleXMLRPCRequestHandler):
     """We handle requests to / and /RPC2"""
     rpc_paths = ('/', '/RPC2',)
