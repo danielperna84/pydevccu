@@ -312,7 +312,7 @@ class RPCFunctions():
             if device.get(const.ATTR_ADDRESS) == address:
                 if data_id in device:
                     return device.get(data_id)
-                if not return_value and data_id == const.ATTR_NAME:
+                if data_id == const.ATTR_NAME:
                     if device.get(const.ATTR_CHILDREN):
                         return "{} {}".format(
                             device.get(const.ATTR_TYPE),
@@ -323,6 +323,8 @@ class RPCFunctions():
                             device.get(const.ATTR_PARENT_TYPE),
                             device.get(const.ATTR_ADDRESS)
                         )
+                else:
+                    return None
         raise Exception
 
 class RequestHandler(SimpleXMLRPCRequestHandler):
