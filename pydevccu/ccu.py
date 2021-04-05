@@ -167,8 +167,15 @@ class RPCFunctions():
         LOG.debug("RPCFunctions._fireEvent: %s, %s, %s, %s", interface_id, address, value_key, value)
         for callback in self.paramset_callbacks:
             callback(interface_id, address, value_key, value)
+        delete_clients = []
         for pinterface_id, proxy in self.remotes.items():
-            proxy.event(pinterface_id, address, value_key, value)
+            try:
+                proxy.event(pinterface_id, address, value_key, value)
+            except Exception:
+                delete_clients.append(pinterface_id)
+        for client in delete_clients:
+            LOG.exception("RPCFunctions._fireEvent: Exception. Deleting client: %s", client)
+            del self.remotes[client]
 
     def listDevices(self, interface_id=None):
         LOG.debug("RPCFunctions.listDevices: interface_id = %s", interface_id)
@@ -326,6 +333,13 @@ class RPCFunctions():
                 else:
                     return None
         raise Exception
+
+    def clientServerInitialized(self, interface_id):
+        LOG.debug("RPCFunctions.clientServerInitialized")
+        LOG.debug(self.remotes)
+        if interface_id in self.remotes:
+            return True
+        return False
 
 class RequestHandler(SimpleXMLRPCRequestHandler):
     """We handle requests to / and /RPC2"""
