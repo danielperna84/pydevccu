@@ -1,0 +1,8420 @@
+{
+"VCU6649135": {
+"MASTER": {}, 
+"SERVICE": {
+"OS_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "OS_VERSION"
+}, 
+"TEST_STATUS": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "TEST_STATUS"
+}, 
+"APPLICATION_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "APPLICATION_VERSION"
+}, 
+"BOOTLOADER_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "BOOTLOADER_VERSION"
+}, 
+"HARDWARE_VERSION": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 65535, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "HARDWARE_VERSION"
+}
+}
+}, 
+"VCU6649135:10": {
+"VALUES": {
+"WEEK_PROGRAM_TARGET_CHANNEL_LOCKS": {
+"OPERATIONS": 2, 
+"CONTROL": "WEEK_PROFILE.TARGET_CHANNEL_LOCKS", 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "WEEK_PROGRAM_TARGET_CHANNEL_LOCKS"
+}, 
+"WEEK_PROGRAM_CHANNEL_LOCKS": {
+"OPERATIONS": 5, 
+"CONTROL": "WEEK_PROFILE.CHANNEL_LOCKS", 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "WEEK_PROGRAM_CHANNEL_LOCKS"
+}, 
+"WEEK_PROGRAM_TARGET_CHANNEL_LOCK": {
+"OPERATIONS": 2, 
+"CONTROL": "WEEK_PROFILE.TARGET_CHANNEL_LOCK", 
+"MIN": "MANU_MODE", 
+"DEFAULT": "MANU_MODE", 
+"MAX": "AUTO_MODE_WITHOUT_RESET", 
+"VALUE_LIST": [
+"MANU_MODE", 
+"AUTO_MODE_WITH_RESET", 
+"AUTO_MODE_WITHOUT_RESET"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "WEEK_PROGRAM_TARGET_CHANNEL_LOCK"
+}, 
+"COMBINED_PARAMETER": {
+"OPERATIONS": 2, 
+"MIN": "", 
+"DEFAULT": "", 
+"MAX": "", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "COMBINED_PARAMETER"
+}
+}, 
+"MASTER": {
+"16_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "16_WP_FIXED_HOUR"
+}, 
+"50_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "50_WP_DURATION_BASE"
+}, 
+"62_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "62_WP_WEEKDAY"
+}, 
+"61_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "61_WP_TARGET_CHANNELS"
+}, 
+"41_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "41_WP_FIXED_HOUR"
+}, 
+"60_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "60_WP_FIXED_HOUR"
+}, 
+"55_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "55_WP_FIXED_HOUR"
+}, 
+"56_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "56_WP_LEVEL"
+}, 
+"10_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "10_WP_LEVEL"
+}, 
+"09_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "09_WP_WEEKDAY"
+}, 
+"20_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "20_WP_LEVEL"
+}, 
+"14_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "14_WP_DURATION_FACTOR"
+}, 
+"25_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "25_WP_FIXED_HOUR"
+}, 
+"43_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "43_WP_WEEKDAY"
+}, 
+"69_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "69_WP_DURATION_BASE"
+}, 
+"13_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "13_WP_LEVEL"
+}, 
+"04_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "04_WP_TARGET_CHANNELS"
+}, 
+"59_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "59_WP_TARGET_CHANNELS"
+}, 
+"54_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "54_WP_DURATION_FACTOR"
+}, 
+"69_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "69_WP_LEVEL"
+}, 
+"35_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "35_WP_LEVEL"
+}, 
+"01_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "01_WP_WEEKDAY"
+}, 
+"06_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "06_WP_DURATION_FACTOR"
+}, 
+"23_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "23_WP_FIXED_MINUTE"
+}, 
+"47_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "47_WP_WEEKDAY"
+}, 
+"75_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "75_WP_FIXED_HOUR"
+}, 
+"58_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "58_WP_FIXED_HOUR"
+}, 
+"46_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "46_WP_DURATION_FACTOR"
+}, 
+"08_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "08_WP_FIXED_HOUR"
+}, 
+"42_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "42_WP_FIXED_MINUTE"
+}, 
+"19_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "19_WP_LEVEL"
+}, 
+"18_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "18_WP_TARGET_CHANNELS"
+}, 
+"56_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "56_WP_FIXED_HOUR"
+}, 
+"26_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "26_WP_DURATION_BASE"
+}, 
+"36_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "36_WP_FIXED_HOUR"
+}, 
+"73_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "73_WP_DURATION_BASE"
+}, 
+"23_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "23_WP_FIXED_HOUR"
+}, 
+"50_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "50_WP_FIXED_MINUTE"
+}, 
+"43_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "43_WP_DURATION_FACTOR"
+}, 
+"31_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "31_WP_WEEKDAY"
+}, 
+"20_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "20_WP_FIXED_HOUR"
+}, 
+"32_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "32_WP_FIXED_HOUR"
+}, 
+"33_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "33_WP_DURATION_FACTOR"
+}, 
+"72_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "72_WP_FIXED_MINUTE"
+}, 
+"31_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "31_WP_FIXED_HOUR"
+}, 
+"38_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "38_WP_TARGET_CHANNELS"
+}, 
+"75_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "75_WP_WEEKDAY"
+}, 
+"69_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "69_WP_DURATION_FACTOR"
+}, 
+"39_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "39_WP_LEVEL"
+}, 
+"09_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "09_WP_FIXED_HOUR"
+}, 
+"67_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "67_WP_DURATION_BASE"
+}, 
+"68_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "68_WP_FIXED_MINUTE"
+}, 
+"35_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "35_WP_WEEKDAY"
+}, 
+"53_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "53_WP_LEVEL"
+}, 
+"15_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "15_WP_DURATION_FACTOR"
+}, 
+"31_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "31_WP_DURATION_BASE"
+}, 
+"49_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "49_WP_TARGET_CHANNELS"
+}, 
+"48_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "48_WP_FIXED_MINUTE"
+}, 
+"48_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "48_WP_DURATION_FACTOR"
+}, 
+"65_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "65_WP_FIXED_MINUTE"
+}, 
+"27_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "27_WP_TARGET_CHANNELS"
+}, 
+"41_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "41_WP_LEVEL"
+}, 
+"53_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "53_WP_DURATION_FACTOR"
+}, 
+"66_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "66_WP_WEEKDAY"
+}, 
+"50_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "50_WP_WEEKDAY"
+}, 
+"66_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "66_WP_FIXED_MINUTE"
+}, 
+"12_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "12_WP_FIXED_MINUTE"
+}, 
+"20_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "20_WP_TARGET_CHANNELS"
+}, 
+"73_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "73_WP_WEEKDAY"
+}, 
+"63_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "63_WP_FIXED_MINUTE"
+}, 
+"11_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "11_WP_DURATION_BASE"
+}, 
+"75_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "75_WP_DURATION_FACTOR"
+}, 
+"45_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "45_WP_WEEKDAY"
+}, 
+"26_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "26_WP_TARGET_CHANNELS"
+}, 
+"02_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "02_WP_DURATION_FACTOR"
+}, 
+"01_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "01_WP_FIXED_HOUR"
+}, 
+"08_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "08_WP_TARGET_CHANNELS"
+}, 
+"58_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "58_WP_DURATION_FACTOR"
+}, 
+"28_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "28_WP_DURATION_BASE"
+}, 
+"44_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "44_WP_FIXED_MINUTE"
+}, 
+"05_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "05_WP_FIXED_HOUR"
+}, 
+"01_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "01_WP_DURATION_BASE"
+}, 
+"38_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "38_WP_DURATION_FACTOR"
+}, 
+"21_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "21_WP_LEVEL"
+}, 
+"64_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "64_WP_DURATION_FACTOR"
+}, 
+"52_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "52_WP_TARGET_CHANNELS"
+}, 
+"08_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "08_WP_WEEKDAY"
+}, 
+"09_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "09_WP_LEVEL"
+}, 
+"34_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "34_WP_DURATION_FACTOR"
+}, 
+"57_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "57_WP_DURATION_BASE"
+}, 
+"04_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "04_WP_DURATION_BASE"
+}, 
+"37_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "37_WP_DURATION_FACTOR"
+}, 
+"54_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "54_WP_DURATION_BASE"
+}, 
+"63_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "63_WP_DURATION_FACTOR"
+}, 
+"33_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "33_WP_WEEKDAY"
+}, 
+"25_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "25_WP_TARGET_CHANNELS"
+}, 
+"55_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "55_WP_LEVEL"
+}, 
+"72_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "72_WP_FIXED_HOUR"
+}, 
+"54_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "54_WP_TARGET_CHANNELS"
+}, 
+"41_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "41_WP_FIXED_MINUTE"
+}, 
+"58_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "58_WP_DURATION_BASE"
+}, 
+"22_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "22_WP_LEVEL"
+}, 
+"37_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "37_WP_TARGET_CHANNELS"
+}, 
+"16_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "16_WP_FIXED_MINUTE"
+}, 
+"72_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "72_WP_DURATION_FACTOR"
+}, 
+"18_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "18_WP_LEVEL"
+}, 
+"54_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "54_WP_FIXED_MINUTE"
+}, 
+"61_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "61_WP_DURATION_BASE"
+}, 
+"26_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "26_WP_FIXED_MINUTE"
+}, 
+"42_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "42_WP_DURATION_BASE"
+}, 
+"26_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "26_WP_WEEKDAY"
+}, 
+"05_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "05_WP_DURATION_BASE"
+}, 
+"27_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "27_WP_DURATION_BASE"
+}, 
+"71_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "71_WP_FIXED_MINUTE"
+}, 
+"33_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "33_WP_FIXED_MINUTE"
+}, 
+"13_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "13_WP_DURATION_BASE"
+}, 
+"15_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "15_WP_WEEKDAY"
+}, 
+"05_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "05_WP_TARGET_CHANNELS"
+}, 
+"43_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "43_WP_FIXED_MINUTE"
+}, 
+"06_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "06_WP_FIXED_MINUTE"
+}, 
+"36_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "36_WP_DURATION_FACTOR"
+}, 
+"22_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "22_WP_DURATION_BASE"
+}, 
+"21_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "21_WP_FIXED_MINUTE"
+}, 
+"39_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "39_WP_TARGET_CHANNELS"
+}, 
+"11_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "11_WP_DURATION_FACTOR"
+}, 
+"70_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "70_WP_FIXED_MINUTE"
+}, 
+"57_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "57_WP_TARGET_CHANNELS"
+}, 
+"61_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "61_WP_WEEKDAY"
+}, 
+"50_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "50_WP_FIXED_HOUR"
+}, 
+"06_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "06_WP_WEEKDAY"
+}, 
+"65_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "65_WP_LEVEL"
+}, 
+"10_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "10_WP_DURATION_FACTOR"
+}, 
+"48_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "48_WP_LEVEL"
+}, 
+"40_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "40_WP_LEVEL"
+}, 
+"14_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "14_WP_FIXED_MINUTE"
+}, 
+"32_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "32_WP_LEVEL"
+}, 
+"54_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "54_WP_FIXED_HOUR"
+}, 
+"67_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "67_WP_FIXED_MINUTE"
+}, 
+"64_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "64_WP_FIXED_HOUR"
+}, 
+"42_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "42_WP_WEEKDAY"
+}, 
+"57_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "57_WP_FIXED_HOUR"
+}, 
+"23_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "23_WP_DURATION_FACTOR"
+}, 
+"51_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "51_WP_FIXED_MINUTE"
+}, 
+"06_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "06_WP_DURATION_BASE"
+}, 
+"23_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "23_WP_DURATION_BASE"
+}, 
+"60_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "60_WP_TARGET_CHANNELS"
+}, 
+"14_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "14_WP_WEEKDAY"
+}, 
+"39_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "39_WP_DURATION_BASE"
+}, 
+"39_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "39_WP_DURATION_FACTOR"
+}, 
+"01_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "01_WP_FIXED_MINUTE"
+}, 
+"17_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "17_WP_FIXED_MINUTE"
+}, 
+"35_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "35_WP_FIXED_MINUTE"
+}, 
+"41_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "41_WP_DURATION_BASE"
+}, 
+"44_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "44_WP_WEEKDAY"
+}, 
+"45_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "45_WP_LEVEL"
+}, 
+"48_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "48_WP_DURATION_BASE"
+}, 
+"25_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "25_WP_WEEKDAY"
+}, 
+"22_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "22_WP_WEEKDAY"
+}, 
+"45_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "45_WP_FIXED_MINUTE"
+}, 
+"39_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "39_WP_WEEKDAY"
+}, 
+"10_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "10_WP_FIXED_HOUR"
+}, 
+"52_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "52_WP_LEVEL"
+}, 
+"46_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "46_WP_FIXED_MINUTE"
+}, 
+"33_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "33_WP_TARGET_CHANNELS"
+}, 
+"59_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "59_WP_FIXED_MINUTE"
+}, 
+"73_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "73_WP_LEVEL"
+}, 
+"67_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "67_WP_WEEKDAY"
+}, 
+"07_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "07_WP_WEEKDAY"
+}, 
+"54_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "54_WP_LEVEL"
+}, 
+"27_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "27_WP_FIXED_HOUR"
+}, 
+"17_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "17_WP_DURATION_FACTOR"
+}, 
+"75_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "75_WP_LEVEL"
+}, 
+"20_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "20_WP_DURATION_BASE"
+}, 
+"49_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "49_WP_DURATION_BASE"
+}, 
+"62_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "62_WP_FIXED_MINUTE"
+}, 
+"46_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "46_WP_LEVEL"
+}, 
+"67_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "67_WP_LEVEL"
+}, 
+"59_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "59_WP_WEEKDAY"
+}, 
+"70_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "70_WP_FIXED_HOUR"
+}, 
+"05_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "05_WP_LEVEL"
+}, 
+"04_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "04_WP_FIXED_HOUR"
+}, 
+"74_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "74_WP_FIXED_MINUTE"
+}, 
+"10_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "10_WP_DURATION_BASE"
+}, 
+"26_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "26_WP_FIXED_HOUR"
+}, 
+"05_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "05_WP_FIXED_MINUTE"
+}, 
+"47_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "47_WP_LEVEL"
+}, 
+"74_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "74_WP_WEEKDAY"
+}, 
+"60_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "60_WP_FIXED_MINUTE"
+}, 
+"73_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "73_WP_FIXED_HOUR"
+}, 
+"72_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "72_WP_TARGET_CHANNELS"
+}, 
+"51_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "51_WP_WEEKDAY"
+}, 
+"34_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "34_WP_DURATION_BASE"
+}, 
+"28_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "28_WP_FIXED_MINUTE"
+}, 
+"01_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "01_WP_DURATION_FACTOR"
+}, 
+"69_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "69_WP_WEEKDAY"
+}, 
+"23_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "23_WP_WEEKDAY"
+}, 
+"09_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "09_WP_DURATION_FACTOR"
+}, 
+"36_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "36_WP_FIXED_MINUTE"
+}, 
+"73_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "73_WP_DURATION_FACTOR"
+}, 
+"02_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "02_WP_TARGET_CHANNELS"
+}, 
+"36_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "36_WP_TARGET_CHANNELS"
+}, 
+"71_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "71_WP_FIXED_HOUR"
+}, 
+"24_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "24_WP_WEEKDAY"
+}, 
+"52_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "52_WP_WEEKDAY"
+}, 
+"37_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "37_WP_LEVEL"
+}, 
+"56_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "56_WP_FIXED_MINUTE"
+}, 
+"46_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "46_WP_WEEKDAY"
+}, 
+"75_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "75_WP_TARGET_CHANNELS"
+}, 
+"61_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "61_WP_FIXED_HOUR"
+}, 
+"52_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "52_WP_FIXED_MINUTE"
+}, 
+"23_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "23_WP_LEVEL"
+}, 
+"68_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "68_WP_TARGET_CHANNELS"
+}, 
+"31_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "31_WP_DURATION_FACTOR"
+}, 
+"64_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "64_WP_WEEKDAY"
+}, 
+"56_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "56_WP_TARGET_CHANNELS"
+}, 
+"73_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "73_WP_FIXED_MINUTE"
+}, 
+"36_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "36_WP_LEVEL"
+}, 
+"15_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "15_WP_LEVEL"
+}, 
+"08_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "08_WP_DURATION_BASE"
+}, 
+"47_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "47_WP_FIXED_HOUR"
+}, 
+"22_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "22_WP_FIXED_MINUTE"
+}, 
+"52_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "52_WP_DURATION_BASE"
+}, 
+"47_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "47_WP_DURATION_BASE"
+}, 
+"44_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "44_WP_FIXED_HOUR"
+}, 
+"62_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "62_WP_TARGET_CHANNELS"
+}, 
+"49_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "49_WP_FIXED_MINUTE"
+}, 
+"11_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "11_WP_FIXED_HOUR"
+}, 
+"16_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "16_WP_TARGET_CHANNELS"
+}, 
+"41_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "41_WP_TARGET_CHANNELS"
+}, 
+"47_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "47_WP_DURATION_FACTOR"
+}, 
+"75_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "75_WP_DURATION_BASE"
+}, 
+"65_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "65_WP_DURATION_BASE"
+}, 
+"70_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "70_WP_TARGET_CHANNELS"
+}, 
+"24_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "24_WP_FIXED_MINUTE"
+}, 
+"21_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "21_WP_TARGET_CHANNELS"
+}, 
+"60_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "60_WP_LEVEL"
+}, 
+"72_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "72_WP_WEEKDAY"
+}, 
+"61_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "61_WP_FIXED_MINUTE"
+}, 
+"37_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "37_WP_FIXED_HOUR"
+}, 
+"29_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "29_WP_DURATION_BASE"
+}, 
+"29_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "29_WP_WEEKDAY"
+}, 
+"45_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "45_WP_FIXED_HOUR"
+}, 
+"04_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "04_WP_WEEKDAY"
+}, 
+"25_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "25_WP_DURATION_FACTOR"
+}, 
+"49_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "49_WP_LEVEL"
+}, 
+"64_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "64_WP_LEVEL"
+}, 
+"32_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "32_WP_DURATION_FACTOR"
+}, 
+"60_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "60_WP_DURATION_FACTOR"
+}, 
+"11_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "11_WP_TARGET_CHANNELS"
+}, 
+"21_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "21_WP_DURATION_BASE"
+}, 
+"50_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "50_WP_LEVEL"
+}, 
+"71_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "71_WP_DURATION_FACTOR"
+}, 
+"47_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "47_WP_FIXED_MINUTE"
+}, 
+"62_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "62_WP_LEVEL"
+}, 
+"60_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "60_WP_DURATION_BASE"
+}, 
+"21_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "21_WP_DURATION_FACTOR"
+}, 
+"44_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "44_WP_DURATION_BASE"
+}, 
+"71_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "71_WP_DURATION_BASE"
+}, 
+"57_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "57_WP_FIXED_MINUTE"
+}, 
+"35_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "35_WP_TARGET_CHANNELS"
+}, 
+"52_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "52_WP_DURATION_FACTOR"
+}, 
+"26_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "26_WP_LEVEL"
+}, 
+"45_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "45_WP_DURATION_FACTOR"
+}, 
+"31_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "31_WP_LEVEL"
+}, 
+"29_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "29_WP_DURATION_FACTOR"
+}, 
+"40_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "40_WP_DURATION_BASE"
+}, 
+"03_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "03_WP_DURATION_BASE"
+}, 
+"13_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "13_WP_FIXED_HOUR"
+}, 
+"41_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "41_WP_DURATION_FACTOR"
+}, 
+"68_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "68_WP_DURATION_FACTOR"
+}, 
+"66_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "66_WP_DURATION_FACTOR"
+}, 
+"42_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "42_WP_DURATION_FACTOR"
+}, 
+"32_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "32_WP_FIXED_MINUTE"
+}, 
+"63_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "63_WP_WEEKDAY"
+}, 
+"19_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "19_WP_DURATION_FACTOR"
+}, 
+"70_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "70_WP_WEEKDAY"
+}, 
+"12_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "12_WP_TARGET_CHANNELS"
+}, 
+"69_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "69_WP_FIXED_MINUTE"
+}, 
+"49_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "49_WP_FIXED_HOUR"
+}, 
+"19_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "19_WP_FIXED_MINUTE"
+}, 
+"74_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "74_WP_LEVEL"
+}, 
+"29_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "29_WP_FIXED_MINUTE"
+}, 
+"34_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "34_WP_FIXED_HOUR"
+}, 
+"72_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "72_WP_DURATION_BASE"
+}, 
+"22_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "22_WP_FIXED_HOUR"
+}, 
+"10_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "10_WP_FIXED_MINUTE"
+}, 
+"59_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "59_WP_LEVEL"
+}, 
+"07_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "07_WP_FIXED_MINUTE"
+}, 
+"66_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "66_WP_TARGET_CHANNELS"
+}, 
+"39_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "39_WP_FIXED_MINUTE"
+}, 
+"22_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "22_WP_DURATION_FACTOR"
+}, 
+"54_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "54_WP_WEEKDAY"
+}, 
+"01_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "01_WP_TARGET_CHANNELS"
+}, 
+"35_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "35_WP_DURATION_FACTOR"
+}, 
+"75_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "75_WP_FIXED_MINUTE"
+}, 
+"36_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "36_WP_WEEKDAY"
+}, 
+"57_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "57_WP_LEVEL"
+}, 
+"16_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "16_WP_LEVEL"
+}, 
+"06_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "06_WP_TARGET_CHANNELS"
+}, 
+"17_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "17_WP_FIXED_HOUR"
+}, 
+"25_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "25_WP_DURATION_BASE"
+}, 
+"09_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "09_WP_TARGET_CHANNELS"
+}, 
+"62_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "62_WP_FIXED_HOUR"
+}, 
+"07_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "07_WP_FIXED_HOUR"
+}, 
+"37_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "37_WP_FIXED_MINUTE"
+}, 
+"71_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "71_WP_LEVEL"
+}, 
+"12_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "12_WP_DURATION_FACTOR"
+}, 
+"02_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "02_WP_FIXED_HOUR"
+}, 
+"29_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "29_WP_FIXED_HOUR"
+}, 
+"42_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "42_WP_TARGET_CHANNELS"
+}, 
+"08_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "08_WP_LEVEL"
+}, 
+"34_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "34_WP_TARGET_CHANNELS"
+}, 
+"35_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "35_WP_FIXED_HOUR"
+}, 
+"27_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "27_WP_WEEKDAY"
+}, 
+"20_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "20_WP_DURATION_FACTOR"
+}, 
+"15_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "15_WP_FIXED_HOUR"
+}, 
+"65_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "65_WP_DURATION_FACTOR"
+}, 
+"18_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "18_WP_WEEKDAY"
+}, 
+"12_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "12_WP_FIXED_HOUR"
+}, 
+"53_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "53_WP_FIXED_HOUR"
+}, 
+"19_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "19_WP_WEEKDAY"
+}, 
+"28_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "28_WP_FIXED_HOUR"
+}, 
+"15_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "15_WP_DURATION_BASE"
+}, 
+"03_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "03_WP_TARGET_CHANNELS"
+}, 
+"12_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "12_WP_DURATION_BASE"
+}, 
+"32_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "32_WP_TARGET_CHANNELS"
+}, 
+"19_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "19_WP_DURATION_BASE"
+}, 
+"09_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "09_WP_DURATION_BASE"
+}, 
+"57_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "57_WP_WEEKDAY"
+}, 
+"59_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "59_WP_DURATION_FACTOR"
+}, 
+"25_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "25_WP_FIXED_MINUTE"
+}, 
+"64_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "64_WP_TARGET_CHANNELS"
+}, 
+"58_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "58_WP_FIXED_MINUTE"
+}, 
+"70_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "70_WP_DURATION_FACTOR"
+}, 
+"68_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "68_WP_FIXED_HOUR"
+}, 
+"65_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "65_WP_TARGET_CHANNELS"
+}, 
+"55_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "55_WP_DURATION_FACTOR"
+}, 
+"51_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "51_WP_FIXED_HOUR"
+}, 
+"34_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "34_WP_LEVEL"
+}, 
+"61_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "61_WP_DURATION_FACTOR"
+}, 
+"16_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "16_WP_WEEKDAY"
+}, 
+"44_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "44_WP_TARGET_CHANNELS"
+}, 
+"69_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "69_WP_TARGET_CHANNELS"
+}, 
+"53_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "53_WP_WEEKDAY"
+}, 
+"58_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "58_WP_WEEKDAY"
+}, 
+"35_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "35_WP_DURATION_BASE"
+}, 
+"03_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "03_WP_LEVEL"
+}, 
+"67_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "67_WP_DURATION_FACTOR"
+}, 
+"13_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "13_WP_TARGET_CHANNELS"
+}, 
+"70_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "70_WP_DURATION_BASE"
+}, 
+"31_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "31_WP_TARGET_CHANNELS"
+}, 
+"14_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "14_WP_FIXED_HOUR"
+}, 
+"38_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "38_WP_DURATION_BASE"
+}, 
+"14_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "14_WP_DURATION_BASE"
+}, 
+"68_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "68_WP_WEEKDAY"
+}, 
+"12_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "12_WP_LEVEL"
+}, 
+"33_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "33_WP_DURATION_BASE"
+}, 
+"38_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "38_WP_WEEKDAY"
+}, 
+"39_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "39_WP_FIXED_HOUR"
+}, 
+"45_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "45_WP_TARGET_CHANNELS"
+}, 
+"29_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "29_WP_LEVEL"
+}, 
+"24_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "24_WP_DURATION_FACTOR"
+}, 
+"17_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "17_WP_WEEKDAY"
+}, 
+"28_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "28_WP_WEEKDAY"
+}, 
+"30_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "30_WP_FIXED_MINUTE"
+}, 
+"05_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "05_WP_DURATION_FACTOR"
+}, 
+"40_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "40_WP_WEEKDAY"
+}, 
+"53_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "53_WP_TARGET_CHANNELS"
+}, 
+"34_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "34_WP_FIXED_MINUTE"
+}, 
+"56_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "56_WP_DURATION_FACTOR"
+}, 
+"44_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "44_WP_LEVEL"
+}, 
+"17_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "17_WP_LEVEL"
+}, 
+"52_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "52_WP_FIXED_HOUR"
+}, 
+"01_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "01_WP_LEVEL"
+}, 
+"62_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "62_WP_DURATION_BASE"
+}, 
+"48_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "48_WP_FIXED_HOUR"
+}, 
+"53_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "53_WP_DURATION_BASE"
+}, 
+"25_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "25_WP_LEVEL"
+}, 
+"14_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "14_WP_TARGET_CHANNELS"
+}, 
+"51_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "51_WP_DURATION_FACTOR"
+}, 
+"65_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "65_WP_WEEKDAY"
+}, 
+"03_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "03_WP_WEEKDAY"
+}, 
+"26_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "26_WP_DURATION_FACTOR"
+}, 
+"04_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "04_WP_FIXED_MINUTE"
+}, 
+"13_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "13_WP_WEEKDAY"
+}, 
+"55_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "55_WP_WEEKDAY"
+}, 
+"59_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "59_WP_DURATION_BASE"
+}, 
+"66_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "66_WP_LEVEL"
+}, 
+"19_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "19_WP_TARGET_CHANNELS"
+}, 
+"63_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "63_WP_TARGET_CHANNELS"
+}, 
+"67_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "67_WP_FIXED_HOUR"
+}, 
+"68_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "68_WP_DURATION_BASE"
+}, 
+"38_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "38_WP_LEVEL"
+}, 
+"55_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "55_WP_DURATION_BASE"
+}, 
+"45_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "45_WP_DURATION_BASE"
+}, 
+"08_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "08_WP_DURATION_FACTOR"
+}, 
+"51_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "51_WP_TARGET_CHANNELS"
+}, 
+"14_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "14_WP_LEVEL"
+}, 
+"02_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "02_WP_FIXED_MINUTE"
+}, 
+"17_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "17_WP_TARGET_CHANNELS"
+}, 
+"43_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "43_WP_LEVEL"
+}, 
+"46_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "46_WP_TARGET_CHANNELS"
+}, 
+"33_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "33_WP_LEVEL"
+}, 
+"21_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "21_WP_FIXED_HOUR"
+}, 
+"74_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "74_WP_DURATION_FACTOR"
+}, 
+"66_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "66_WP_DURATION_BASE"
+}, 
+"08_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "08_WP_FIXED_MINUTE"
+}, 
+"60_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "60_WP_WEEKDAY"
+}, 
+"43_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "43_WP_DURATION_BASE"
+}, 
+"24_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "24_WP_FIXED_HOUR"
+}, 
+"43_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "43_WP_FIXED_HOUR"
+}, 
+"23_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "23_WP_TARGET_CHANNELS"
+}, 
+"48_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "48_WP_TARGET_CHANNELS"
+}, 
+"27_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "27_WP_LEVEL"
+}, 
+"46_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "46_WP_DURATION_BASE"
+}, 
+"50_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "50_WP_DURATION_FACTOR"
+}, 
+"07_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "07_WP_LEVEL"
+}, 
+"02_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "02_WP_DURATION_BASE"
+}, 
+"66_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "66_WP_FIXED_HOUR"
+}, 
+"38_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "38_WP_FIXED_HOUR"
+}, 
+"37_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "37_WP_WEEKDAY"
+}, 
+"31_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "31_WP_FIXED_MINUTE"
+}, 
+"16_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "16_WP_DURATION_FACTOR"
+}, 
+"42_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "42_WP_FIXED_HOUR"
+}, 
+"16_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "16_WP_DURATION_BASE"
+}, 
+"63_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "63_WP_FIXED_HOUR"
+}, 
+"05_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "05_WP_WEEKDAY"
+}, 
+"20_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "20_WP_WEEKDAY"
+}, 
+"38_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "38_WP_FIXED_MINUTE"
+}, 
+"04_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "04_WP_LEVEL"
+}, 
+"33_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "33_WP_FIXED_HOUR"
+}, 
+"22_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "22_WP_TARGET_CHANNELS"
+}, 
+"18_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "18_WP_FIXED_MINUTE"
+}, 
+"10_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "10_WP_WEEKDAY"
+}, 
+"02_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "02_WP_WEEKDAY"
+}, 
+"34_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "34_WP_WEEKDAY"
+}, 
+"68_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "68_WP_LEVEL"
+}, 
+"03_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "03_WP_FIXED_HOUR"
+}, 
+"49_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "49_WP_DURATION_FACTOR"
+}, 
+"02_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "02_WP_LEVEL"
+}, 
+"74_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "74_WP_TARGET_CHANNELS"
+}, 
+"07_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "07_WP_DURATION_BASE"
+}, 
+"64_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "64_WP_DURATION_BASE"
+}, 
+"12_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "12_WP_WEEKDAY"
+}, 
+"61_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "61_WP_LEVEL"
+}, 
+"19_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "19_WP_FIXED_HOUR"
+}, 
+"70_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "70_WP_LEVEL"
+}, 
+"28_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "28_WP_TARGET_CHANNELS"
+}, 
+"67_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "67_WP_TARGET_CHANNELS"
+}, 
+"24_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "24_WP_DURATION_BASE"
+}, 
+"30_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "30_WP_TARGET_CHANNELS"
+}, 
+"58_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "58_WP_TARGET_CHANNELS"
+}, 
+"11_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "11_WP_FIXED_MINUTE"
+}, 
+"72_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "72_WP_LEVEL"
+}, 
+"13_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "13_WP_FIXED_MINUTE"
+}, 
+"48_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "48_WP_WEEKDAY"
+}, 
+"37_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "37_WP_DURATION_BASE"
+}, 
+"55_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "55_WP_TARGET_CHANNELS"
+}, 
+"30_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "30_WP_FIXED_HOUR"
+}, 
+"63_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "63_WP_DURATION_BASE"
+}, 
+"44_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "44_WP_DURATION_FACTOR"
+}, 
+"21_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "21_WP_WEEKDAY"
+}, 
+"40_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "40_WP_FIXED_MINUTE"
+}, 
+"58_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "58_WP_LEVEL"
+}, 
+"06_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "06_WP_FIXED_HOUR"
+}, 
+"07_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "07_WP_TARGET_CHANNELS"
+}, 
+"17_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "17_WP_DURATION_BASE"
+}, 
+"71_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "71_WP_TARGET_CHANNELS"
+}, 
+"18_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "18_WP_FIXED_HOUR"
+}, 
+"40_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "40_WP_FIXED_HOUR"
+}, 
+"18_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "18_WP_DURATION_BASE"
+}, 
+"24_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "24_WP_LEVEL"
+}, 
+"40_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "40_WP_DURATION_FACTOR"
+}, 
+"74_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "74_WP_FIXED_HOUR"
+}, 
+"40_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "40_WP_TARGET_CHANNELS"
+}, 
+"55_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "55_WP_FIXED_MINUTE"
+}, 
+"13_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "13_WP_DURATION_FACTOR"
+}, 
+"03_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "03_WP_DURATION_FACTOR"
+}, 
+"20_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "20_WP_FIXED_MINUTE"
+}, 
+"15_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "15_WP_TARGET_CHANNELS"
+}, 
+"18_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "18_WP_DURATION_FACTOR"
+}, 
+"30_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "30_WP_DURATION_BASE"
+}, 
+"46_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "46_WP_FIXED_HOUR"
+}, 
+"62_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "62_WP_DURATION_FACTOR"
+}, 
+"30_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "30_WP_WEEKDAY"
+}, 
+"29_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "29_WP_TARGET_CHANNELS"
+}, 
+"28_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "28_WP_LEVEL"
+}, 
+"11_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "11_WP_WEEKDAY"
+}, 
+"41_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "41_WP_WEEKDAY"
+}, 
+"07_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "07_WP_DURATION_FACTOR"
+}, 
+"51_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "51_WP_DURATION_BASE"
+}, 
+"09_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "09_WP_FIXED_MINUTE"
+}, 
+"11_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "11_WP_LEVEL"
+}, 
+"56_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "56_WP_WEEKDAY"
+}, 
+"36_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "36_WP_DURATION_BASE"
+}, 
+"27_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "27_WP_DURATION_FACTOR"
+}, 
+"63_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "63_WP_LEVEL"
+}, 
+"49_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "49_WP_WEEKDAY"
+}, 
+"15_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "15_WP_FIXED_MINUTE"
+}, 
+"69_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "69_WP_FIXED_HOUR"
+}, 
+"30_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "30_WP_LEVEL"
+}, 
+"24_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "24_WP_TARGET_CHANNELS"
+}, 
+"43_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "43_WP_TARGET_CHANNELS"
+}, 
+"64_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "64_WP_FIXED_MINUTE"
+}, 
+"03_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "03_WP_FIXED_MINUTE"
+}, 
+"06_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "06_WP_LEVEL"
+}, 
+"28_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "28_WP_DURATION_FACTOR"
+}, 
+"50_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "50_WP_TARGET_CHANNELS"
+}, 
+"51_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "51_WP_LEVEL"
+}, 
+"32_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "32_WP_DURATION_BASE"
+}, 
+"10_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "10_WP_TARGET_CHANNELS"
+}, 
+"71_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "71_WP_WEEKDAY"
+}, 
+"65_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "65_WP_FIXED_HOUR"
+}, 
+"47_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "47_WP_TARGET_CHANNELS"
+}, 
+"27_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "27_WP_FIXED_MINUTE"
+}, 
+"74_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "74_WP_DURATION_BASE"
+}, 
+"56_WP_DURATION_BASE": {
+"OPERATIONS": 3, 
+"MIN": "BASE_100_MS", 
+"DEFAULT": "BASE_1_H", 
+"MAX": "BASE_1_H", 
+"VALUE_LIST": [
+"BASE_100_MS", 
+"BASE_1_S", 
+"BASE_5_S", 
+"BASE_10_S", 
+"BASE_1_M", 
+"BASE_5_M", 
+"BASE_10_M", 
+"BASE_1_H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "56_WP_DURATION_BASE"
+}, 
+"57_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "57_WP_DURATION_FACTOR"
+}, 
+"53_WP_FIXED_MINUTE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 59, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "53_WP_FIXED_MINUTE"
+}, 
+"59_WP_FIXED_HOUR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 23, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "59_WP_FIXED_HOUR"
+}, 
+"73_WP_TARGET_CHANNELS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 16777215, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "73_WP_TARGET_CHANNELS"
+}, 
+"30_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "30_WP_DURATION_FACTOR"
+}, 
+"42_WP_LEVEL": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 1.01, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "42_WP_LEVEL"
+}, 
+"04_WP_DURATION_FACTOR": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 31, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "04_WP_DURATION_FACTOR"
+}, 
+"32_WP_WEEKDAY": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "32_WP_WEEKDAY"
+}
+}, 
+"SERVICE": {
+"OS_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "OS_VERSION"
+}, 
+"TEST_STATUS": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "TEST_STATUS"
+}, 
+"APPLICATION_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "APPLICATION_VERSION"
+}, 
+"BOOTLOADER_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "BOOTLOADER_VERSION"
+}, 
+"HARDWARE_VERSION": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 65535, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "HARDWARE_VERSION"
+}
+}
+}, 
+"VCU6649135:8": {
+"VALUES": {
+"STATE": {
+"OPERATIONS": 5, 
+"CONTROL": "ACCESS_RECEIVER.STATE", 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "STATE"
+}, 
+"ACCESS_AUTHORIZATION": {
+"OPERATIONS": 2, 
+"CONTROL": "ACCESS_RECEIVER.ACCESS_AUTHORIZATION", 
+"MIN": "DISABLE", 
+"DEFAULT": "DISABLE", 
+"MAX": "ENABLE", 
+"VALUE_LIST": [
+"DISABLE", 
+"ENABLE"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "ACCESS_AUTHORIZATION"
+}
+}, 
+"MASTER": {}, 
+"SERVICE": {
+"OS_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "OS_VERSION"
+}, 
+"TEST_STATUS": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "TEST_STATUS"
+}, 
+"APPLICATION_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "APPLICATION_VERSION"
+}, 
+"BOOTLOADER_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "BOOTLOADER_VERSION"
+}, 
+"HARDWARE_VERSION": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 65535, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "HARDWARE_VERSION"
+}
+}, 
+"LINK": {
+"SHORT_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_HI"
+}, 
+"SHORT_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_OFF"
+}, 
+"LONG_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_HI"
+}, 
+"SHORT_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_PROFILE_ACTION_TYPE"
+}, 
+"LONG_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_OFF"
+}, 
+"SHORT_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_ON"
+}, 
+"LONG_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_ON"
+}, 
+"LONG_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_OFF"
+}, 
+"SHORT_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_LO"
+}, 
+"LONG_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_PROFILE_ACTION_TYPE"
+}, 
+"LONG_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_ON"
+}, 
+"LONG_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_LO"
+}, 
+"SHORT_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_OFF"
+}, 
+"SHORT_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_ON"
+}
+}
+}, 
+"VCU6649135:9": {
+"VALUES": {
+"STATE": {
+"OPERATIONS": 5, 
+"CONTROL": "ACCESS_RECEIVER.STATE", 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "STATE"
+}, 
+"ACCESS_AUTHORIZATION": {
+"OPERATIONS": 2, 
+"CONTROL": "ACCESS_RECEIVER.ACCESS_AUTHORIZATION", 
+"MIN": "DISABLE", 
+"DEFAULT": "DISABLE", 
+"MAX": "ENABLE", 
+"VALUE_LIST": [
+"DISABLE", 
+"ENABLE"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "ACCESS_AUTHORIZATION"
+}
+}, 
+"MASTER": {}, 
+"SERVICE": {
+"OS_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "OS_VERSION"
+}, 
+"TEST_STATUS": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "TEST_STATUS"
+}, 
+"APPLICATION_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "APPLICATION_VERSION"
+}, 
+"BOOTLOADER_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "BOOTLOADER_VERSION"
+}, 
+"HARDWARE_VERSION": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 65535, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "HARDWARE_VERSION"
+}
+}, 
+"LINK": {
+"SHORT_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_HI"
+}, 
+"SHORT_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_OFF"
+}, 
+"LONG_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_HI"
+}, 
+"SHORT_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_PROFILE_ACTION_TYPE"
+}, 
+"LONG_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_OFF"
+}, 
+"SHORT_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_ON"
+}, 
+"LONG_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_ON"
+}, 
+"LONG_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_OFF"
+}, 
+"SHORT_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_LO"
+}, 
+"LONG_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_PROFILE_ACTION_TYPE"
+}, 
+"LONG_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_ON"
+}, 
+"LONG_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_LO"
+}, 
+"SHORT_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_OFF"
+}, 
+"SHORT_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_ON"
+}
+}
+}, 
+"VCU6649135:2": {
+"VALUES": {
+"STATE": {
+"OPERATIONS": 5, 
+"CONTROL": "ACCESS_RECEIVER.STATE", 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "STATE"
+}, 
+"ACCESS_AUTHORIZATION": {
+"OPERATIONS": 2, 
+"CONTROL": "ACCESS_RECEIVER.ACCESS_AUTHORIZATION", 
+"MIN": "DISABLE", 
+"DEFAULT": "DISABLE", 
+"MAX": "ENABLE", 
+"VALUE_LIST": [
+"DISABLE", 
+"ENABLE"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "ACCESS_AUTHORIZATION"
+}
+}, 
+"MASTER": {}, 
+"SERVICE": {
+"OS_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "OS_VERSION"
+}, 
+"TEST_STATUS": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "TEST_STATUS"
+}, 
+"APPLICATION_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "APPLICATION_VERSION"
+}, 
+"BOOTLOADER_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "BOOTLOADER_VERSION"
+}, 
+"HARDWARE_VERSION": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 65535, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "HARDWARE_VERSION"
+}
+}, 
+"LINK": {
+"SHORT_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_HI"
+}, 
+"SHORT_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_OFF"
+}, 
+"LONG_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_HI"
+}, 
+"SHORT_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_PROFILE_ACTION_TYPE"
+}, 
+"LONG_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_OFF"
+}, 
+"SHORT_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_ON"
+}, 
+"LONG_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_ON"
+}, 
+"LONG_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_OFF"
+}, 
+"SHORT_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_LO"
+}, 
+"LONG_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_PROFILE_ACTION_TYPE"
+}, 
+"LONG_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_ON"
+}, 
+"LONG_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_LO"
+}, 
+"SHORT_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_OFF"
+}, 
+"SHORT_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_ON"
+}
+}
+}, 
+"VCU6649135:3": {
+"VALUES": {
+"STATE": {
+"OPERATIONS": 5, 
+"CONTROL": "ACCESS_RECEIVER.STATE", 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "STATE"
+}, 
+"ACCESS_AUTHORIZATION": {
+"OPERATIONS": 2, 
+"CONTROL": "ACCESS_RECEIVER.ACCESS_AUTHORIZATION", 
+"MIN": "DISABLE", 
+"DEFAULT": "DISABLE", 
+"MAX": "ENABLE", 
+"VALUE_LIST": [
+"DISABLE", 
+"ENABLE"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "ACCESS_AUTHORIZATION"
+}
+}, 
+"MASTER": {}, 
+"SERVICE": {
+"OS_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "OS_VERSION"
+}, 
+"TEST_STATUS": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "TEST_STATUS"
+}, 
+"APPLICATION_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "APPLICATION_VERSION"
+}, 
+"BOOTLOADER_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "BOOTLOADER_VERSION"
+}, 
+"HARDWARE_VERSION": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 65535, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "HARDWARE_VERSION"
+}
+}, 
+"LINK": {
+"SHORT_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_HI"
+}, 
+"SHORT_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_OFF"
+}, 
+"LONG_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_HI"
+}, 
+"SHORT_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_PROFILE_ACTION_TYPE"
+}, 
+"LONG_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_OFF"
+}, 
+"SHORT_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_ON"
+}, 
+"LONG_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_ON"
+}, 
+"LONG_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_OFF"
+}, 
+"SHORT_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_LO"
+}, 
+"LONG_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_PROFILE_ACTION_TYPE"
+}, 
+"LONG_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_ON"
+}, 
+"LONG_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_LO"
+}, 
+"SHORT_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_OFF"
+}, 
+"SHORT_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_ON"
+}
+}
+}, 
+"VCU6649135:0": {
+"VALUES": {
+"UNREACH": {
+"OPERATIONS": 5, 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 25, 
+"TYPE": "BOOL", 
+"ID": "UNREACH"
+}, 
+"LOW_BAT": {
+"OPERATIONS": 5, 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 9, 
+"TYPE": "BOOL", 
+"ID": "LOW_BAT"
+}, 
+"RSSI_PEER": {
+"OPERATIONS": 5, 
+"MIN": -128, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "RSSI_PEER"
+}, 
+"OPERATING_VOLTAGE_STATUS": {
+"OPERATIONS": 5, 
+"MIN": "NORMAL", 
+"DEFAULT": "NORMAL", 
+"MAX": "EXTERNAL", 
+"VALUE_LIST": [
+"NORMAL", 
+"UNKNOWN", 
+"OVERFLOW", 
+"EXTERNAL"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "OPERATING_VOLTAGE_STATUS"
+}, 
+"UPDATE_PENDING": {
+"OPERATIONS": 5, 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 9, 
+"TYPE": "BOOL", 
+"ID": "UPDATE_PENDING"
+}, 
+"DUTY_CYCLE": {
+"OPERATIONS": 5, 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "DUTY_CYCLE"
+}, 
+"CONFIG_PENDING": {
+"OPERATIONS": 5, 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 9, 
+"TYPE": "BOOL", 
+"ID": "CONFIG_PENDING"
+}, 
+"OPERATING_VOLTAGE": {
+"OPERATIONS": 5, 
+"MIN": 0.0, 
+"DEFAULT": 0.0, 
+"MAX": 25.2, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "OPERATING_VOLTAGE"
+}, 
+"INSTALL_TEST": {
+"OPERATIONS": 3, 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 2, 
+"TYPE": "BOOL", 
+"ID": "INSTALL_TEST"
+}, 
+"RSSI_DEVICE": {
+"OPERATIONS": 5, 
+"MIN": -128, 
+"DEFAULT": 0, 
+"MAX": 127, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "RSSI_DEVICE"
+}
+}, 
+"MASTER": {
+"DST_END_DAY_OF_WEEK": {
+"OPERATIONS": 3, 
+"MIN": "SUNDAY", 
+"DEFAULT": "SUNDAY", 
+"MAX": "SATURDAY", 
+"VALUE_LIST": [
+"SUNDAY", 
+"MONDAY", 
+"TUESDAY", 
+"WEDNESDAY", 
+"THURSDAY", 
+"FRIDAY", 
+"SATURDAY"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "DST_END_DAY_OF_WEEK"
+}, 
+"UTC_DST_OFFSET": {
+"OPERATIONS": 3, 
+"MIN": -720, 
+"DEFAULT": 120, 
+"MAX": 720, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "UTC_DST_OFFSET", 
+"UNIT": "min"
+}, 
+"DST_END_TIME": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 180, 
+"MAX": 1425, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "DST_END_TIME"
+}, 
+"DAYLIGHT_SAVINGS_TIME": {
+"OPERATIONS": 3, 
+"MIN": false, 
+"DEFAULT": true, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "DAYLIGHT_SAVINGS_TIME"
+}, 
+"DST_START_MONTH": {
+"OPERATIONS": 3, 
+"MIN": 1, 
+"DEFAULT": 3, 
+"MAX": 12, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "DST_START_MONTH"
+}, 
+"DISABLE_MSG_TO_AC": {
+"OPERATIONS": 3, 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "DISABLE_MSG_TO_AC"
+}, 
+"DST_END_WEEK_OF_MONTH": {
+"OPERATIONS": 3, 
+"MIN": "1.WEEK", 
+"DEFAULT": "LAST", 
+"MAX": "LAST", 
+"VALUE_LIST": [
+"RESERVED", 
+"1.WEEK", 
+"2.WEEK", 
+"3.WEEK", 
+"4.WEEK", 
+"LAST"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "DST_END_WEEK_OF_MONTH"
+}, 
+"DUTYCYCLE_LIMIT": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 180, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "DUTYCYCLE_LIMIT"
+}, 
+"DST_START_TIME": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 120, 
+"MAX": 1425, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "DST_START_TIME"
+}, 
+"CYCLIC_INFO_MSG_DIS_UNCHANGED": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 20, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "CYCLIC_INFO_MSG_DIS_UNCHANGED"
+}, 
+"DST_START_WEEK_OF_MONTH": {
+"OPERATIONS": 3, 
+"MIN": "1.WEEK", 
+"DEFAULT": "LAST", 
+"MAX": "LAST", 
+"VALUE_LIST": [
+"RESERVED", 
+"1.WEEK", 
+"2.WEEK", 
+"3.WEEK", 
+"4.WEEK", 
+"LAST"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "DST_START_WEEK_OF_MONTH"
+}, 
+"CYCLIC_INFO_MSG_DIS": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 1, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "CYCLIC_INFO_MSG_DIS"
+}, 
+"DST_START_DAY_OF_WEEK": {
+"OPERATIONS": 3, 
+"MIN": "SUNDAY", 
+"DEFAULT": "SUNDAY", 
+"MAX": "SATURDAY", 
+"VALUE_LIST": [
+"SUNDAY", 
+"MONDAY", 
+"TUESDAY", 
+"WEDNESDAY", 
+"THURSDAY", 
+"FRIDAY", 
+"SATURDAY"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "DST_START_DAY_OF_WEEK"
+}, 
+"SUPPORTING_WIRED_OPERATION_MODE": {
+"OPERATIONS": 1, 
+"MIN": true, 
+"DEFAULT": true, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "SUPPORTING_WIRED_OPERATION_MODE"
+}, 
+"CYCLIC_INFO_MSG": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 1, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "CYCLIC_INFO_MSG"
+}, 
+"GLOBAL_BUTTON_LOCK": {
+"OPERATIONS": 3, 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "GLOBAL_BUTTON_LOCK"
+}, 
+"UTC_OFFSET": {
+"OPERATIONS": 3, 
+"MIN": -720, 
+"DEFAULT": 60, 
+"MAX": 720, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "UTC_OFFSET", 
+"UNIT": "min"
+}, 
+"LOW_BAT_LIMIT": {
+"OPERATIONS": 3, 
+"MIN": 0.0, 
+"DEFAULT": 3.3, 
+"MAX": 25.2, 
+"FLAGS": 1, 
+"TYPE": "FLOAT", 
+"ID": "LOW_BAT_LIMIT", 
+"UNIT": "V"
+}, 
+"LOCAL_RESET_DISABLED": {
+"OPERATIONS": 3, 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "LOCAL_RESET_DISABLED"
+}, 
+"ENABLE_ROUTING": {
+"OPERATIONS": 3, 
+"MIN": false, 
+"DEFAULT": true, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "ENABLE_ROUTING"
+}, 
+"ARR_TIMEOUT": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 10, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "ARR_TIMEOUT"
+}, 
+"DST_END_MONTH": {
+"OPERATIONS": 3, 
+"MIN": 1, 
+"DEFAULT": 10, 
+"MAX": 12, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "DST_END_MONTH"
+}, 
+"CYCLIC_INFO_MSG_OVERDUE_THRESHOLD": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 2, 
+"MAX": 2147483647, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "CYCLIC_INFO_MSG_OVERDUE_THRESHOLD"
+}
+}, 
+"SERVICE": {
+"OS_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "OS_VERSION"
+}, 
+"TEST_STATUS": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "TEST_STATUS"
+}, 
+"APPLICATION_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "APPLICATION_VERSION"
+}, 
+"BOOTLOADER_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "BOOTLOADER_VERSION"
+}, 
+"HARDWARE_VERSION": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 65535, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "HARDWARE_VERSION"
+}
+}
+}, 
+"VCU6649135:1": {
+"VALUES": {
+"WP_OPTIONS": {
+"OPERATIONS": 7, 
+"CONTROL": "DOOR_LOCK_STATE_TRANSMITTER.WP_OPTIONS", 
+"MIN": "NOP", 
+"DEFAULT": "NOP", 
+"MAX": "OFF", 
+"VALUE_LIST": [
+"NOP", 
+"ON", 
+"OFF"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "WP_OPTIONS"
+}, 
+"PROCESS": {
+"OPERATIONS": 5, 
+"MIN": "STABLE", 
+"DEFAULT": "STABLE", 
+"MAX": "NOT_STABLE", 
+"VALUE_LIST": [
+"STABLE", 
+"NOT_STABLE"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "PROCESS"
+}, 
+"LOCK_TARGET_LEVEL": {
+"OPERATIONS": 2, 
+"CONTROL": "DOOR_LOCK_STATE_TRANSMITTER.LOCK_TARGET_LEVEL", 
+"MIN": "LOCKED", 
+"DEFAULT": "LOCKED", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"LOCKED", 
+"UNLOCKED", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LOCK_TARGET_LEVEL"
+}, 
+"SECTION": {
+"OPERATIONS": 5, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 15, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SECTION"
+}, 
+"SECTION_STATUS": {
+"OPERATIONS": 5, 
+"MIN": "NORMAL", 
+"DEFAULT": "NORMAL", 
+"MAX": "UNKNOWN", 
+"VALUE_LIST": [
+"NORMAL", 
+"UNKNOWN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SECTION_STATUS"
+}, 
+"LOCK_STATE": {
+"OPERATIONS": 5, 
+"CONTROL": "DOOR_LOCK_STATE_TRANSMITTER.LOCK_STATE", 
+"MIN": "UNKNOWN", 
+"DEFAULT": "UNKNOWN", 
+"MAX": "UNLOCKED", 
+"VALUE_LIST": [
+"UNKNOWN", 
+"LOCKED", 
+"UNLOCKED"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LOCK_STATE"
+}, 
+"ACTIVITY_STATE": {
+"OPERATIONS": 5, 
+"MIN": "UNKNOWN", 
+"DEFAULT": "UNKNOWN", 
+"MAX": "STABLE", 
+"VALUE_LIST": [
+"UNKNOWN", 
+"UP", 
+"DOWN", 
+"STABLE"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "ACTIVITY_STATE"
+}
+}, 
+"MASTER": {
+"POWERUP_ONTIME_VALUE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 31, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "POWERUP_ONTIME_VALUE"
+}, 
+"EVENT_RANDOMTIME_UNIT": {
+"OPERATIONS": 3, 
+"MIN": "100MS", 
+"DEFAULT": "S", 
+"MAX": "H", 
+"VALUE_LIST": [
+"100MS", 
+"S", 
+"M", 
+"H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "EVENT_RANDOMTIME_UNIT"
+}, 
+"DOOR_LOCK_NEUTRAL_POS": {
+"OPERATIONS": 3, 
+"MIN": "VERTICAL", 
+"DEFAULT": "VERTICAL", 
+"MAX": "HORIZONTAL", 
+"VALUE_LIST": [
+"VERTICAL", 
+"HORIZONTAL"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "DOOR_LOCK_NEUTRAL_POS"
+}, 
+"EVENT_RANDOMTIME_VALUE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 1, 
+"MAX": 63, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "EVENT_RANDOMTIME_VALUE"
+}, 
+"DOOR_LOCK_DIRECTION": {
+"OPERATIONS": 3, 
+"MIN": "RIGHT", 
+"DEFAULT": "LEFT", 
+"MAX": "LEFT", 
+"VALUE_LIST": [
+"RIGHT", 
+"LEFT"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "DOOR_LOCK_DIRECTION"
+}, 
+"EVENT_DELAY_UNIT": {
+"OPERATIONS": 3, 
+"MIN": "100MS", 
+"DEFAULT": "S", 
+"MAX": "H", 
+"VALUE_LIST": [
+"100MS", 
+"S", 
+"M", 
+"H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "EVENT_DELAY_UNIT"
+}, 
+"EVENT_DELAY_VALUE": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 1, 
+"MAX": 63, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "EVENT_DELAY_VALUE"
+}, 
+"DOOR_LOCK_TURNS": {
+"OPERATIONS": 3, 
+"MIN": 1, 
+"DEFAULT": 2, 
+"MAX": 15, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "DOOR_LOCK_TURNS"
+}, 
+"POWERUP_ONTIME_UNIT": {
+"OPERATIONS": 3, 
+"MIN": "100MS", 
+"DEFAULT": "100MS", 
+"MAX": "H", 
+"VALUE_LIST": [
+"100MS", 
+"1S", 
+"5S", 
+"10S", 
+"1M", 
+"5M", 
+"10M", 
+"H"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "POWERUP_ONTIME_UNIT"
+}
+}, 
+"SERVICE": {
+"OS_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "OS_VERSION"
+}, 
+"TEST_STATUS": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "TEST_STATUS"
+}, 
+"APPLICATION_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "APPLICATION_VERSION"
+}, 
+"BOOTLOADER_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "BOOTLOADER_VERSION"
+}, 
+"HARDWARE_VERSION": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 65535, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "HARDWARE_VERSION"
+}
+}
+}, 
+"VCU6649135:6": {
+"VALUES": {
+"STATE": {
+"OPERATIONS": 5, 
+"CONTROL": "ACCESS_RECEIVER.STATE", 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "STATE"
+}, 
+"ACCESS_AUTHORIZATION": {
+"OPERATIONS": 2, 
+"CONTROL": "ACCESS_RECEIVER.ACCESS_AUTHORIZATION", 
+"MIN": "DISABLE", 
+"DEFAULT": "DISABLE", 
+"MAX": "ENABLE", 
+"VALUE_LIST": [
+"DISABLE", 
+"ENABLE"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "ACCESS_AUTHORIZATION"
+}
+}, 
+"MASTER": {}, 
+"SERVICE": {
+"OS_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "OS_VERSION"
+}, 
+"TEST_STATUS": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "TEST_STATUS"
+}, 
+"APPLICATION_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "APPLICATION_VERSION"
+}, 
+"BOOTLOADER_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "BOOTLOADER_VERSION"
+}, 
+"HARDWARE_VERSION": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 65535, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "HARDWARE_VERSION"
+}
+}, 
+"LINK": {
+"SHORT_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_HI"
+}, 
+"SHORT_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_OFF"
+}, 
+"LONG_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_HI"
+}, 
+"SHORT_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_PROFILE_ACTION_TYPE"
+}, 
+"LONG_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_OFF"
+}, 
+"SHORT_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_ON"
+}, 
+"LONG_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_ON"
+}, 
+"LONG_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_OFF"
+}, 
+"SHORT_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_LO"
+}, 
+"LONG_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_PROFILE_ACTION_TYPE"
+}, 
+"LONG_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_ON"
+}, 
+"LONG_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_LO"
+}, 
+"SHORT_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_OFF"
+}, 
+"SHORT_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_ON"
+}
+}
+}, 
+"VCU6649135:7": {
+"VALUES": {
+"STATE": {
+"OPERATIONS": 5, 
+"CONTROL": "ACCESS_RECEIVER.STATE", 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "STATE"
+}, 
+"ACCESS_AUTHORIZATION": {
+"OPERATIONS": 2, 
+"CONTROL": "ACCESS_RECEIVER.ACCESS_AUTHORIZATION", 
+"MIN": "DISABLE", 
+"DEFAULT": "DISABLE", 
+"MAX": "ENABLE", 
+"VALUE_LIST": [
+"DISABLE", 
+"ENABLE"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "ACCESS_AUTHORIZATION"
+}
+}, 
+"MASTER": {}, 
+"SERVICE": {
+"OS_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "OS_VERSION"
+}, 
+"TEST_STATUS": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "TEST_STATUS"
+}, 
+"APPLICATION_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "APPLICATION_VERSION"
+}, 
+"BOOTLOADER_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "BOOTLOADER_VERSION"
+}, 
+"HARDWARE_VERSION": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 65535, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "HARDWARE_VERSION"
+}
+}, 
+"LINK": {
+"SHORT_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_HI"
+}, 
+"SHORT_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_OFF"
+}, 
+"LONG_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_HI"
+}, 
+"SHORT_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_PROFILE_ACTION_TYPE"
+}, 
+"LONG_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_OFF"
+}, 
+"SHORT_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_ON"
+}, 
+"LONG_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_ON"
+}, 
+"LONG_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_OFF"
+}, 
+"SHORT_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_LO"
+}, 
+"LONG_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_PROFILE_ACTION_TYPE"
+}, 
+"LONG_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_ON"
+}, 
+"LONG_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_LO"
+}, 
+"SHORT_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_OFF"
+}, 
+"SHORT_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_ON"
+}
+}
+}, 
+"VCU6649135:4": {
+"VALUES": {
+"STATE": {
+"OPERATIONS": 5, 
+"CONTROL": "ACCESS_RECEIVER.STATE", 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "STATE"
+}, 
+"ACCESS_AUTHORIZATION": {
+"OPERATIONS": 2, 
+"CONTROL": "ACCESS_RECEIVER.ACCESS_AUTHORIZATION", 
+"MIN": "DISABLE", 
+"DEFAULT": "DISABLE", 
+"MAX": "ENABLE", 
+"VALUE_LIST": [
+"DISABLE", 
+"ENABLE"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "ACCESS_AUTHORIZATION"
+}
+}, 
+"MASTER": {}, 
+"SERVICE": {
+"OS_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "OS_VERSION"
+}, 
+"TEST_STATUS": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "TEST_STATUS"
+}, 
+"APPLICATION_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "APPLICATION_VERSION"
+}, 
+"BOOTLOADER_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "BOOTLOADER_VERSION"
+}, 
+"HARDWARE_VERSION": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 65535, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "HARDWARE_VERSION"
+}
+}, 
+"LINK": {
+"SHORT_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_HI"
+}, 
+"SHORT_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_OFF"
+}, 
+"LONG_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_HI"
+}, 
+"SHORT_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_PROFILE_ACTION_TYPE"
+}, 
+"LONG_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_OFF"
+}, 
+"SHORT_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_ON"
+}, 
+"LONG_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_ON"
+}, 
+"LONG_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_OFF"
+}, 
+"SHORT_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_LO"
+}, 
+"LONG_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_PROFILE_ACTION_TYPE"
+}, 
+"LONG_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_ON"
+}, 
+"LONG_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_LO"
+}, 
+"SHORT_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_OFF"
+}, 
+"SHORT_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_ON"
+}
+}
+}, 
+"VCU6649135:5": {
+"VALUES": {
+"STATE": {
+"OPERATIONS": 5, 
+"CONTROL": "ACCESS_RECEIVER.STATE", 
+"MIN": false, 
+"DEFAULT": false, 
+"MAX": true, 
+"FLAGS": 1, 
+"TYPE": "BOOL", 
+"ID": "STATE"
+}, 
+"ACCESS_AUTHORIZATION": {
+"OPERATIONS": 2, 
+"CONTROL": "ACCESS_RECEIVER.ACCESS_AUTHORIZATION", 
+"MIN": "DISABLE", 
+"DEFAULT": "DISABLE", 
+"MAX": "ENABLE", 
+"VALUE_LIST": [
+"DISABLE", 
+"ENABLE"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "ACCESS_AUTHORIZATION"
+}
+}, 
+"MASTER": {}, 
+"SERVICE": {
+"OS_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "OS_VERSION"
+}, 
+"TEST_STATUS": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "TEST_STATUS"
+}, 
+"APPLICATION_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "APPLICATION_VERSION"
+}, 
+"BOOTLOADER_VERSION": {
+"OPERATIONS": 1, 
+"MIN": "0.0.0", 
+"DEFAULT": "0.0.0", 
+"MAX": "255.255.255", 
+"FLAGS": 1, 
+"TYPE": "STRING", 
+"ID": "BOOTLOADER_VERSION"
+}, 
+"HARDWARE_VERSION": {
+"OPERATIONS": 1, 
+"MIN": 0, 
+"DEFAULT": 0, 
+"MAX": 65535, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "HARDWARE_VERSION"
+}
+}, 
+"LINK": {
+"SHORT_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_HI"
+}, 
+"SHORT_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_OFF"
+}, 
+"LONG_COND_VALUE_HI": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 150, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_HI"
+}, 
+"SHORT_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_PROFILE_ACTION_TYPE"
+}, 
+"LONG_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_OFF"
+}, 
+"SHORT_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_ON"
+}, 
+"LONG_JT_ON": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "LOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_JT_ON"
+}, 
+"LONG_CT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_OFF"
+}, 
+"SHORT_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "SHORT_COND_VALUE_LO"
+}, 
+"LONG_PROFILE_ACTION_TYPE": {
+"OPERATIONS": 3, 
+"MIN": "PROFILE_ACTION_TYPE_INACTIVE", 
+"DEFAULT": "PROFILE_ACTION_TYPE_JUMP", 
+"MAX": "PROFILE_ACTION_TYPE_JUMP", 
+"VALUE_LIST": [
+"PROFILE_ACTION_TYPE_INACTIVE", 
+"PROFILE_ACTION_TYPE_JUMP"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_PROFILE_ACTION_TYPE"
+}, 
+"LONG_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "LONG_CT_ON"
+}, 
+"LONG_COND_VALUE_LO": {
+"OPERATIONS": 3, 
+"MIN": 0, 
+"DEFAULT": 50, 
+"MAX": 255, 
+"FLAGS": 1, 
+"TYPE": "INTEGER", 
+"ID": "LONG_COND_VALUE_LO"
+}, 
+"SHORT_JT_OFF": {
+"OPERATIONS": 3, 
+"MIN": "NOP", 
+"DEFAULT": "UNLOCK", 
+"MAX": "OPEN", 
+"VALUE_LIST": [
+"NOP", 
+"UNLOCK", 
+"LOCK", 
+"OPEN"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_JT_OFF"
+}, 
+"SHORT_CT_ON": {
+"OPERATIONS": 3, 
+"MIN": "VALUE_GE_LO", 
+"DEFAULT": "VALUE_GE_LO", 
+"MAX": "VALUE_L_LO_OR_GE_HI", 
+"VALUE_LIST": [
+"VALUE_GE_LO", 
+"VALUE_GE_HI", 
+"VALUE_L_LO", 
+"VALUE_L_HI", 
+"VALUE_GE_LO_AND_L_HI", 
+"VALUE_L_LO_OR_GE_HI"
+], 
+"FLAGS": 1, 
+"TYPE": "ENUM", 
+"ID": "SHORT_CT_ON"
+}
+}
+}
+}
