@@ -1,5 +1,30 @@
-Version 0.0.7 (2020-)
-- 
+Version 0.0.7 (2021-04-09)
+- Add script to get metadata
+- Add `getVersion` method to server object
+- Add `getMetadata` method to server object
+- Add `clientServerInitialized` (Homegear) method to server object
+- Handle disconnects
+- Minor improvements
+- Add HmIP-PSM (Issue #3)
+- Add HmIP-SWSD (Issue #3)
+- Add HmIP-DSD-PCB (Issue #3)
+- Add HmIP-DBB (Issue #3)
+- Add HmIP-FAL230-C10 (Issue #3)
+- Add HmIP-FSI16 (Issue #3)
+- Add HmIP-BDT (Issue #3)
+- Add HmIP-HDM1 (Issue #3)
+- Add HmIP-MP3P (Issue #3)
+- Add HmIP-RCB1 (Issue #3)
+- Add HmIP-SWD (Issue #3)
+- Add HmIP-WGC (Issue #3)
+- Add HmIP-WRC6 (Issue #3)
+- Add HmIP-SRD (Issue #3)
+- Add HmIP-MIO16-PCB (Issue #3)
+- Add HmIP-STE2-PCB (Issue #3)
+- Add HmIP-RCV-50 (Issue #3)
+- Add HmIP-FSM16 (Issue #3)
+- Add HmIP-DLD (Issue #3)
+- Add HB-WDS40-THP-O
 
 Version 0.0.6 (2020-01-02)
 - Code cleanup / optimization
