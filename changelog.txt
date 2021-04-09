@@ -1,3 +1,8 @@
+Version 0.0.8 ()
+- Add HmIP-eTRV-B (Issue #3)
+- Add HmIP-SMI55 (Issue #3)
+- Add HmIP-SWDO-I (Issue #3)
+
 Version 0.0.7 (2021-04-09)
 - Add script to get metadata
 - Add `getVersion` method to server object
