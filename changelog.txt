@@ -1,3 +1,6 @@
+Version 0.0.9 ()
+- Add HB-UNI-Sensor-THPD-BME280
+
 Version 0.0.8 (2021-04-09)
 - Add HmIP-eTRV-B (Issue #3)
 - Add HmIP-SMI55 (Issue #3)
