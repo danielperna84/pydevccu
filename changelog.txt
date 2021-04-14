@@ -4,6 +4,7 @@ Version 0.0.9 ()
 - Add HmIP-WTH-2 (Issue #3)
 - Add HmIP-FALMOT-C12 (Issue #3)
 - Add HmIP-HEATING (Issue #3)
+- Fix getting state for HmIP devices when using default from paramset
 
 Version 0.0.8 (2021-04-09)
 - Add HmIP-eTRV-B (Issue #3)

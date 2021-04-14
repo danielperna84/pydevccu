@@ -285,6 +285,9 @@ class RPCFunctions():
                 data[parameter] = self.paramsets[address][paramset_key][parameter]
             except:
                 data[parameter] = self.paramset_descriptions[address][paramset_key][parameter][const.PARAMSET_ATTR_DEFAULT]
+                if self.paramset_descriptions[address][paramset_key][parameter][const.ATTR_TYPE] == const.PARAMSET_TYPE_ENUM:
+                    if not isinstance(data[parameter], int):
+                        data[parameter] = self.paramset_descriptions[address][paramset_key][parameter][const.PARAMSET_ATTR_VALUE_LIST].index(data[parameter])
         return data
 
     def init(self, url, interface_id=None):
