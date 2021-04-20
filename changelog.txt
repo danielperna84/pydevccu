@@ -5,6 +5,13 @@ Version 0.0.9 ()
 - Add HmIP-FALMOT-C12 (Issue #3)
 - Add HmIP-HEATING (Issue #3)
 - Add HmIP-eTRV-2 (Issue #3)
+- Add HmIP-BRC2 (Issue #3)
+- Add HmIP-BROLL (Issue #3)
+- Add HmIP-BSM (Issue #3)
+- Add HmIP-FDT (Issue #3)
+- Add HmIP-SPDR (Issue #3)
+- Add HmIP-SPI (Issue #3)
+- Add HmIP-SWDO (Issue #3)
 - Fix getting state for HmIP devices when using default from paramset
 
 Version 0.0.8 (2021-04-09)
