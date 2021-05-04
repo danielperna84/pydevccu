@@ -1,3 +1,6 @@
+Version 0.1.0 ()
+- 
+
 Version 0.0.9 (2021-05-04)
 - Add HB-UNI-Sensor-THPD-BME280
 - Add HmIP-STHD (Issue #3)
