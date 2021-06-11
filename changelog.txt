@@ -1,6 +1,7 @@
 Version 0.1.0 ()
 - Add HmIPW-FAL230-C6 (Issue #3)
 - Add HmIPW-WTH (Issue #3)
+- Add HmIP-DRDI3 (Issue #3)
 
 Version 0.0.9 (2021-05-04)
 - Add HB-UNI-Sensor-THPD-BME280
