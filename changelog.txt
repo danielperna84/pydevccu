@@ -43,6 +43,7 @@ Version 0.1.0 (2022-01-)
 - Add HmIPW-SMI55
 - Add HmIPW-WRC6
 - Add HmIPW-WTH
+- Add RPI-RF-MOD
 
 Version 0.0.9 (2021-05-04)
 - Add HB-UNI-Sensor-THPD-BME280
