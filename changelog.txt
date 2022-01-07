@@ -1,4 +1,4 @@
-Version 0.1.0 (2022-01-)
+Version 0.1.0 (2022-01-07)
 - Fix HmIP-STHD
 - Add HmIP-ASIR
 - Add HmIP-ASIR-2
