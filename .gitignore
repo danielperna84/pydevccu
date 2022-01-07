@@ -1,2 +1,6 @@
 dist/
 pydevccu.egg-info/
+venv
+paramsets_db.json
+start*
+.idea

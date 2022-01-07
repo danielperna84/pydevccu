@@ -1,0 +1,650 @@
+{
+  "VCU5628817": {
+    "MASTER": {},
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU5628817:0": {
+    "MASTER": {
+      "DUTYCYCLE_LIMIT": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "DUTYCYCLE_LIMIT",
+        "TYPE": "INTEGER",
+        "DEFAULT": 180
+      },
+      "DISABLE_MSG_TO_AC": {
+        "MIN": false,
+        "OPERATIONS": 3,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DISABLE_MSG_TO_AC",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "CYCLIC_INFO_MSG_OVERDUE_THRESHOLD": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 2147483647,
+        "FLAGS": 1,
+        "ID": "CYCLIC_INFO_MSG_OVERDUE_THRESHOLD",
+        "TYPE": "INTEGER",
+        "DEFAULT": 2
+      },
+      "CYCLIC_INFO_MSG_DIS": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "CYCLIC_INFO_MSG_DIS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 1
+      },
+      "ENABLE_ROUTING": {
+        "MIN": false,
+        "OPERATIONS": 3,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "ENABLE_ROUTING",
+        "TYPE": "BOOL",
+        "DEFAULT": true
+      },
+      "LOCAL_RESET_DISABLED": {
+        "MIN": false,
+        "OPERATIONS": 3,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "LOCAL_RESET_DISABLED",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "LOW_BAT_LIMIT": {
+        "MIN": 0.0,
+        "UNIT": "V",
+        "OPERATIONS": 3,
+        "MAX": 25.2,
+        "FLAGS": 1,
+        "ID": "LOW_BAT_LIMIT",
+        "TYPE": "FLOAT",
+        "DEFAULT": 2.2
+      },
+      "ARR_TIMEOUT": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "ARR_TIMEOUT",
+        "TYPE": "INTEGER",
+        "DEFAULT": 10
+      },
+      "CYCLIC_INFO_MSG": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "CYCLIC_INFO_MSG",
+        "TYPE": "INTEGER",
+        "DEFAULT": 1
+      },
+      "CYCLIC_INFO_MSG_DIS_UNCHANGED": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "CYCLIC_INFO_MSG_DIS_UNCHANGED",
+        "TYPE": "INTEGER",
+        "DEFAULT": 20
+      }
+    },
+    "VALUES": {
+      "CONFIG_PENDING": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "CONFIG_PENDING",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "DUTY_CYCLE": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DUTY_CYCLE",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "LOW_BAT": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "LOW_BAT",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "INSTALL_TEST": {
+        "MIN": false,
+        "OPERATIONS": 3,
+        "MAX": true,
+        "FLAGS": 2,
+        "ID": "INSTALL_TEST",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "UNREACH": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 25,
+        "ID": "UNREACH",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "OPERATING_VOLTAGE_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "EXTERNAL",
+        "FLAGS": 1,
+        "ID": "OPERATING_VOLTAGE_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "EXTERNAL"
+        ]
+      },
+      "RSSI_DEVICE": {
+        "MIN": -128,
+        "OPERATIONS": 5,
+        "MAX": 127,
+        "FLAGS": 1,
+        "ID": "RSSI_DEVICE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OPERATING_VOLTAGE": {
+        "MIN": 0.0,
+        "OPERATIONS": 5,
+        "MAX": 25.2,
+        "FLAGS": 1,
+        "ID": "OPERATING_VOLTAGE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0
+      },
+      "RSSI_PEER": {
+        "MIN": -128,
+        "OPERATIONS": 5,
+        "MAX": 127,
+        "FLAGS": 1,
+        "ID": "RSSI_PEER",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "ERROR_CODE": {
+        "MIN": 0,
+        "OPERATIONS": 5,
+        "MAX": 255,
+        "FLAGS": 9,
+        "ID": "ERROR_CODE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "UPDATE_PENDING": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "UPDATE_PENDING",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU5628817:1": {
+    "MASTER": {
+      "PIR_SENSITIVITY": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "PIR_SENSITIVITY",
+        "TYPE": "INTEGER",
+        "DEFAULT": 24
+      },
+      "MIN_INTERVAL": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 7,
+        "FLAGS": 1,
+        "ID": "MIN_INTERVAL",
+        "TYPE": "INTEGER",
+        "DEFAULT": 4
+      },
+      "CAPTURE_WITHIN_INTERVAL": {
+        "MIN": false,
+        "OPERATIONS": 3,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "CAPTURE_WITHIN_INTERVAL",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "BRIGHTNESS_FILTER": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 15,
+        "FLAGS": 1,
+        "ID": "BRIGHTNESS_FILTER",
+        "TYPE": "INTEGER",
+        "DEFAULT": 7
+      },
+      "PIR_OPERATION_MODE": {
+        "MIN": "PIR_OPERATION_MODE_NORMAL",
+        "OPERATIONS": 3,
+        "MAX": "PIR_OPERATION_MODE_OFF",
+        "FLAGS": 1,
+        "ID": "PIR_OPERATION_MODE",
+        "TYPE": "ENUM",
+        "DEFAULT": "PIR_OPERATION_MODE_NORMAL",
+        "VALUE_LIST": [
+          "PIR_OPERATION_MODE_NORMAL",
+          "PIR_OPERATION_MODE_ECO",
+          "PIR_OPERATION_MODE_OFF"
+        ]
+      },
+      "COND_TX_THRESHOLD_LO": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 60000,
+        "FLAGS": 1,
+        "ID": "COND_TX_THRESHOLD_LO",
+        "TYPE": "INTEGER",
+        "DEFAULT": 1000
+      },
+      "EVENT_FILTER_NUMBER": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 15,
+        "FLAGS": 1,
+        "ID": "EVENT_FILTER_NUMBER",
+        "TYPE": "INTEGER",
+        "DEFAULT": 1
+      },
+      "EVENT_FILTER_PERIOD": {
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "MAX": 7.5,
+        "FLAGS": 1,
+        "ID": "EVENT_FILTER_PERIOD",
+        "TYPE": "FLOAT",
+        "DEFAULT": 1.5
+      },
+      "MOTION_ACTIVE_TIME": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 7,
+        "FLAGS": 1,
+        "ID": "MOTION_ACTIVE_TIME",
+        "TYPE": "INTEGER",
+        "DEFAULT": 4
+      }
+    },
+    "VALUES": {
+      "MOTION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "MOTION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "MOTIONDETECTOR_TRANSCEIVER.MOTION_DETECTION_STATE"
+      },
+      "RESET_MOTION": {
+        "MIN": false,
+        "OPERATIONS": 2,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "RESET_MOTION",
+        "TYPE": "ACTION",
+        "DEFAULT": false,
+        "CONTROL": "MOTIONDETECTOR_TRANSCEIVER.RESET_MOTION"
+      },
+      "ILLUMINATION": {
+        "MIN": 0.0,
+        "OPERATIONS": 5,
+        "MAX": 163830.0,
+        "FLAGS": 1,
+        "ID": "ILLUMINATION",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "MOTIONDETECTOR_TRANSCEIVER.ILLUMINATION"
+      },
+      "CURRENT_ILLUMINATION": {
+        "MIN": 0.0,
+        "OPERATIONS": 5,
+        "MAX": 163830.0,
+        "FLAGS": 1,
+        "ID": "CURRENT_ILLUMINATION",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0
+      },
+      "CURRENT_ILLUMINATION_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "OVERFLOW",
+        "FLAGS": 1,
+        "ID": "CURRENT_ILLUMINATION_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW"
+        ]
+      },
+      "ILLUMINATION_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "OVERFLOW",
+        "FLAGS": 1,
+        "ID": "ILLUMINATION_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW"
+        ]
+      },
+      "MOTION_DETECTION_ACTIVE": {
+        "MIN": false,
+        "OPERATIONS": 7,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "MOTION_DETECTION_ACTIVE",
+        "TYPE": "BOOL",
+        "DEFAULT": true,
+        "CONTROL": "MOTIONDETECTOR_TRANSCEIVER.MOTION_DETECTION_ACTIVE"
+      }
+    },
+    "LINK": {},
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU5628817:2": {
+    "MASTER": {
+      "BLOCKING_PERIOD_UNIT": {
+        "MIN": "100MS",
+        "OPERATIONS": 3,
+        "MAX": "H",
+        "FLAGS": 1,
+        "ID": "BLOCKING_PERIOD_UNIT",
+        "TYPE": "ENUM",
+        "DEFAULT": "1S",
+        "VALUE_LIST": [
+          "100MS",
+          "1S",
+          "5S",
+          "10S",
+          "1M",
+          "5M",
+          "10M",
+          "H"
+        ]
+      },
+      "BLOCKING_PERIOD_VALUE": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 31,
+        "FLAGS": 1,
+        "ID": "BLOCKING_PERIOD_VALUE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 3
+      }
+    },
+    "VALUES": {},
+    "LINK": {},
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU5628817:3": {
+    "MASTER": {},
+    "VALUES": {},
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  }
+}

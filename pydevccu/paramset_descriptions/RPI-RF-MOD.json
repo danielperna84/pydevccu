@@ -1,0 +1,135 @@
+{
+    "VCU8066814": {
+        "MASTER": {},
+        "SERVICE": {
+            "TEST_STATUS": {
+                "MIN": 0,
+                "OPERATIONS": 1,
+                "MAX": 255,
+                "FLAGS": 1,
+                "ID": "TEST_STATUS",
+                "TYPE": "INTEGER",
+                "DEFAULT": 0
+            },
+            "OS_VERSION": {
+                "MIN": "0.0.0",
+                "OPERATIONS": 1,
+                "MAX": "255.255.255",
+                "FLAGS": 1,
+                "ID": "OS_VERSION",
+                "TYPE": "STRING",
+                "DEFAULT": "0.0.0"
+            },
+            "APPLICATION_VERSION": {
+                "MIN": "0.0.0",
+                "OPERATIONS": 1,
+                "MAX": "255.255.255",
+                "FLAGS": 1,
+                "ID": "APPLICATION_VERSION",
+                "TYPE": "STRING",
+                "DEFAULT": "0.0.0"
+            },
+            "BOOTLOADER_VERSION": {
+                "MIN": "0.0.0",
+                "OPERATIONS": 1,
+                "MAX": "255.255.255",
+                "FLAGS": 1,
+                "ID": "BOOTLOADER_VERSION",
+                "TYPE": "STRING",
+                "DEFAULT": "0.0.0"
+            },
+            "HARDWARE_VERSION": {
+                "MIN": 0,
+                "OPERATIONS": 1,
+                "MAX": 65535,
+                "FLAGS": 1,
+                "ID": "HARDWARE_VERSION",
+                "TYPE": "INTEGER",
+                "DEFAULT": 0
+            }
+        }
+    },
+    "VCU8066814:0": {
+        "MASTER": {},
+        "VALUES": {
+            "INCLUSION_UNSUPPORTED_DEVICE": {
+                "MIN": "",
+                "OPERATIONS": 5,
+                "MAX": "",
+                "FLAGS": 1,
+                "ID": "INCLUSION_UNSUPPORTED_DEVICE",
+                "TYPE": "STRING",
+                "DEFAULT": ""
+            },
+            "CARRIER_SENSE_LEVEL": {
+                "MIN": 0.0,
+                "UNIT": "%",
+                "OPERATIONS": 5,
+                "MAX": 100.0,
+                "FLAGS": 1,
+                "ID": "CARRIER_SENSE_LEVEL",
+                "TYPE": "FLOAT",
+                "DEFAULT": 0.0,
+                "CONTROL": "MAINTENANCE.CARRIER_SENSE_LEVEL"
+            },
+            "DUTY_CYCLE_LEVEL": {
+                "MIN": 0.0,
+                "UNIT": "%",
+                "OPERATIONS": 5,
+                "MAX": 100.0,
+                "FLAGS": 1,
+                "ID": "DUTY_CYCLE_LEVEL",
+                "TYPE": "FLOAT",
+                "DEFAULT": 0.0,
+                "CONTROL": "MAINTENANCE.DUTY_CYCLE_LEVEL"
+            }
+        },
+        "SERVICE": {
+            "TEST_STATUS": {
+                "MIN": 0,
+                "OPERATIONS": 1,
+                "MAX": 255,
+                "FLAGS": 1,
+                "ID": "TEST_STATUS",
+                "TYPE": "INTEGER",
+                "DEFAULT": 0
+            },
+            "OS_VERSION": {
+                "MIN": "0.0.0",
+                "OPERATIONS": 1,
+                "MAX": "255.255.255",
+                "FLAGS": 1,
+                "ID": "OS_VERSION",
+                "TYPE": "STRING",
+                "DEFAULT": "0.0.0"
+            },
+            "APPLICATION_VERSION": {
+                "MIN": "0.0.0",
+                "OPERATIONS": 1,
+                "MAX": "255.255.255",
+                "FLAGS": 1,
+                "ID": "APPLICATION_VERSION",
+                "TYPE": "STRING",
+                "DEFAULT": "0.0.0"
+            },
+            "BOOTLOADER_VERSION": {
+                "MIN": "0.0.0",
+                "OPERATIONS": 1,
+                "MAX": "255.255.255",
+                "FLAGS": 1,
+                "ID": "BOOTLOADER_VERSION",
+                "TYPE": "STRING",
+                "DEFAULT": "0.0.0"
+            },
+            "HARDWARE_VERSION": {
+                "MIN": 0,
+                "OPERATIONS": 1,
+                "MAX": 65535,
+                "FLAGS": 1,
+                "ID": "HARDWARE_VERSION",
+                "TYPE": "INTEGER",
+                "DEFAULT": 0
+            }
+        }
+    }
+}
