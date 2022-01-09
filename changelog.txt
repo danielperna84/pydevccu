@@ -1,6 +1,9 @@
 Version 0.1.1 (2022-)
 - Fix version
+- Add HmIP-eTRV-E
+- Add HmIP-MOD-RC8
 - Add HmIP-SMO-2
+- Add HmIP-STH
 
 Version 0.1.0 (2022-01-07)
 - Fix HmIP-STHD
