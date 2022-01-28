@@ -1,3 +1,7 @@
+Version 0.1.2 (2022-)
+- Add HmIP-DLS
+- Add HmIP-HDM2
+
 Version 0.1.1 (2022-01-13)
 - Fix version
 - Update HmIP-DLD
