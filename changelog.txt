@@ -1,4 +1,4 @@
-Version 0.1.2 (2022-)
+Version 0.1.2 (2022-01-28)
 - Add HmIP-DLS
 - Add HmIP-HDM2
 
