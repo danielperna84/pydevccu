@@ -1,0 +1,487 @@
+{
+  "VCU2407364": {},
+  "VCU2407364:0": {
+    "VALUES": {
+      "CONFIG_PENDING": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "CONFIG_PENDING",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "DUTY_CYCLE": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DUTY_CYCLE",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "INSTALL_TEST": {
+        "MIN": false,
+        "OPERATIONS": 3,
+        "MAX": true,
+        "FLAGS": 2,
+        "ID": "INSTALL_TEST",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "ERROR_OVERHEAT": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "ERROR_OVERHEAT",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "MAINTENANCE.ERROR_OVERHEAT"
+      },
+      "OPERATING_VOLTAGE_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "EXTERNAL",
+        "FLAGS": 1,
+        "ID": "OPERATING_VOLTAGE_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "EXTERNAL"
+        ],
+        "CONTROL": "MAINTENANCE.OPERATING_VOLTAGE_STATUS"
+      },
+      "ACTUAL_TEMPERATURE_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "UNDERFLOW",
+        "FLAGS": 1,
+        "ID": "ACTUAL_TEMPERATURE_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "UNDERFLOW"
+        ]
+      },
+      "RSSI_PEER": {
+        "MIN": -128,
+        "OPERATIONS": 5,
+        "MAX": 127,
+        "FLAGS": 1,
+        "ID": "RSSI_PEER",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "ERROR_CODE": {
+        "MIN": 0,
+        "OPERATIONS": 5,
+        "MAX": 255,
+        "FLAGS": 9,
+        "ID": "ERROR_CODE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0,
+        "CONTROL": "MAINTENANCE.ERROR_CODE"
+      },
+      "UPDATE_PENDING": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "UPDATE_PENDING",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "UNREACH": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 25,
+        "ID": "UNREACH",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "MAINTENANCE.UNREACH"
+      },
+      "RSSI_DEVICE": {
+        "MIN": -128,
+        "OPERATIONS": 5,
+        "MAX": 127,
+        "FLAGS": 1,
+        "ID": "RSSI_DEVICE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "ACTUAL_TEMPERATURE": {
+        "MIN": -3276.8,
+        "UNIT": "\u00b0C",
+        "OPERATIONS": 5,
+        "MAX": 3276.7,
+        "FLAGS": 1,
+        "ID": "ACTUAL_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "MAINTENANCE.ACTUAL_TEMPERATURE"
+      },
+      "OPERATING_VOLTAGE": {
+        "MIN": 0.0,
+        "UNIT": "V",
+        "OPERATIONS": 5,
+        "MAX": 25.2,
+        "FLAGS": 1,
+        "ID": "OPERATING_VOLTAGE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "MAINTENANCE.OPERATING_VOLTAGE"
+      }
+    }
+  },
+  "VCU2407364:1": {
+    "VALUES": {
+      "PRESS_LONG_RELEASE": {
+        "MIN": false,
+        "OPERATIONS": 4,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "PRESS_LONG_RELEASE",
+        "TYPE": "ACTION",
+        "DEFAULT": false
+      },
+      "PRESS_SHORT": {
+        "MIN": false,
+        "OPERATIONS": 4,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "PRESS_SHORT",
+        "TYPE": "ACTION",
+        "DEFAULT": false,
+        "CONTROL": "BUTTON_NO_FUNCTION.SHORT"
+      },
+      "PRESS_LONG_START": {
+        "MIN": false,
+        "OPERATIONS": 4,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "PRESS_LONG_START",
+        "TYPE": "ACTION",
+        "DEFAULT": false
+      },
+      "PRESS_LONG": {
+        "MIN": false,
+        "OPERATIONS": 4,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "PRESS_LONG",
+        "TYPE": "ACTION",
+        "DEFAULT": false,
+        "CONTROL": "BUTTON_NO_FUNCTION.LONG"
+      }
+    }
+  },
+  "VCU2407364:2": {
+    "VALUES": {
+      "SECTION_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "UNKNOWN",
+        "FLAGS": 1,
+        "ID": "SECTION_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN"
+        ]
+      },
+      "PROCESS": {
+        "MIN": "STABLE",
+        "OPERATIONS": 5,
+        "MAX": "NOT_STABLE",
+        "FLAGS": 1,
+        "ID": "PROCESS",
+        "TYPE": "ENUM",
+        "DEFAULT": "STABLE",
+        "VALUE_LIST": [
+          "STABLE",
+          "NOT_STABLE"
+        ]
+      },
+      "STATE": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "STATE",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "SWITCH_TRANSMITTER.STATE"
+      },
+      "SECTION": {
+        "MIN": 0,
+        "OPERATIONS": 5,
+        "MAX": 15,
+        "FLAGS": 1,
+        "ID": "SECTION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU2407364:3": {
+    "VALUES": {
+      "SECTION_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "UNKNOWN",
+        "FLAGS": 1,
+        "ID": "SECTION_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN"
+        ]
+      },
+      "COMBINED_PARAMETER": {
+        "MIN": "",
+        "OPERATIONS": 2,
+        "MAX": "",
+        "FLAGS": 1,
+        "ID": "COMBINED_PARAMETER",
+        "TYPE": "STRING",
+        "DEFAULT": ""
+      },
+      "ON_TIME": {
+        "MIN": 0.0,
+        "UNIT": "s",
+        "OPERATIONS": 2,
+        "MAX": 8580000.0,
+        "FLAGS": 1,
+        "ID": "ON_TIME",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0
+      },
+      "PROCESS": {
+        "MIN": "STABLE",
+        "OPERATIONS": 5,
+        "MAX": "NOT_STABLE",
+        "FLAGS": 1,
+        "ID": "PROCESS",
+        "TYPE": "ENUM",
+        "DEFAULT": "STABLE",
+        "VALUE_LIST": [
+          "STABLE",
+          "NOT_STABLE"
+        ]
+      },
+      "STATE": {
+        "MIN": false,
+        "OPERATIONS": 7,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "STATE",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "SWITCH.STATE"
+      },
+      "SECTION": {
+        "MIN": 0,
+        "OPERATIONS": 5,
+        "MAX": 15,
+        "FLAGS": 1,
+        "ID": "SECTION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU2407364:4": {
+    "VALUES": {
+      "SECTION_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "UNKNOWN",
+        "FLAGS": 1,
+        "ID": "SECTION_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN"
+        ]
+      },
+      "COMBINED_PARAMETER": {
+        "MIN": "",
+        "OPERATIONS": 2,
+        "MAX": "",
+        "FLAGS": 1,
+        "ID": "COMBINED_PARAMETER",
+        "TYPE": "STRING",
+        "DEFAULT": ""
+      },
+      "ON_TIME": {
+        "MIN": 0.0,
+        "UNIT": "s",
+        "OPERATIONS": 2,
+        "MAX": 8580000.0,
+        "FLAGS": 1,
+        "ID": "ON_TIME",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0
+      },
+      "PROCESS": {
+        "MIN": "STABLE",
+        "OPERATIONS": 5,
+        "MAX": "NOT_STABLE",
+        "FLAGS": 1,
+        "ID": "PROCESS",
+        "TYPE": "ENUM",
+        "DEFAULT": "STABLE",
+        "VALUE_LIST": [
+          "STABLE",
+          "NOT_STABLE"
+        ]
+      },
+      "STATE": {
+        "MIN": false,
+        "OPERATIONS": 7,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "STATE",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "SWITCH.STATE"
+      },
+      "SECTION": {
+        "MIN": 0,
+        "OPERATIONS": 5,
+        "MAX": 15,
+        "FLAGS": 1,
+        "ID": "SECTION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU2407364:5": {
+    "VALUES": {
+      "SECTION_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "UNKNOWN",
+        "FLAGS": 1,
+        "ID": "SECTION_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN"
+        ]
+      },
+      "COMBINED_PARAMETER": {
+        "MIN": "",
+        "OPERATIONS": 2,
+        "MAX": "",
+        "FLAGS": 1,
+        "ID": "COMBINED_PARAMETER",
+        "TYPE": "STRING",
+        "DEFAULT": ""
+      },
+      "ON_TIME": {
+        "MIN": 0.0,
+        "UNIT": "s",
+        "OPERATIONS": 2,
+        "MAX": 8580000.0,
+        "FLAGS": 1,
+        "ID": "ON_TIME",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0
+      },
+      "PROCESS": {
+        "MIN": "STABLE",
+        "OPERATIONS": 5,
+        "MAX": "NOT_STABLE",
+        "FLAGS": 1,
+        "ID": "PROCESS",
+        "TYPE": "ENUM",
+        "DEFAULT": "STABLE",
+        "VALUE_LIST": [
+          "STABLE",
+          "NOT_STABLE"
+        ]
+      },
+      "STATE": {
+        "MIN": false,
+        "OPERATIONS": 7,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "STATE",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "SWITCH.STATE"
+      },
+      "SECTION": {
+        "MIN": 0,
+        "OPERATIONS": 5,
+        "MAX": 15,
+        "FLAGS": 1,
+        "ID": "SECTION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU2407364:6": {
+    "VALUES": {
+      "COMBINED_PARAMETER": {
+        "MIN": "",
+        "OPERATIONS": 2,
+        "MAX": "",
+        "FLAGS": 1,
+        "ID": "COMBINED_PARAMETER",
+        "TYPE": "STRING",
+        "DEFAULT": ""
+      },
+      "WEEK_PROGRAM_TARGET_CHANNEL_LOCK": {
+        "MIN": "MANU_MODE",
+        "OPERATIONS": 2,
+        "MAX": "AUTO_MODE_WITHOUT_RESET",
+        "FLAGS": 1,
+        "ID": "WEEK_PROGRAM_TARGET_CHANNEL_LOCK",
+        "TYPE": "ENUM",
+        "DEFAULT": "MANU_MODE",
+        "VALUE_LIST": [
+          "MANU_MODE",
+          "AUTO_MODE_WITH_RESET",
+          "AUTO_MODE_WITHOUT_RESET"
+        ],
+        "CONTROL": "WEEK_PROFILE.TARGET_CHANNEL_LOCK"
+      },
+      "WEEK_PROGRAM_TARGET_CHANNEL_LOCKS": {
+        "MIN": 0,
+        "OPERATIONS": 2,
+        "MAX": 16777215,
+        "FLAGS": 1,
+        "ID": "WEEK_PROGRAM_TARGET_CHANNEL_LOCKS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0,
+        "CONTROL": "WEEK_PROFILE.TARGET_CHANNEL_LOCKS"
+      },
+      "WEEK_PROGRAM_CHANNEL_LOCKS": {
+        "MIN": 0,
+        "OPERATIONS": 5,
+        "MAX": 16777215,
+        "FLAGS": 1,
+        "ID": "WEEK_PROGRAM_CHANNEL_LOCKS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0,
+        "CONTROL": "WEEK_PROFILE.CHANNEL_LOCKS"
+      }
+    }
+  }
+}
