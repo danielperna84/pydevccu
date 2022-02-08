@@ -1,0 +1,57 @@
+[
+  {
+    "ADDRESS": "VCU8492627",
+    "CHILDREN": [
+      "VCU8492627:0",
+      "VCU8492627:1"
+    ],
+    "FIRMWARE": "1.5",
+    "FLAGS": 1,
+    "INTERFACE": "QEQ0688163",
+    "PARAMSETS": [
+      "MASTER"
+    ],
+    "PARENT": "",
+    "RF_ADDRESS": 10855681,
+    "ROAMING": 0,
+    "RX_MODE": 28,
+    "TYPE": "HB-UNI-Sensor1",
+    "UPDATABLE": 1,
+    "VERSION": 2
+  },
+  {
+    "ADDRESS": "VCU8492627:0",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 0,
+    "FLAGS": 3,
+    "INDEX": 0,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU8492627",
+    "PARENT_TYPE": "HB-UNI-Sensor1",
+    "TYPE": "MAINTENANCE",
+    "VERSION": 2
+  },
+  {
+    "ADDRESS": "VCU8492627:1",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 1,
+    "LINK_SOURCE_ROLES": "WEATHER_TH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU8492627",
+    "PARENT_TYPE": "HB-UNI-Sensor1",
+    "TYPE": "WEATHER",
+    "VERSION": 2
+  }
+]
