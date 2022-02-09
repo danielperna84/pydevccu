@@ -1,3 +1,13 @@
+Version 0.1.3 (2022-02-09)
+- Add HB-LC-Bl1PBU-FM
+- Add HB-UNI-Sensor1
+- Add HmIP-eTRV-B1
+- Add HmIP-KRC4
+- Add HmIP-PCBS-BAT
+- Add HmIP-PCBS
+- Add HmIP-PCBS2
+- Add HmIP-SWDM-B2
+
 Version 0.1.2 (2022-01-28)
 - Add HmIP-DLS
 - Add HmIP-HDM2
