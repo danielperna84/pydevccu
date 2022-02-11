@@ -1,0 +1,116 @@
+[
+  {
+    "ADDRESS": "VCU1795819",
+    "CHILDREN": [
+      "VCU1795819:0",
+      "VCU1795819:1",
+      "VCU1795819:2",
+      "VCU1795819:3",
+      "VCU1795819:4"
+    ],
+    "FIRMWARE": "1.0",
+    "FLAGS": 1,
+    "INTERFACE": "PEQ0532930",
+    "PARAMSETS": [
+      "MASTER"
+    ],
+    "PARENT": "",
+    "RF_ADDRESS": 15939073,
+    "ROAMING": 0,
+    "RX_MODE": 4,
+    "TYPE": "HB-LC-Sw2PBU-FM",
+    "UPDATABLE": 0,
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU1795819:0",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 0,
+    "FLAGS": 3,
+    "INDEX": 0,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU1795819",
+    "PARENT_TYPE": "HB-LC-Sw2PBU-FM",
+    "TYPE": "MAINTENANCE",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU1795819:1",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 1,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH WCS_TIPTRONIC_SENSOR WEATHER_CS",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU1795819",
+    "PARENT_TYPE": "HB-LC-Sw2PBU-FM",
+    "TYPE": "SWITCH",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU1795819:2",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 2,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH WCS_TIPTRONIC_SENSOR WEATHER_CS",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU1795819",
+    "PARENT_TYPE": "HB-LC-Sw2PBU-FM",
+    "TYPE": "SWITCH",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU1795819:3",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "GROUP": "PEQ0639590:4",
+    "INDEX": 3,
+    "LINK_SOURCE_ROLES": "KEYMATIC REMOTECONTROL_RECEIVER SWITCH WINMATIC",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU1795819",
+    "PARENT_TYPE": "HB-LC-Sw2PBU-FM",
+    "TYPE": "KEY",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU1795819:4",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "GROUP": "PEQ0639590:3",
+    "INDEX": 4,
+    "LINK_SOURCE_ROLES": "KEYMATIC REMOTECONTROL_RECEIVER SWITCH WINMATIC",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU1795819",
+    "PARENT_TYPE": "HB-LC-Sw2PBU-FM",
+    "TYPE": "KEY",
+    "VERSION": 1
+  }
+]
