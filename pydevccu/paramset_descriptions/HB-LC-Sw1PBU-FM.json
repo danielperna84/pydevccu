@@ -1,0 +1,257 @@
+{
+  "VCU7994929": {},
+  "VCU7994929:0": {
+    "VALUES": {
+      "AES_KEY": {
+        "DEFAULT": 0,
+        "FLAGS": 0,
+        "ID": "AES_KEY",
+        "MAX": 127,
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "TAB_ORDER": 5,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      },
+      "CONFIG_PENDING": {
+        "DEFAULT": false,
+        "FLAGS": 9,
+        "ID": "CONFIG_PENDING",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 2,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "RSSI_DEVICE": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "RSSI_DEVICE",
+        "MAX": 2147483647,
+        "MIN": -2147483648,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 3,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      },
+      "RSSI_PEER": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "RSSI_PEER",
+        "MAX": 2147483647,
+        "MIN": -2147483648,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 4,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      },
+      "STICKY_UNREACH": {
+        "DEFAULT": false,
+        "FLAGS": 25,
+        "ID": "STICKY_UNREACH",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 7,
+        "TAB_ORDER": 1,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "UNREACH": {
+        "DEFAULT": false,
+        "FLAGS": 9,
+        "ID": "UNREACH",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 0,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      }
+    }
+  },
+  "VCU7994929:1": {
+    "VALUES": {
+      "INHIBIT": {
+        "CONTROL": "NONE",
+        "DEFAULT": false,
+        "FLAGS": 1,
+        "ID": "INHIBIT",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 7,
+        "TAB_ORDER": 2,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "INSTALL_TEST": {
+        "DEFAULT": false,
+        "FLAGS": 3,
+        "ID": "INSTALL_TEST",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 2,
+        "TAB_ORDER": 3,
+        "TYPE": "ACTION",
+        "UNIT": ""
+      },
+      "ON_TIME": {
+        "CONTROL": "NONE",
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "ON_TIME",
+        "MAX": 85825945.6,
+        "MIN": 0.0,
+        "OPERATIONS": 2,
+        "TAB_ORDER": 1,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "STATE": {
+        "CONTROL": "SWITCH.STATE",
+        "DEFAULT": false,
+        "FLAGS": 1,
+        "ID": "STATE",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 7,
+        "TAB_ORDER": 0,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "WORKING": {
+        "DEFAULT": false,
+        "FLAGS": 3,
+        "ID": "WORKING",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 4,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      }
+    }
+  },
+  "VCU7994929:2": {
+    "VALUES": {
+      "INSTALL_TEST": {
+        "DEFAULT": false,
+        "FLAGS": 3,
+        "ID": "INSTALL_TEST",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 4,
+        "TAB_ORDER": 2,
+        "TYPE": "ACTION",
+        "UNIT": ""
+      },
+      "PRESS_CONT": {
+        "DEFAULT": false,
+        "FLAGS": 3,
+        "ID": "PRESS_CONT",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 4,
+        "TAB_ORDER": 3,
+        "TYPE": "ACTION",
+        "UNIT": ""
+      },
+      "PRESS_LONG": {
+        "CONTROL": "BUTTON.LONG",
+        "DEFAULT": false,
+        "FLAGS": 1,
+        "ID": "PRESS_LONG",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 6,
+        "TAB_ORDER": 1,
+        "TYPE": "ACTION",
+        "UNIT": ""
+      },
+      "PRESS_LONG_RELEASE": {
+        "DEFAULT": false,
+        "FLAGS": 3,
+        "ID": "PRESS_LONG_RELEASE",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 4,
+        "TAB_ORDER": 4,
+        "TYPE": "ACTION",
+        "UNIT": ""
+      },
+      "PRESS_SHORT": {
+        "CONTROL": "BUTTON.SHORT",
+        "DEFAULT": false,
+        "FLAGS": 1,
+        "ID": "PRESS_SHORT",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 6,
+        "TAB_ORDER": 0,
+        "TYPE": "ACTION",
+        "UNIT": ""
+      }
+    }
+  },
+  "VCU7994929:3": {
+    "VALUES": {
+      "INSTALL_TEST": {
+        "DEFAULT": false,
+        "FLAGS": 3,
+        "ID": "INSTALL_TEST",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 4,
+        "TAB_ORDER": 2,
+        "TYPE": "ACTION",
+        "UNIT": ""
+      },
+      "PRESS_CONT": {
+        "DEFAULT": false,
+        "FLAGS": 3,
+        "ID": "PRESS_CONT",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 4,
+        "TAB_ORDER": 3,
+        "TYPE": "ACTION",
+        "UNIT": ""
+      },
+      "PRESS_LONG": {
+        "CONTROL": "BUTTON.LONG",
+        "DEFAULT": false,
+        "FLAGS": 1,
+        "ID": "PRESS_LONG",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 6,
+        "TAB_ORDER": 1,
+        "TYPE": "ACTION",
+        "UNIT": ""
+      },
+      "PRESS_LONG_RELEASE": {
+        "DEFAULT": false,
+        "FLAGS": 3,
+        "ID": "PRESS_LONG_RELEASE",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 4,
+        "TAB_ORDER": 4,
+        "TYPE": "ACTION",
+        "UNIT": ""
+      },
+      "PRESS_SHORT": {
+        "CONTROL": "BUTTON.SHORT",
+        "DEFAULT": false,
+        "FLAGS": 1,
+        "ID": "PRESS_SHORT",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 6,
+        "TAB_ORDER": 0,
+        "TYPE": "ACTION",
+        "UNIT": ""
+      }
+    }
+  }
+}

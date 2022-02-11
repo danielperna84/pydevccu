@@ -1,0 +1,97 @@
+[
+  {
+    "ADDRESS": "VCU7994929",
+    "CHILDREN": [
+      "VCU7994929:0",
+      "VCU7994929:1",
+      "VCU7994929:2",
+      "VCU7994929:3"
+    ],
+    "FIRMWARE": "1.0",
+    "FLAGS": 1,
+    "INTERFACE": "PEQ0532930",
+    "PARAMSETS": [
+      "MASTER"
+    ],
+    "PARENT": "",
+    "RF_ADDRESS": 15938817,
+    "ROAMING": 0,
+    "RX_MODE": 4,
+    "TYPE": "HB-LC-Sw1PBU-FM",
+    "UPDATABLE": 0,
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU7994929:0",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 0,
+    "FLAGS": 3,
+    "INDEX": 0,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU7994929",
+    "PARENT_TYPE": "HB-LC-Sw1PBU-FM",
+    "TYPE": "MAINTENANCE",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU7994929:1",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 1,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH WCS_TIPTRONIC_SENSOR WEATHER_CS",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU7994929",
+    "PARENT_TYPE": "HB-LC-Sw1PBU-FM",
+    "TYPE": "SWITCH",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU7994929:2",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "GROUP": "LEQ1018604:3",
+    "INDEX": 2,
+    "LINK_SOURCE_ROLES": "KEYMATIC REMOTECONTROL_RECEIVER SWITCH WINMATIC",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU7994929",
+    "PARENT_TYPE": "HB-LC-Sw1PBU-FM",
+    "TYPE": "KEY",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU7994929:3",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "GROUP": "LEQ1018604:2",
+    "INDEX": 3,
+    "LINK_SOURCE_ROLES": "KEYMATIC REMOTECONTROL_RECEIVER SWITCH WINMATIC",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU7994929",
+    "PARENT_TYPE": "HB-LC-Sw1PBU-FM",
+    "TYPE": "KEY",
+    "VERSION": 1
+  }
+]
