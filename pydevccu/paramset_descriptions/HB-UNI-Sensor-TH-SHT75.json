@@ -1,0 +1,134 @@
+{
+  "VCU2054243": {},
+  "VCU2054243:0": {
+    "MASTER": {},
+    "VALUES": {
+      "CONFIG_PENDING": {
+        "DEFAULT": false,
+        "FLAGS": 9,
+        "ID": "CONFIG_PENDING",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 2,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "DEVICE_IN_BOOTLOADER": {
+        "DEFAULT": false,
+        "FLAGS": 9,
+        "ID": "DEVICE_IN_BOOTLOADER",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 6,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "LOWBAT": {
+        "DEFAULT": false,
+        "FLAGS": 9,
+        "ID": "LOWBAT",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 3,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "RSSI_DEVICE": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "RSSI_DEVICE",
+        "MAX": 2147483647,
+        "MIN": -2147483648,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 4,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      },
+      "RSSI_PEER": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "RSSI_PEER",
+        "MAX": 2147483647,
+        "MIN": -2147483648,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 5,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      },
+      "STICKY_UNREACH": {
+        "DEFAULT": false,
+        "FLAGS": 25,
+        "ID": "STICKY_UNREACH",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 7,
+        "TAB_ORDER": 1,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "UNREACH": {
+        "DEFAULT": false,
+        "FLAGS": 9,
+        "ID": "UNREACH",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 0,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "UPDATE_PENDING": {
+        "DEFAULT": false,
+        "FLAGS": 9,
+        "ID": "UPDATE_PENDING",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 7,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      }
+    }
+  },
+  "VCU2054243:1": {
+    "VALUES": {
+      "MY_HUMIDITY": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "MY_HUMIDITY",
+        "MAX": 100.0,
+        "MIN": 0.0,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 1,
+        "TYPE": "FLOAT",
+        "UNIT": "%"
+      },
+      "OPERATING_VOLTAGE": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "OPERATING_VOLTAGE",
+        "MAX": 5.5,
+        "MIN": 0.5,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 2,
+        "TYPE": "FLOAT",
+        "UNIT": "V"
+      },
+      "TEMPERATURE": {
+        "AutoconfRoles": "WEATHER",
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "TEMPERATURE",
+        "MAX": 120.0,
+        "MIN": -50.0,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 0,
+        "TYPE": "FLOAT",
+        "UNIT": "\u00b0C"
+      }
+    }
+  }
+}

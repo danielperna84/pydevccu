@@ -1,0 +1,57 @@
+[
+  {
+    "ADDRESS": "VCU2054243",
+    "CHILDREN": [
+      "VCU2054243:0",
+      "VCU2054243:1"
+    ],
+    "FIRMWARE": "1.0",
+    "FLAGS": 1,
+    "INTERFACE": "SEQ2878250",
+    "PARAMSETS": [
+      "MASTER"
+    ],
+    "PARENT": "",
+    "RF_ADDRESS": 2163239,
+    "ROAMING": 0,
+    "RX_MODE": 28,
+    "TYPE": "HB-UNI-Sensor-TH-SHT75",
+    "UPDATABLE": 1,
+    "VERSION": 2
+  },
+  {
+    "ADDRESS": "VCU2054243:0",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 0,
+    "FLAGS": 3,
+    "INDEX": 0,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2054243",
+    "PARENT_TYPE": "HB-UNI-Sensor-TH-SHT75",
+    "TYPE": "MAINTENANCE",
+    "VERSION": 2
+  },
+  {
+    "ADDRESS": "VCU2054243:1",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 1,
+    "LINK_SOURCE_ROLES": "WEATHER_TH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2054243",
+    "PARENT_TYPE": "HB-UNI-Sensor-TH-SHT75",
+    "TYPE": "WEATHER",
+    "VERSION": 2
+  }
+]
