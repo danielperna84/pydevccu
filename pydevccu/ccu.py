@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring,missing-class-docstring,missing-function-docstring,protected-access,line-too-long,broad-except,bare-except,invalid-name
+import datetime
 import os
 import sys
 import logging
@@ -185,6 +186,29 @@ class RPCFunctions():
     def getServiceMessages(self):
         LOG.debug("RPCFunctions.getServiceMessages")
         return [['VCU0000001:1', const.ATTR_ERROR, 7]]
+
+    # pylint: disable=no-self-use
+    def getAllSystemVariables(self):
+        LOG.debug("RPCFunctions.getAllSystemVariables")
+        return {"sys_var1": "str_var", "sys_var2": 13}
+
+    # pylint: disable=no-self-use
+    def getSystemVariable(self, name):
+        LOG.debug("RPCFunctions.getSystemVariable %s", name)
+        return str(datetime.datetime.now())
+
+    # pylint: disable=no-self-use
+    def deleteSystemVariable(self, name):
+        LOG.debug("RPCFunctions.deleteSystemVariable %s", name)
+
+    # pylint: disable=no-self-use
+    def setSystemVariable(self, name, value):
+        LOG.debug("RPCFunctions.setSystemVariable %s: %s", name, value)
+
+    # pylint: disable=no-self-use
+    def clientServerInitialized(self, interface_id):
+        LOG.debug("RPCFunctions.clientServerInitialized %s", interface_id)
+        return True
 
     def getValue(self, address, value_key):
         address = address.upper()
