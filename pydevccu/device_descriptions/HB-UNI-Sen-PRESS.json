@@ -1,0 +1,57 @@
+[
+  {
+    "ADDRESS": "VCU6167284",
+    "CHILDREN": [
+      "VCU6167284:0",
+      "VCU6167284:1"
+    ],
+    "FIRMWARE": "1.0",
+    "FLAGS": 1,
+    "INTERFACE": "TEQ0268151",
+    "PARAMSETS": [
+      "MASTER"
+    ],
+    "PARENT": "",
+    "RF_ADDRESS": 15270145,
+    "ROAMING": 0,
+    "RX_MODE": 28,
+    "TYPE": "HB-UNI-Sen-PRESS",
+    "UPDATABLE": 1,
+    "VERSION": 2
+  },
+  {
+    "ADDRESS": "VCU6167284:0",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 0,
+    "FLAGS": 3,
+    "INDEX": 0,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU6167284",
+    "PARENT_TYPE": "HB-UNI-Sen-PRESS",
+    "TYPE": "MAINTENANCE",
+    "VERSION": 2
+  },
+  {
+    "ADDRESS": "VCU6167284:1",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 0,
+    "FLAGS": 1,
+    "INDEX": 1,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU6167284",
+    "PARENT_TYPE": "HB-UNI-Sen-PRESS",
+    "TYPE": "GENERIC",
+    "VERSION": 2
+  }
+]
