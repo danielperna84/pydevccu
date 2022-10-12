@@ -1,244 +1,244 @@
 {
-"VCU0000253": {
-"MASTER": {
-"SABOTAGE_MSG": {
-"TYPE": "BOOL",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": true,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-}
-}
-},
-"VCU0000253:0": {
-"MASTER": {},
-"VALUES": {
-"UNREACH": {
-"TYPE": "BOOL",
-"OPERATIONS": 5,
-"FLAGS": 9,
-"DEFAULT": 0,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"STICKY_UNREACH": {
-"TYPE": "BOOL",
-"OPERATIONS": 7,
-"FLAGS": 11,
-"DEFAULT": 0,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"CONFIG_PENDING": {
-"TYPE": "BOOL",
-"OPERATIONS": 5,
-"FLAGS": 9,
-"DEFAULT": 0,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"LOWBAT": {
-"TYPE": "BOOL",
-"OPERATIONS": 5,
-"FLAGS": 9,
-"DEFAULT": 0,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"AES_KEY": {
-"TYPE": "INTEGER",
-"OPERATIONS": 1,
-"FLAGS": 0,
-"DEFAULT": 0,
-"MAX": 127,
-"MIN": 0,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"RSSI_DEVICE": {
-"TYPE": "INTEGER",
-"OPERATIONS": 5,
-"FLAGS": 1,
-"DEFAULT": 0,
-"MAX": 2147483647,
-"MIN": -2147483648,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"RSSI_PEER": {
-"TYPE": "INTEGER",
-"OPERATIONS": 5,
-"FLAGS": 1,
-"DEFAULT": 0,
-"MAX": 2147483647,
-"MIN": -2147483648,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"ENTER_BOOTLOADER": {
-"TYPE": "ACTION",
-"OPERATIONS": 2,
-"FLAGS": 3,
-"DEFAULT": false,
-"MAX": 0,
-"MIN": 0,
-"UNIT": null,
-"TAB_ORDER": 0
-}
-}
-},
-"VCU0000253:1": {
-"MASTER": {
-"EVENT_FILTER_PERIOD": {
-"TYPE": "FLOAT",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": 0.5,
-"MAX": 7.5,
-"MIN": 0.5,
-"UNIT": "s",
-"TAB_ORDER": 0
-},
-"EVENT_FILTER_NUMBER": {
-"TYPE": "INTEGER",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": 1,
-"MAX": 15,
-"MIN": 1,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"CAPTURE_WITHIN_INTERVAL": {
-"TYPE": "BOOL",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": false,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"MIN_INTERVAL": {
-"TYPE": "INTEGER",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": 4,
-"MAX": 4,
-"MIN": 0,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"BRIGHTNESS_FILTER": {
-"TYPE": "INTEGER",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": 7,
-"MAX": 7,
-"MIN": 0,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"AES_ACTIVE": {
-"TYPE": "BOOL",
-"OPERATIONS": 0,
-"FLAGS": 3,
-"DEFAULT": false,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"LED_ONTIME": {
-"TYPE": "FLOAT",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": 0.5,
-"MAX": 1.275,
-"MIN": 0.0,
-"UNIT": "s",
-"TAB_ORDER": 0
-}
-},
-"VALUES": {
-"BRIGHTNESS": {
-"TYPE": "INTEGER",
-"OPERATIONS": 5,
-"FLAGS": 1,
-"DEFAULT": 0,
-"MAX": 255,
-"MIN": 0,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"NEXT_TRANSMISSION": {
-"TYPE": "INTEGER",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": 0,
-"MAX": 2147483647,
-"MIN": -2147483648,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"MOTION": {
-"TYPE": "BOOL",
-"OPERATIONS": 5,
-"FLAGS": 1,
-"DEFAULT": 0,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"ERROR": {
-"TYPE": "ENUM",
-"OPERATIONS": 5,
-"FLAGS": 9,
-"DEFAULT": 0,
-"MAX": 1,
-"MIN": 0,
-"UNIT": null,
-"TAB_ORDER": 0,
-"VALUE_LIST": [
-"NO_ERROR",
-"SABOTAGE"
-],
-"CONTROL": "NONE"
-},
-"INSTALL_TEST": {
-"TYPE": "ACTION",
-"OPERATIONS": 4,
-"FLAGS": 3,
-"DEFAULT": false,
-"MAX": 0,
-"MIN": 0,
-"UNIT": null,
-"TAB_ORDER": 0
-}
-},
-"LINK": {
-"PEER_NEEDS_BURST": {
-"TYPE": "BOOL",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": false,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-}
-}
-}
+  "VCU0000253": {
+    "MASTER": {
+      "SABOTAGE_MSG": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": true,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      }
+    }
+  },
+  "VCU0000253:0": {
+    "MASTER": {},
+    "VALUES": {
+      "UNREACH": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 5,
+        "FLAGS": 9,
+        "DEFAULT": 0,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "STICKY_UNREACH": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 7,
+        "FLAGS": 11,
+        "DEFAULT": 0,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "CONFIG_PENDING": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 5,
+        "FLAGS": 9,
+        "DEFAULT": 0,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "LOWBAT": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 5,
+        "FLAGS": 9,
+        "DEFAULT": 0,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "AES_KEY": {
+        "TYPE": "INTEGER",
+        "OPERATIONS": 1,
+        "FLAGS": 0,
+        "DEFAULT": 0,
+        "MAX": 127,
+        "MIN": 0,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "RSSI_DEVICE": {
+        "TYPE": "INTEGER",
+        "OPERATIONS": 5,
+        "FLAGS": 1,
+        "DEFAULT": 0,
+        "MAX": 2147483647,
+        "MIN": -2147483648,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "RSSI_PEER": {
+        "TYPE": "INTEGER",
+        "OPERATIONS": 5,
+        "FLAGS": 1,
+        "DEFAULT": 0,
+        "MAX": 2147483647,
+        "MIN": -2147483648,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "ENTER_BOOTLOADER": {
+        "TYPE": "ACTION",
+        "OPERATIONS": 2,
+        "FLAGS": 3,
+        "DEFAULT": false,
+        "MAX": 0,
+        "MIN": 0,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      }
+    }
+  },
+  "VCU0000253:1": {
+    "MASTER": {
+      "EVENT_FILTER_PERIOD": {
+        "TYPE": "FLOAT",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": 0.5,
+        "MAX": 7.5,
+        "MIN": 0.5,
+        "UNIT": "s",
+        "TAB_ORDER": 0
+      },
+      "EVENT_FILTER_NUMBER": {
+        "TYPE": "INTEGER",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": 1,
+        "MAX": 15,
+        "MIN": 1,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "CAPTURE_WITHIN_INTERVAL": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": false,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "MIN_INTERVAL": {
+        "TYPE": "INTEGER",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": 4,
+        "MAX": 4,
+        "MIN": 0,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "BRIGHTNESS_FILTER": {
+        "TYPE": "INTEGER",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": 7,
+        "MAX": 7,
+        "MIN": 0,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "AES_ACTIVE": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 0,
+        "FLAGS": 3,
+        "DEFAULT": false,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "LED_ONTIME": {
+        "TYPE": "FLOAT",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": 0.5,
+        "MAX": 1.275,
+        "MIN": 0.0,
+        "UNIT": "s",
+        "TAB_ORDER": 0
+      }
+    },
+    "VALUES": {
+      "BRIGHTNESS": {
+        "TYPE": "INTEGER",
+        "OPERATIONS": 5,
+        "FLAGS": 1,
+        "DEFAULT": 0,
+        "MAX": 255,
+        "MIN": 0,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "NEXT_TRANSMISSION": {
+        "TYPE": "INTEGER",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": 0,
+        "MAX": 2147483647,
+        "MIN": -2147483648,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "MOTION": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 5,
+        "FLAGS": 1,
+        "DEFAULT": 0,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "ERROR": {
+        "TYPE": "ENUM",
+        "OPERATIONS": 5,
+        "FLAGS": 9,
+        "DEFAULT": 0,
+        "MAX": 1,
+        "MIN": 0,
+        "UNIT": null,
+        "TAB_ORDER": 0,
+        "VALUE_LIST": [
+          "NO_ERROR",
+          "SABOTAGE"
+        ],
+        "CONTROL": "NONE"
+      },
+      "INSTALL_TEST": {
+        "TYPE": "ACTION",
+        "OPERATIONS": 4,
+        "FLAGS": 3,
+        "DEFAULT": false,
+        "MAX": 0,
+        "MIN": 0,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      }
+    },
+    "LINK": {
+      "PEER_NEEDS_BURST": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": false,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      }
+    }
+  }
 }
