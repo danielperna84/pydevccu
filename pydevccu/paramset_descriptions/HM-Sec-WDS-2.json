@@ -1,240 +1,240 @@
 {
-"VCU0000349": {
-"MASTER": {
-"CYCLIC_INFO_MSG": {
-"TYPE": "BOOL",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": false,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"TRANSMIT_DEV_TRY_MAX": {
-"TYPE": "INTEGER",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": 6,
-"MAX": 10.0,
-"MIN": 1.0,
-"UNIT": null,
-"TAB_ORDER": 0
-}
-}
-},
-"VCU0000349:0": {
-"MASTER": {},
-"VALUES": {
-"UNREACH": {
-"TYPE": "BOOL",
-"OPERATIONS": 5,
-"FLAGS": 9,
-"DEFAULT": 0,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"STICKY_UNREACH": {
-"TYPE": "BOOL",
-"OPERATIONS": 7,
-"FLAGS": 11,
-"DEFAULT": 0,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"CONFIG_PENDING": {
-"TYPE": "BOOL",
-"OPERATIONS": 5,
-"FLAGS": 9,
-"DEFAULT": 0,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"LOWBAT": {
-"TYPE": "BOOL",
-"OPERATIONS": 5,
-"FLAGS": 9,
-"DEFAULT": 0,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"AES_KEY": {
-"TYPE": "INTEGER",
-"OPERATIONS": 1,
-"FLAGS": 0,
-"DEFAULT": 0,
-"MAX": 127,
-"MIN": 0,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"RSSI_DEVICE": {
-"TYPE": "INTEGER",
-"OPERATIONS": 5,
-"FLAGS": 1,
-"DEFAULT": 0,
-"MAX": 2147483647,
-"MIN": -2147483648,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"RSSI_PEER": {
-"TYPE": "INTEGER",
-"OPERATIONS": 5,
-"FLAGS": 1,
-"DEFAULT": 0,
-"MAX": 2147483647,
-"MIN": -2147483648,
-"UNIT": null,
-"TAB_ORDER": 0
-}
-}
-},
-"VCU0000349:1": {
-"MASTER": {
-"MSG_FOR_POS_A": {
-"TYPE": "ENUM",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": 1,
-"MAX": 1,
-"MIN": 0,
-"UNIT": null,
-"TAB_ORDER": 0,
-"VALUE_LIST": [
-"NO_MSG",
-"DRY"
-]
-},
-"MSG_FOR_POS_B": {
-"TYPE": "ENUM",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": 3,
-"MAX": 3,
-"MIN": 0,
-"UNIT": null,
-"TAB_ORDER": 0,
-"VALUE_LIST": [
-"NO_MSG",
-"DRY",
-"WATER",
-"WET"
-]
-},
-"MSG_FOR_POS_C": {
-"TYPE": "ENUM",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": 1,
-"MAX": 2,
-"MIN": 0,
-"UNIT": null,
-"TAB_ORDER": 0,
-"VALUE_LIST": [
-"NO_MSG",
-"WATER",
-"WET"
-]
-},
-"AES_ACTIVE": {
-"TYPE": "BOOL",
-"OPERATIONS": 0,
-"FLAGS": 3,
-"DEFAULT": false,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"EVENT_FILTERTIME": {
-"TYPE": "FLOAT",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": 5.0,
-"MAX": 7620.0,
-"MIN": 5.0,
-"UNIT": "s",
-"TAB_ORDER": 0
-},
-"TRANSMIT_TRY_MAX": {
-"TYPE": "INTEGER",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": 6,
-"MAX": 10.0,
-"MIN": 1.0,
-"UNIT": null,
-"TAB_ORDER": 0
-}
-},
-"VALUES": {
-"STATE": {
-"TYPE": "ENUM",
-"OPERATIONS": 5,
-"FLAGS": 1,
-"DEFAULT": 0,
-"MAX": 2,
-"MIN": 0,
-"UNIT": null,
-"TAB_ORDER": 0,
-"VALUE_LIST": [
-"DRY",
-"WET",
-"WATER"
-]
-},
-"LOWBAT": {
-"TYPE": "BOOL",
-"OPERATIONS": 5,
-"FLAGS": 1,
-"DEFAULT": 0,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0,
-"CONTROL": "NONE"
-},
-"INSTALL_TEST": {
-"TYPE": "ACTION",
-"OPERATIONS": 4,
-"FLAGS": 3,
-"DEFAULT": false,
-"MAX": 0,
-"MIN": 0,
-"UNIT": null,
-"TAB_ORDER": 0
-}
-},
-"LINK": {
-"PEER_NEEDS_BURST": {
-"TYPE": "BOOL",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": false,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-},
-"EXPECT_AES": {
-"TYPE": "BOOL",
-"OPERATIONS": 0,
-"FLAGS": 1,
-"DEFAULT": false,
-"MAX": true,
-"MIN": false,
-"UNIT": null,
-"TAB_ORDER": 0
-}
-}
-}
+  "VCU0000349": {
+    "MASTER": {
+      "CYCLIC_INFO_MSG": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": false,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "TRANSMIT_DEV_TRY_MAX": {
+        "TYPE": "INTEGER",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": 6,
+        "MAX": 10.0,
+        "MIN": 1.0,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      }
+    }
+  },
+  "VCU0000349:0": {
+    "MASTER": {},
+    "VALUES": {
+      "UNREACH": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 5,
+        "FLAGS": 9,
+        "DEFAULT": 0,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "STICKY_UNREACH": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 7,
+        "FLAGS": 11,
+        "DEFAULT": 0,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "CONFIG_PENDING": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 5,
+        "FLAGS": 9,
+        "DEFAULT": 0,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "LOWBAT": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 5,
+        "FLAGS": 9,
+        "DEFAULT": 0,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "AES_KEY": {
+        "TYPE": "INTEGER",
+        "OPERATIONS": 1,
+        "FLAGS": 0,
+        "DEFAULT": 0,
+        "MAX": 127,
+        "MIN": 0,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "RSSI_DEVICE": {
+        "TYPE": "INTEGER",
+        "OPERATIONS": 5,
+        "FLAGS": 1,
+        "DEFAULT": 0,
+        "MAX": 2147483647,
+        "MIN": -2147483648,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "RSSI_PEER": {
+        "TYPE": "INTEGER",
+        "OPERATIONS": 5,
+        "FLAGS": 1,
+        "DEFAULT": 0,
+        "MAX": 2147483647,
+        "MIN": -2147483648,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      }
+    }
+  },
+  "VCU0000349:1": {
+    "MASTER": {
+      "MSG_FOR_POS_A": {
+        "TYPE": "ENUM",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": 1,
+        "MAX": 1,
+        "MIN": 0,
+        "UNIT": null,
+        "TAB_ORDER": 0,
+        "VALUE_LIST": [
+          "NO_MSG",
+          "DRY"
+        ]
+      },
+      "MSG_FOR_POS_B": {
+        "TYPE": "ENUM",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": 3,
+        "MAX": 3,
+        "MIN": 0,
+        "UNIT": null,
+        "TAB_ORDER": 0,
+        "VALUE_LIST": [
+          "NO_MSG",
+          "DRY",
+          "WATER",
+          "WET"
+        ]
+      },
+      "MSG_FOR_POS_C": {
+        "TYPE": "ENUM",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": 1,
+        "MAX": 2,
+        "MIN": 0,
+        "UNIT": null,
+        "TAB_ORDER": 0,
+        "VALUE_LIST": [
+          "NO_MSG",
+          "WATER",
+          "WET"
+        ]
+      },
+      "AES_ACTIVE": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 0,
+        "FLAGS": 3,
+        "DEFAULT": false,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "EVENT_FILTERTIME": {
+        "TYPE": "FLOAT",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": 5.0,
+        "MAX": 7620.0,
+        "MIN": 5.0,
+        "UNIT": "s",
+        "TAB_ORDER": 0
+      },
+      "TRANSMIT_TRY_MAX": {
+        "TYPE": "INTEGER",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": 6,
+        "MAX": 10.0,
+        "MIN": 1.0,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      }
+    },
+    "VALUES": {
+      "STATE": {
+        "TYPE": "ENUM",
+        "OPERATIONS": 5,
+        "FLAGS": 1,
+        "DEFAULT": 0,
+        "MAX": 2,
+        "MIN": 0,
+        "UNIT": null,
+        "TAB_ORDER": 0,
+        "VALUE_LIST": [
+          "DRY",
+          "WET",
+          "WATER"
+        ]
+      },
+      "LOWBAT": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 5,
+        "FLAGS": 1,
+        "DEFAULT": 0,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0,
+        "CONTROL": "NONE"
+      },
+      "INSTALL_TEST": {
+        "TYPE": "ACTION",
+        "OPERATIONS": 4,
+        "FLAGS": 3,
+        "DEFAULT": false,
+        "MAX": 0,
+        "MIN": 0,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      }
+    },
+    "LINK": {
+      "PEER_NEEDS_BURST": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": false,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      },
+      "EXPECT_AES": {
+        "TYPE": "BOOL",
+        "OPERATIONS": 0,
+        "FLAGS": 1,
+        "DEFAULT": false,
+        "MAX": true,
+        "MIN": false,
+        "UNIT": null,
+        "TAB_ORDER": 0
+      }
+    }
+  }
 }
