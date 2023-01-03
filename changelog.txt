@@ -1,3 +1,23 @@
+Version 0.1.4 (2023-01-03)
+- Add HB-LC-Sw1PBU-FM
+- Add HB-LC-Sw2PBU-FM
+- Add HB-UNI-Sen-TEMP-DS18B20
+- Add HmIP-MOD-HO
+- Add HB-UNI-Sensor-TH-SHT75
+- Add ELV-SH-BS2
+- Add HB-UNI-Sen-PRESS
+- Add ALPHA-IP-RBG
+- Add HmIP-WTH-1
+- Add HmIP-eTRV-2 I9F
+- Refreshed HmIP-PCBS
+- Refreshed HmIP-PCBS2
+- Refreshed HmIP-PCBS-BAT
+- Refreshed HmIP-eTRV-B1
+- Refreshed HmIP-SWDM-B2
+- Refreshed HB-LC-Bl1PBU-FM
+- Refreshed HB-UNI-Sen-TEMP-DS18B20
+- Refreshed HB-UNI-Sensor1
+
 Version 0.1.3 (2022-02-09)
 - Add HB-LC-Bl1PBU-FM
 - Add HB-UNI-Sensor1
