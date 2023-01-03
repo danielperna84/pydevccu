@@ -1,16 +1,16 @@
 [
   {
-    "ADDRESS": "VCU9207981",
+    "ADDRESS": "VCU2304696",
     "CHILDREN": [
-      "VCU9207981:0",
-      "VCU9207981:1",
-      "VCU9207981:2",
-      "VCU9207981:3",
-      "VCU9207981:4",
-      "VCU9207981:5",
-      "VCU9207981:6",
-      "VCU9207981:7",
-      "VCU9207981:8"
+      "VCU2304696:0",
+      "VCU2304696:1",
+      "VCU2304696:2",
+      "VCU2304696:3",
+      "VCU2304696:4",
+      "VCU2304696:5",
+      "VCU2304696:6",
+      "VCU2304696:7",
+      "VCU2304696:8"
     ],
     "FIRMWARE": "1.0",
     "FLAGS": 1,
@@ -27,7 +27,7 @@
     "VERSION": 2
   },
   {
-    "ADDRESS": "VCU9207981:0",
+    "ADDRESS": "VCU2304696:0",
     "AES_ACTIVE": 0,
     "DIRECTION": 0,
     "FLAGS": 3,
@@ -38,13 +38,13 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU9207981",
+    "PARENT": "VCU2304696",
     "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
     "TYPE": "MAINTENANCE",
     "VERSION": 2
   },
   {
-    "ADDRESS": "VCU9207981:1",
+    "ADDRESS": "VCU2304696:1",
     "AES_ACTIVE": 0,
     "DIRECTION": 1,
     "FLAGS": 1,
@@ -56,13 +56,13 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU9207981",
+    "PARENT": "VCU2304696",
     "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
     "TYPE": "WEATHER",
     "VERSION": 2
   },
   {
-    "ADDRESS": "VCU9207981:2",
+    "ADDRESS": "VCU2304696:2",
     "AES_ACTIVE": 0,
     "DIRECTION": 1,
     "FLAGS": 1,
@@ -74,13 +74,13 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU9207981",
+    "PARENT": "VCU2304696",
     "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
     "TYPE": "WEATHER",
     "VERSION": 2
   },
   {
-    "ADDRESS": "VCU9207981:3",
+    "ADDRESS": "VCU2304696:3",
     "AES_ACTIVE": 0,
     "DIRECTION": 1,
     "FLAGS": 1,
@@ -92,13 +92,13 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU9207981",
+    "PARENT": "VCU2304696",
     "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
     "TYPE": "WEATHER",
     "VERSION": 2
   },
   {
-    "ADDRESS": "VCU9207981:4",
+    "ADDRESS": "VCU2304696:4",
     "AES_ACTIVE": 0,
     "DIRECTION": 1,
     "FLAGS": 1,
@@ -110,13 +110,13 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU9207981",
+    "PARENT": "VCU2304696",
     "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
     "TYPE": "WEATHER",
     "VERSION": 2
   },
   {
-    "ADDRESS": "VCU9207981:5",
+    "ADDRESS": "VCU2304696:5",
     "AES_ACTIVE": 0,
     "DIRECTION": 1,
     "FLAGS": 1,
@@ -128,13 +128,13 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU9207981",
+    "PARENT": "VCU2304696",
     "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
     "TYPE": "WEATHER",
     "VERSION": 2
   },
   {
-    "ADDRESS": "VCU9207981:6",
+    "ADDRESS": "VCU2304696:6",
     "AES_ACTIVE": 0,
     "DIRECTION": 1,
     "FLAGS": 1,
@@ -146,13 +146,13 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU9207981",
+    "PARENT": "VCU2304696",
     "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
     "TYPE": "WEATHER",
     "VERSION": 2
   },
   {
-    "ADDRESS": "VCU9207981:7",
+    "ADDRESS": "VCU2304696:7",
     "AES_ACTIVE": 0,
     "DIRECTION": 1,
     "FLAGS": 1,
@@ -164,13 +164,13 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU9207981",
+    "PARENT": "VCU2304696",
     "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
     "TYPE": "WEATHER",
     "VERSION": 2
   },
   {
-    "ADDRESS": "VCU9207981:8",
+    "ADDRESS": "VCU2304696:8",
     "AES_ACTIVE": 0,
     "DIRECTION": 1,
     "FLAGS": 1,
@@ -182,7 +182,7 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU9207981",
+    "PARENT": "VCU2304696",
     "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
     "TYPE": "WEATHER",
     "VERSION": 2
