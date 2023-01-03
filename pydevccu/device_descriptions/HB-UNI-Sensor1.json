@@ -1,9 +1,9 @@
 [
   {
-    "ADDRESS": "VCU8492627",
+    "ADDRESS": "VCU7837366",
     "CHILDREN": [
-      "VCU8492627:0",
-      "VCU8492627:1"
+      "VCU7837366:0",
+      "VCU7837366:1"
     ],
     "FIRMWARE": "1.5",
     "FLAGS": 1,
@@ -20,7 +20,7 @@
     "VERSION": 2
   },
   {
-    "ADDRESS": "VCU8492627:0",
+    "ADDRESS": "VCU7837366:0",
     "AES_ACTIVE": 0,
     "DIRECTION": 0,
     "FLAGS": 3,
@@ -31,13 +31,13 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU8492627",
+    "PARENT": "VCU7837366",
     "PARENT_TYPE": "HB-UNI-Sensor1",
     "TYPE": "MAINTENANCE",
     "VERSION": 2
   },
   {
-    "ADDRESS": "VCU8492627:1",
+    "ADDRESS": "VCU7837366:1",
     "AES_ACTIVE": 0,
     "DIRECTION": 1,
     "FLAGS": 1,
@@ -49,7 +49,7 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU8492627",
+    "PARENT": "VCU7837366",
     "PARENT_TYPE": "HB-UNI-Sensor1",
     "TYPE": "WEATHER",
     "VERSION": 2

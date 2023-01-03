@@ -1,224 +1,190 @@
-{
-  "VCU9207981": {},
-  "VCU9207981:0": {
-    "VALUES": {
-      "CONFIG_PENDING": {
-        "DEFAULT": false,
-        "FLAGS": 9,
-        "ID": "CONFIG_PENDING",
-        "MAX": true,
-        "MIN": false,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 2,
-        "TYPE": "BOOL",
-        "UNIT": ""
-      },
-      "DEVICE_IN_BOOTLOADER": {
-        "DEFAULT": false,
-        "FLAGS": 9,
-        "ID": "DEVICE_IN_BOOTLOADER",
-        "MAX": true,
-        "MIN": false,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 6,
-        "TYPE": "BOOL",
-        "UNIT": ""
-      },
-      "LOWBAT": {
-        "CONTROL": "NONE",
-        "DEFAULT": false,
-        "FLAGS": 9,
-        "ID": "LOWBAT",
-        "MAX": true,
-        "MIN": false,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 3,
-        "TYPE": "BOOL",
-        "UNIT": ""
-      },
-      "RSSI_DEVICE": {
-        "DEFAULT": 0,
-        "FLAGS": 1,
-        "ID": "RSSI_DEVICE",
-        "MAX": 2147483647,
-        "MIN": -2147483648,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 4,
-        "TYPE": "INTEGER",
-        "UNIT": ""
-      },
-      "RSSI_PEER": {
-        "DEFAULT": 0,
-        "FLAGS": 1,
-        "ID": "RSSI_PEER",
-        "MAX": 2147483647,
-        "MIN": -2147483648,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 5,
-        "TYPE": "INTEGER",
-        "UNIT": ""
-      },
-      "STICKY_UNREACH": {
-        "DEFAULT": false,
-        "FLAGS": 25,
-        "ID": "STICKY_UNREACH",
-        "MAX": true,
-        "MIN": false,
-        "OPERATIONS": 7,
-        "TAB_ORDER": 1,
-        "TYPE": "BOOL",
-        "UNIT": ""
-      },
-      "UNREACH": {
-        "DEFAULT": false,
-        "FLAGS": 9,
-        "ID": "UNREACH",
-        "MAX": true,
-        "MIN": false,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 0,
-        "TYPE": "BOOL",
-        "UNIT": ""
-      },
-      "UPDATE_PENDING": {
-        "DEFAULT": false,
-        "FLAGS": 9,
-        "ID": "UPDATE_PENDING",
-        "MAX": true,
-        "MIN": false,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 7,
-        "TYPE": "BOOL",
-        "UNIT": ""
-      }
-    }
+[
+  {
+    "ADDRESS": "VCU2304696",
+    "CHILDREN": [
+      "VCU2304696:0",
+      "VCU2304696:1",
+      "VCU2304696:2",
+      "VCU2304696:3",
+      "VCU2304696:4",
+      "VCU2304696:5",
+      "VCU2304696:6",
+      "VCU2304696:7",
+      "VCU2304696:8"
+    ],
+    "FIRMWARE": "1.0",
+    "FLAGS": 1,
+    "INTERFACE": "QEQ0688163",
+    "PARAMSETS": [
+      "MASTER"
+    ],
+    "PARENT": "",
+    "RF_ADDRESS": 15925505,
+    "ROAMING": 0,
+    "RX_MODE": 28,
+    "TYPE": "HB-UNI-Sen-TEMP-DS18B20",
+    "UPDATABLE": 1,
+    "VERSION": 2
   },
-  "VCU9207981:1": {
-    "VALUES": {
-      "TEMPERATURE": {
-        "AutoconfRoles": "WEATHER",
-        "DEFAULT": 0.0,
-        "FLAGS": 1,
-        "ID": "TEMPERATURE",
-        "MAX": 150.0,
-        "MIN": -150.0,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 0,
-        "TYPE": "FLOAT",
-        "UNIT": "\u00b0C"
-      }
-    }
+  {
+    "ADDRESS": "VCU2304696:0",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 0,
+    "FLAGS": 3,
+    "INDEX": 0,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2304696",
+    "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
+    "TYPE": "MAINTENANCE",
+    "VERSION": 2
   },
-  "VCU9207981:2": {
-    "VALUES": {
-      "TEMPERATURE": {
-        "AutoconfRoles": "WEATHER",
-        "DEFAULT": 0.0,
-        "FLAGS": 1,
-        "ID": "TEMPERATURE",
-        "MAX": 150.0,
-        "MIN": -150.0,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 0,
-        "TYPE": "FLOAT",
-        "UNIT": "\u00b0C"
-      }
-    }
+  {
+    "ADDRESS": "VCU2304696:1",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 1,
+    "LINK_SOURCE_ROLES": "WEATHER_TH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2304696",
+    "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
+    "TYPE": "WEATHER",
+    "VERSION": 2
   },
-  "VCU9207981:3": {
-    "VALUES": {
-      "TEMPERATURE": {
-        "AutoconfRoles": "WEATHER",
-        "DEFAULT": 0.0,
-        "FLAGS": 1,
-        "ID": "TEMPERATURE",
-        "MAX": 150.0,
-        "MIN": -150.0,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 0,
-        "TYPE": "FLOAT",
-        "UNIT": "\u00b0C"
-      }
-    }
+  {
+    "ADDRESS": "VCU2304696:2",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 2,
+    "LINK_SOURCE_ROLES": "WEATHER_TH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2304696",
+    "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
+    "TYPE": "WEATHER",
+    "VERSION": 2
   },
-  "VCU9207981:4": {
-    "VALUES": {
-      "TEMPERATURE": {
-        "AutoconfRoles": "WEATHER",
-        "DEFAULT": 0.0,
-        "FLAGS": 1,
-        "ID": "TEMPERATURE",
-        "MAX": 150.0,
-        "MIN": -150.0,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 0,
-        "TYPE": "FLOAT",
-        "UNIT": "\u00b0C"
-      }
-    }
+  {
+    "ADDRESS": "VCU2304696:3",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 3,
+    "LINK_SOURCE_ROLES": "WEATHER_TH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2304696",
+    "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
+    "TYPE": "WEATHER",
+    "VERSION": 2
   },
-  "VCU9207981:5": {
-    "VALUES": {
-      "TEMPERATURE": {
-        "AutoconfRoles": "WEATHER",
-        "DEFAULT": 0.0,
-        "FLAGS": 1,
-        "ID": "TEMPERATURE",
-        "MAX": 150.0,
-        "MIN": -150.0,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 0,
-        "TYPE": "FLOAT",
-        "UNIT": "\u00b0C"
-      }
-    }
+  {
+    "ADDRESS": "VCU2304696:4",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 4,
+    "LINK_SOURCE_ROLES": "WEATHER_TH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2304696",
+    "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
+    "TYPE": "WEATHER",
+    "VERSION": 2
   },
-  "VCU9207981:6": {
-    "VALUES": {
-      "TEMPERATURE": {
-        "AutoconfRoles": "WEATHER",
-        "DEFAULT": 0.0,
-        "FLAGS": 1,
-        "ID": "TEMPERATURE",
-        "MAX": 150.0,
-        "MIN": -150.0,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 0,
-        "TYPE": "FLOAT",
-        "UNIT": "\u00b0C"
-      }
-    }
+  {
+    "ADDRESS": "VCU2304696:5",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 5,
+    "LINK_SOURCE_ROLES": "WEATHER_TH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2304696",
+    "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
+    "TYPE": "WEATHER",
+    "VERSION": 2
   },
-  "VCU9207981:7": {
-    "VALUES": {
-      "TEMPERATURE": {
-        "AutoconfRoles": "WEATHER",
-        "DEFAULT": 0.0,
-        "FLAGS": 1,
-        "ID": "TEMPERATURE",
-        "MAX": 150.0,
-        "MIN": -150.0,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 0,
-        "TYPE": "FLOAT",
-        "UNIT": "\u00b0C"
-      }
-    }
+  {
+    "ADDRESS": "VCU2304696:6",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 6,
+    "LINK_SOURCE_ROLES": "WEATHER_TH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2304696",
+    "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
+    "TYPE": "WEATHER",
+    "VERSION": 2
   },
-  "VCU9207981:8": {
-    "VALUES": {
-      "TEMPERATURE": {
-        "AutoconfRoles": "WEATHER",
-        "DEFAULT": 0.0,
-        "FLAGS": 1,
-        "ID": "TEMPERATURE",
-        "MAX": 150.0,
-        "MIN": -150.0,
-        "OPERATIONS": 5,
-        "TAB_ORDER": 0,
-        "TYPE": "FLOAT",
-        "UNIT": "\u00b0C"
-      }
-    }
+  {
+    "ADDRESS": "VCU2304696:7",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 7,
+    "LINK_SOURCE_ROLES": "WEATHER_TH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2304696",
+    "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
+    "TYPE": "WEATHER",
+    "VERSION": 2
+  },
+  {
+    "ADDRESS": "VCU2304696:8",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 8,
+    "LINK_SOURCE_ROLES": "WEATHER_TH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2304696",
+    "PARENT_TYPE": "HB-UNI-Sen-TEMP-DS18B20",
+    "TYPE": "WEATHER",
+    "VERSION": 2
   }
-}
+]

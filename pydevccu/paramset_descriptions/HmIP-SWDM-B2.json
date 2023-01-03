@@ -1,117 +1,134 @@
-{
-  "VCU8333683": {},
-  "VCU8333683:0": {
-    "VALUES": {
-      "CONFIG_PENDING": {
-        "MIN": false,
-        "OPERATIONS": 5,
-        "MAX": true,
-        "FLAGS": 9,
-        "ID": "CONFIG_PENDING",
-        "TYPE": "BOOL",
-        "DEFAULT": false
-      },
-      "DUTY_CYCLE": {
-        "MIN": false,
-        "OPERATIONS": 5,
-        "MAX": true,
-        "FLAGS": 1,
-        "ID": "DUTY_CYCLE",
-        "TYPE": "BOOL",
-        "DEFAULT": false
-      },
-      "LOW_BAT": {
-        "MIN": false,
-        "OPERATIONS": 5,
-        "MAX": true,
-        "FLAGS": 9,
-        "ID": "LOW_BAT",
-        "TYPE": "BOOL",
-        "DEFAULT": false
-      },
-      "INSTALL_TEST": {
-        "MIN": false,
-        "OPERATIONS": 3,
-        "MAX": true,
-        "FLAGS": 2,
-        "ID": "INSTALL_TEST",
-        "TYPE": "BOOL",
-        "DEFAULT": false
-      },
-      "UNREACH": {
-        "MIN": false,
-        "OPERATIONS": 5,
-        "MAX": true,
-        "FLAGS": 25,
-        "ID": "UNREACH",
-        "TYPE": "BOOL",
-        "DEFAULT": false
-      },
-      "OPERATING_VOLTAGE_STATUS": {
-        "MIN": "NORMAL",
-        "OPERATIONS": 5,
-        "MAX": "EXTERNAL",
-        "FLAGS": 1,
-        "ID": "OPERATING_VOLTAGE_STATUS",
-        "TYPE": "ENUM",
-        "DEFAULT": "NORMAL",
-        "VALUE_LIST": [
-          "NORMAL",
-          "UNKNOWN",
-          "OVERFLOW",
-          "EXTERNAL"
-        ]
-      },
-      "RSSI_DEVICE": {
-        "MIN": -128,
-        "OPERATIONS": 5,
-        "MAX": 127,
-        "FLAGS": 1,
-        "ID": "RSSI_DEVICE",
-        "TYPE": "INTEGER",
-        "DEFAULT": 0
-      },
-      "OPERATING_VOLTAGE": {
-        "MIN": 0.0,
-        "OPERATIONS": 5,
-        "MAX": 25.2,
-        "FLAGS": 1,
-        "ID": "OPERATING_VOLTAGE",
-        "TYPE": "FLOAT",
-        "DEFAULT": 0.0
-      },
-      "RSSI_PEER": {
-        "MIN": -128,
-        "OPERATIONS": 5,
-        "MAX": 127,
-        "FLAGS": 1,
-        "ID": "RSSI_PEER",
-        "TYPE": "INTEGER",
-        "DEFAULT": 0
-      }
-    }
+[
+  {
+    "TYPE": "HmIP-SWDM-B2",
+    "SUBTYPE": "SWDM",
+    "ADDRESS": "VCU8490397",
+    "RF_ADDRESS": 6433827,
+    "CHILDREN": [
+      "VCU8490397:0",
+      "VCU8490397:1",
+      "VCU8490397:2"
+    ],
+    "PARENT": "",
+    "PARENT_TYPE": "",
+    "INDEX": 0,
+    "AES_ACTIVE": 1,
+    "PARAMSETS": [
+      "MASTER",
+      "SERVICE"
+    ],
+    "FIRMWARE": "1.2.12",
+    "AVAILABLE_FIRMWARE": "0.0.0",
+    "UPDATABLE": true,
+    "FIRMWARE_UPDATE_STATE": "",
+    "VERSION": 1,
+    "FLAGS": 1,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "DIRECTION": 0,
+    "GROUP": "",
+    "TEAM": "",
+    "TEAM_TAG": "",
+    "TEAM_CHANNELS": [],
+    "INTERFACE": "",
+    "ROAMING": 0,
+    "RX_MODE": 4
   },
-  "VCU8333683:1": {
-    "VALUES": {
-      "STATE": {
-        "MIN": "CLOSED",
-        "UNIT": "\"\"",
-        "OPERATIONS": 5,
-        "MAX": "OPEN",
-        "FLAGS": 1,
-        "ID": "STATE",
-        "TAB_ORDER": 0,
-        "TYPE": "ENUM",
-        "DEFAULT": "CLOSED",
-        "VALUE_LIST": [
-          "CLOSED",
-          "OPEN"
-        ],
-        "CONTROL": "DOOR_SENSOR.STATE"
-      }
-    }
+  {
+    "TYPE": "MAINTENANCE",
+    "SUBTYPE": "",
+    "ADDRESS": "VCU8490397:0",
+    "RF_ADDRESS": 0,
+    "CHILDREN": [],
+    "PARENT": "VCU8490397",
+    "PARENT_TYPE": "HmIP-SWDM-B2",
+    "INDEX": 0,
+    "AES_ACTIVE": 1,
+    "PARAMSETS": [
+      "MASTER",
+      "VALUES",
+      "SERVICE"
+    ],
+    "FIRMWARE": "",
+    "AVAILABLE_FIRMWARE": "",
+    "UPDATABLE": true,
+    "FIRMWARE_UPDATE_STATE": "",
+    "VERSION": 1,
+    "FLAGS": 1,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "DIRECTION": 0,
+    "GROUP": "",
+    "TEAM": "",
+    "TEAM_TAG": "",
+    "TEAM_CHANNELS": [],
+    "INTERFACE": "",
+    "ROAMING": 0,
+    "RX_MODE": 0
   },
-  "VCU8333683:2": {
-    "VALUES": {}
+  {
+    "TYPE": "SHUTTER_CONTACT",
+    "SUBTYPE": "",
+    "ADDRESS": "VCU8490397:1",
+    "RF_ADDRESS": 0,
+    "CHILDREN": [],
+    "PARENT": "VCU8490397",
+    "PARENT_TYPE": "HmIP-SWDM-B2",
+    "INDEX": 1,
+    "AES_ACTIVE": 1,
+    "PARAMSETS": [
+      "MASTER",
+      "VALUES",
+      "LINK",
+      "SERVICE"
+    ],
+    "FIRMWARE": "",
+    "AVAILABLE_FIRMWARE": "",
+    "UPDATABLE": true,
+    "FIRMWARE_UPDATE_STATE": "",
+    "VERSION": 1,
+    "FLAGS": 1,
+    "LINK_SOURCE_ROLES": "CONDITIONAL_SWITCH WINDOW_SWITCH",
+    "LINK_TARGET_ROLES": "",
+    "DIRECTION": 1,
+    "GROUP": "",
+    "TEAM": "",
+    "TEAM_TAG": "",
+    "TEAM_CHANNELS": [],
+    "INTERFACE": "",
+    "ROAMING": 0,
+    "RX_MODE": 0
+  },
+  {
+    "TYPE": "ALARM_COND_SWITCH_TRANSMITTER",
+    "SUBTYPE": "",
+    "ADDRESS": "VCU8490397:2",
+    "RF_ADDRESS": 0,
+    "CHILDREN": [],
+    "PARENT": "VCU8490397",
+    "PARENT_TYPE": "HmIP-SWDM-B2",
+    "INDEX": 2,
+    "AES_ACTIVE": 1,
+    "PARAMSETS": [
+      "MASTER",
+      "VALUES",
+      "SERVICE"
+    ],
+    "FIRMWARE": "",
+    "AVAILABLE_FIRMWARE": "",
+    "UPDATABLE": true,
+    "FIRMWARE_UPDATE_STATE": "",
+    "VERSION": 1,
+    "FLAGS": 0,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "DIRECTION": 0,
+    "GROUP": "",
+    "TEAM": "",
+    "TEAM_TAG": "",
+    "TEAM_CHANNELS": [],
+    "INTERFACE": "",
+    "ROAMING": 0,
+    "RX_MODE": 0
   }
-}
+]

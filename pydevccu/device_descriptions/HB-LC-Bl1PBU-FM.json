@@ -1,11 +1,11 @@
 [
   {
-    "ADDRESS": "VCU9834159",
+    "ADDRESS": "VCU1136001",
     "CHILDREN": [
-      "VCU9834159:0",
-      "VCU9834159:1",
-      "VCU9834159:2",
-      "VCU9834159:3"
+      "VCU1136001:0",
+      "VCU1136001:1",
+      "VCU1136001:2",
+      "VCU1136001:3"
     ],
     "FIRMWARE": "1.0",
     "FLAGS": 1,
@@ -22,7 +22,7 @@
     "VERSION": 1
   },
   {
-    "ADDRESS": "VCU9834159:0",
+    "ADDRESS": "VCU1136001:0",
     "AES_ACTIVE": 0,
     "DIRECTION": 0,
     "FLAGS": 3,
@@ -33,13 +33,13 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU9834159",
+    "PARENT": "VCU1136001",
     "PARENT_TYPE": "HB-LC-Bl1PBU-FM",
     "TYPE": "MAINTENANCE",
     "VERSION": 1
   },
   {
-    "ADDRESS": "VCU9834159:1",
+    "ADDRESS": "VCU1136001:1",
     "AES_ACTIVE": 0,
     "DIRECTION": 2,
     "FLAGS": 1,
@@ -51,13 +51,13 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU9834159",
+    "PARENT": "VCU1136001",
     "PARENT_TYPE": "HB-LC-Bl1PBU-FM",
     "TYPE": "BLIND",
     "VERSION": 1
   },
   {
-    "ADDRESS": "VCU9834159:2",
+    "ADDRESS": "VCU1136001:2",
     "AES_ACTIVE": 0,
     "DIRECTION": 1,
     "FLAGS": 1,
@@ -70,13 +70,13 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU9834159",
+    "PARENT": "VCU1136001",
     "PARENT_TYPE": "HB-LC-Bl1PBU-FM",
     "TYPE": "KEY",
     "VERSION": 1
   },
   {
-    "ADDRESS": "VCU9834159:3",
+    "ADDRESS": "VCU1136001:3",
     "AES_ACTIVE": 0,
     "DIRECTION": 1,
     "FLAGS": 1,
@@ -89,7 +89,7 @@
       "MASTER",
       "VALUES"
     ],
-    "PARENT": "VCU9834159",
+    "PARENT": "VCU1136001",
     "PARENT_TYPE": "HB-LC-Bl1PBU-FM",
     "TYPE": "KEY",
     "VERSION": 1
