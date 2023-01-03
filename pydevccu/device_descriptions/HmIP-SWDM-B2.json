@@ -2,12 +2,12 @@
   {
     "TYPE": "HmIP-SWDM-B2",
     "SUBTYPE": "SWDM",
-    "ADDRESS": "VCU8333683",
-    "RF_ADDRESS": 3743456,
+    "ADDRESS": "VCU8490397",
+    "RF_ADDRESS": 6433827,
     "CHILDREN": [
-      "VCU8333683:0",
-      "VCU8333683:1",
-      "VCU8333683:2"
+      "VCU8490397:0",
+      "VCU8490397:1",
+      "VCU8490397:2"
     ],
     "PARENT": "",
     "PARENT_TYPE": "",
@@ -37,10 +37,10 @@
   {
     "TYPE": "MAINTENANCE",
     "SUBTYPE": "",
-    "ADDRESS": "VCU8333683:0",
+    "ADDRESS": "VCU8490397:0",
     "RF_ADDRESS": 0,
     "CHILDREN": [],
-    "PARENT": "VCU8333683",
+    "PARENT": "VCU8490397",
     "PARENT_TYPE": "HmIP-SWDM-B2",
     "INDEX": 0,
     "AES_ACTIVE": 1,
@@ -69,10 +69,10 @@
   {
     "TYPE": "SHUTTER_CONTACT",
     "SUBTYPE": "",
-    "ADDRESS": "VCU8333683:1",
+    "ADDRESS": "VCU8490397:1",
     "RF_ADDRESS": 0,
     "CHILDREN": [],
-    "PARENT": "VCU8333683",
+    "PARENT": "VCU8490397",
     "PARENT_TYPE": "HmIP-SWDM-B2",
     "INDEX": 1,
     "AES_ACTIVE": 1,
@@ -102,10 +102,10 @@
   {
     "TYPE": "ALARM_COND_SWITCH_TRANSMITTER",
     "SUBTYPE": "",
-    "ADDRESS": "VCU8333683:2",
+    "ADDRESS": "VCU8490397:2",
     "RF_ADDRESS": 0,
     "CHILDREN": [],
-    "PARENT": "VCU8333683",
+    "PARENT": "VCU8490397",
     "PARENT_TYPE": "HmIP-SWDM-B2",
     "INDEX": 2,
     "AES_ACTIVE": 1,

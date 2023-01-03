@@ -1,6 +1,7 @@
 {
-  "VCU9207981": {},
-  "VCU9207981:0": {
+  "VCU2304696": {},
+  "VCU2304696:0": {
+    "MASTER": {},
     "VALUES": {
       "CONFIG_PENDING": {
         "DEFAULT": false,
@@ -93,7 +94,21 @@
       }
     }
   },
-  "VCU9207981:1": {
+  "VCU2304696:1": {
+    "LINK": {},
+    "MASTER": {
+      "TEMPERATURE_OFFSET": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "TEMPERATURE_OFFSET",
+        "MAX": 5.0,
+        "MIN": -5.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 0,
+        "TYPE": "FLOAT",
+        "UNIT": "K"
+      }
+    },
     "VALUES": {
       "TEMPERATURE": {
         "AutoconfRoles": "WEATHER",
@@ -109,7 +124,21 @@
       }
     }
   },
-  "VCU9207981:2": {
+  "VCU2304696:2": {
+    "LINK": {},
+    "MASTER": {
+      "TEMPERATURE_OFFSET": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "TEMPERATURE_OFFSET",
+        "MAX": 5.0,
+        "MIN": -5.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 0,
+        "TYPE": "FLOAT",
+        "UNIT": "K"
+      }
+    },
     "VALUES": {
       "TEMPERATURE": {
         "AutoconfRoles": "WEATHER",
@@ -125,7 +154,21 @@
       }
     }
   },
-  "VCU9207981:3": {
+  "VCU2304696:3": {
+    "LINK": {},
+    "MASTER": {
+      "TEMPERATURE_OFFSET": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "TEMPERATURE_OFFSET",
+        "MAX": 5.0,
+        "MIN": -5.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 0,
+        "TYPE": "FLOAT",
+        "UNIT": "K"
+      }
+    },
     "VALUES": {
       "TEMPERATURE": {
         "AutoconfRoles": "WEATHER",
@@ -141,7 +184,21 @@
       }
     }
   },
-  "VCU9207981:4": {
+  "VCU2304696:4": {
+    "LINK": {},
+    "MASTER": {
+      "TEMPERATURE_OFFSET": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "TEMPERATURE_OFFSET",
+        "MAX": 5.0,
+        "MIN": -5.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 0,
+        "TYPE": "FLOAT",
+        "UNIT": "K"
+      }
+    },
     "VALUES": {
       "TEMPERATURE": {
         "AutoconfRoles": "WEATHER",
@@ -157,7 +214,21 @@
       }
     }
   },
-  "VCU9207981:5": {
+  "VCU2304696:5": {
+    "LINK": {},
+    "MASTER": {
+      "TEMPERATURE_OFFSET": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "TEMPERATURE_OFFSET",
+        "MAX": 5.0,
+        "MIN": -5.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 0,
+        "TYPE": "FLOAT",
+        "UNIT": "K"
+      }
+    },
     "VALUES": {
       "TEMPERATURE": {
         "AutoconfRoles": "WEATHER",
@@ -173,7 +244,21 @@
       }
     }
   },
-  "VCU9207981:6": {
+  "VCU2304696:6": {
+    "LINK": {},
+    "MASTER": {
+      "TEMPERATURE_OFFSET": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "TEMPERATURE_OFFSET",
+        "MAX": 5.0,
+        "MIN": -5.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 0,
+        "TYPE": "FLOAT",
+        "UNIT": "K"
+      }
+    },
     "VALUES": {
       "TEMPERATURE": {
         "AutoconfRoles": "WEATHER",
@@ -189,7 +274,21 @@
       }
     }
   },
-  "VCU9207981:7": {
+  "VCU2304696:7": {
+    "LINK": {},
+    "MASTER": {
+      "TEMPERATURE_OFFSET": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "TEMPERATURE_OFFSET",
+        "MAX": 5.0,
+        "MIN": -5.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 0,
+        "TYPE": "FLOAT",
+        "UNIT": "K"
+      }
+    },
     "VALUES": {
       "TEMPERATURE": {
         "AutoconfRoles": "WEATHER",
@@ -205,7 +304,21 @@
       }
     }
   },
-  "VCU9207981:8": {
+  "VCU2304696:8": {
+    "LINK": {},
+    "MASTER": {
+      "TEMPERATURE_OFFSET": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "TEMPERATURE_OFFSET",
+        "MAX": 5.0,
+        "MIN": -5.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 0,
+        "TYPE": "FLOAT",
+        "UNIT": "K"
+      }
+    },
     "VALUES": {
       "TEMPERATURE": {
         "AutoconfRoles": "WEATHER",

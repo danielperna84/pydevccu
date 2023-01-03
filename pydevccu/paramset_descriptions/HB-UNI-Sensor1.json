@@ -1,6 +1,7 @@
 {
-  "VCU8492627": {},
-  "VCU8492627:0": {
+  "VCU7837366": {},
+  "VCU7837366:0": {
+    "MASTER": {},
     "VALUES": {
       "CONFIG_PENDING": {
         "DEFAULT": false,
@@ -92,7 +93,9 @@
       }
     }
   },
-  "VCU8492627:1": {
+  "VCU7837366:1": {
+    "LINK": {},
+    "MASTER": {},
     "VALUES": {
       "AIR_PRESSURE": {
         "AutoconfRoles": "WEATHER",
