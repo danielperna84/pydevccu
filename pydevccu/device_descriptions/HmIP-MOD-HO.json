@@ -2,12 +2,12 @@
   {
     "TYPE": "HmIP-MOD-HO",
     "SUBTYPE": "MOD-HO",
-    "ADDRESS": "VCU6529515",
+    "ADDRESS": "VCU3574044",
     "RF_ADDRESS": 6459384,
     "CHILDREN": [
-      "VCU6529515:0",
-      "VCU6529515:1",
-      "VCU6529515:2"
+      "VCU3574044:0",
+      "VCU3574044:1",
+      "VCU3574044:2"
     ],
     "PARENT": "",
     "PARENT_TYPE": "",
@@ -37,10 +37,10 @@
   {
     "TYPE": "MAINTENANCE",
     "SUBTYPE": "",
-    "ADDRESS": "VCU6529515:0",
+    "ADDRESS": "VCU3574044:0",
     "RF_ADDRESS": 0,
     "CHILDREN": [],
-    "PARENT": "VCU6529515",
+    "PARENT": "VCU3574044",
     "PARENT_TYPE": "HmIP-MOD-HO",
     "INDEX": 0,
     "AES_ACTIVE": 1,
@@ -69,10 +69,10 @@
   {
     "TYPE": "DOOR_RECEIVER",
     "SUBTYPE": "",
-    "ADDRESS": "VCU6529515:1",
+    "ADDRESS": "VCU3574044:1",
     "RF_ADDRESS": 0,
     "CHILDREN": [],
-    "PARENT": "VCU6529515",
+    "PARENT": "VCU3574044",
     "PARENT_TYPE": "HmIP-MOD-HO",
     "INDEX": 1,
     "AES_ACTIVE": 1,
@@ -102,10 +102,10 @@
   {
     "TYPE": "SIMPLE_SWITCH_RECEIVER",
     "SUBTYPE": "",
-    "ADDRESS": "VCU6529515:2",
+    "ADDRESS": "VCU3574044:2",
     "RF_ADDRESS": 0,
     "CHILDREN": [],
-    "PARENT": "VCU6529515",
+    "PARENT": "VCU3574044",
     "PARENT_TYPE": "HmIP-MOD-HO",
     "INDEX": 2,
     "AES_ACTIVE": 1,
