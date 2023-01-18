@@ -1,0 +1,339 @@
+[
+  {
+    "ADDRESS": "VCU9973336",
+    "AVAILABLE_FIRMWARE": "3.23",
+    "CHILDREN": [
+      "VCU9973336:0",
+      "VCU9973336:1",
+      "VCU9973336:2",
+      "VCU9973336:3",
+      "VCU9973336:4",
+      "VCU9973336:5",
+      "VCU9973336:6",
+      "VCU9973336:7",
+      "VCU9973336:8",
+      "VCU9973336:9",
+      "VCU9973336:10",
+      "VCU9973336:11",
+      "VCU9973336:12",
+      "VCU9973336:13",
+      "VCU9973336:14",
+      "VCU9973336:15",
+      "VCU9973336:16"
+    ],
+    "FIRMWARE": "3.20",
+    "FLAGS": 1,
+    "PARAMSETS": [
+      "MASTER"
+    ],
+    "PARENT": "",
+    "TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "UPDATABLE": 1,
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:0",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 0,
+    "FLAGS": 3,
+    "INDEX": 0,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "MAINTENANCE",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:1",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 1,
+    "LINK_SOURCE_ROLES": "SWITCH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "KEY",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:2",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 2,
+    "LINK_SOURCE_ROLES": "SWITCH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "KEY",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:3",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 3,
+    "LINK_SOURCE_ROLES": "SWITCH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "KEY",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:4",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 4,
+    "LINK_SOURCE_ROLES": "SWITCH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "KEY",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:5",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 5,
+    "LINK_SOURCE_ROLES": "SWITCH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "KEY",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:6",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 6,
+    "LINK_SOURCE_ROLES": "SWITCH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "KEY",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:7",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 7,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "DIMMER",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:8",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 8,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "DIMMER",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:9",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 9,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "DIMMER",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:10",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 10,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "DIMMER",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:11",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 11,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "DIMMER",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:12",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 12,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "DIMMER",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:13",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 13,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "DIMMER",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:14",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 14,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "DIMMER",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:15",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 15,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "RGBW_COLOR",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU9973336:16",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 16,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU9973336",
+    "PARENT_TYPE": "HBW-LC-RGBWW-IN6-DR",
+    "TYPE": "RGBW_COLOR",
+    "VERSION": 1
+  }
+]
