@@ -1,3 +1,8 @@
+Version 0.1.5 (2023-01-26)
+- Fix HmIP-MOD-HO
+- Add HmIP-MOD-TEM
+- Add HBW-LC-RGBWW-IN6-DR
+
 Version 0.1.4 (2023-01-03)
 - Add HB-LC-Sw1PBU-FM
 - Add HB-LC-Sw2PBU-FM

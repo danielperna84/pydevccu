@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 PACKAGE_NAME = 'pydevccu'
 HERE = os.path.abspath(os.path.dirname(__file__))
-VERSION = '0.1.4'
+VERSION = '0.1.5'
 
 PACKAGES = find_packages(exclude=['tests', 'tests.*', 'dist', 'build'])
 
