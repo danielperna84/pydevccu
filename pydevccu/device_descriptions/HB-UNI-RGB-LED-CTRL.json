@@ -1,0 +1,95 @@
+[
+  {
+    "ADDRESS": "VCU3203533",
+    "CHILDREN": [
+      "VCU3203533:0",
+      "VCU3203533:1",
+      "VCU3203533:2",
+      "VCU3203533:3"
+    ],
+    "FIRMWARE": "2.5",
+    "FLAGS": 1,
+    "INTERFACE": "QEQ0689800",
+    "PARAMSETS": [
+      "MASTER"
+    ],
+    "PARENT": "",
+    "RF_ADDRESS": 15941889,
+    "ROAMING": 0,
+    "RX_MODE": 1,
+    "TYPE": "HB-UNI-RGB-LED-CTRL",
+    "UPDATABLE": 1,
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU3203533:0",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 0,
+    "FLAGS": 3,
+    "INDEX": 0,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU3203533",
+    "PARENT_TYPE": "HB-UNI-RGB-LED-CTRL",
+    "TYPE": "MAINTENANCE",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU3203533:1",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 1,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH WCS_TIPTRONIC_SENSOR WEATHER_CS",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU3203533",
+    "PARENT_TYPE": "HB-UNI-RGB-LED-CTRL",
+    "TYPE": "DIMMER",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU3203533:2",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 2,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH WCS_TIPTRONIC_SENSOR WEATHER_CS",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU3203533",
+    "PARENT_TYPE": "HB-UNI-RGB-LED-CTRL",
+    "TYPE": "RGBW_COLOR",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU3203533:3",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 3,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH WCS_TIPTRONIC_SENSOR WEATHER_CS",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU3203533",
+    "PARENT_TYPE": "HB-UNI-RGB-LED-CTRL",
+    "TYPE": "RGBW_AUTOMATIC",
+    "VERSION": 1
+  }
+]
