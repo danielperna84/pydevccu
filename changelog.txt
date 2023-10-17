@@ -1,3 +1,9 @@
+Version 0.1.7 (2023-10-17)
+- Add HmIPW-SCTHD
+- Add HmIP-eTRV-B-2 R4M
+- Add HmIP-WKP
+- Add HB-UNI-RGB-LED-CTRL
+
 Version 0.1.6 (2023-04-26)
 - Add HmIP-RGBW
 
