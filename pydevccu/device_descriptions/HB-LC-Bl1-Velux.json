@@ -1,0 +1,57 @@
+[
+  {
+    "ADDRESS": "VCU8033008",
+    "CHILDREN": [
+      "VCU8033008:0",
+      "VCU8033008:1"
+    ],
+    "FIRMWARE": "2.4",
+    "FLAGS": 1,
+    "INTERFACE": "PEQ1947615",
+    "PARAMSETS": [
+      "MASTER"
+    ],
+    "PARENT": "",
+    "RF_ADDRESS": 5845505,
+    "ROAMING": 0,
+    "RX_MODE": 2,
+    "TYPE": "HB-LC-Bl1-Velux",
+    "UPDATABLE": 0,
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU8033008:0",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 0,
+    "FLAGS": 3,
+    "INDEX": 0,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU8033008",
+    "PARENT_TYPE": "HB-LC-Bl1-Velux",
+    "TYPE": "MAINTENANCE",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU8033008:1",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 1,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH WEATHER_CS",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU8033008",
+    "PARENT_TYPE": "HB-LC-Bl1-Velux",
+    "TYPE": "BLIND",
+    "VERSION": 1
+  }
+]
