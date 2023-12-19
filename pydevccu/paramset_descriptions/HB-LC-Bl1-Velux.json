@@ -1,0 +1,1316 @@
+{
+  "VCU8033008": {},
+  "VCU8033008:0": {
+    "VALUES": {
+      "AES_KEY": {
+        "DEFAULT": 0,
+        "FLAGS": 0,
+        "ID": "AES_KEY",
+        "MAX": 127,
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "TAB_ORDER": 7,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      },
+      "CONFIG_PENDING": {
+        "DEFAULT": false,
+        "FLAGS": 9,
+        "ID": "CONFIG_PENDING",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 2,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "DUTYCYCLE": {
+        "DEFAULT": false,
+        "FLAGS": 9,
+        "ID": "DUTYCYCLE",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 4,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "LOWBAT": {
+        "DEFAULT": false,
+        "FLAGS": 9,
+        "ID": "LOWBAT",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 3,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "RSSI_DEVICE": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "RSSI_DEVICE",
+        "MAX": 2147483647,
+        "MIN": -2147483648,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 5,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      },
+      "RSSI_PEER": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "RSSI_PEER",
+        "MAX": 2147483647,
+        "MIN": -2147483648,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 6,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      },
+      "STICKY_UNREACH": {
+        "DEFAULT": false,
+        "FLAGS": 25,
+        "ID": "STICKY_UNREACH",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 7,
+        "TAB_ORDER": 1,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "UNREACH": {
+        "DEFAULT": false,
+        "FLAGS": 9,
+        "ID": "UNREACH",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 0,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      }
+    }
+  },
+  "VCU8033008:1": {
+    "LINK": {
+      "LONG_ACTION_TYPE": {
+        "DEFAULT": 1,
+        "FLAGS": 1,
+        "ID": "LONG_ACTION_TYPE",
+        "MAX": 3,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 47,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "INACTIVE",
+          "JUMP_TO_TARGET",
+          "TOGGLE_TO_COUNTER",
+          "TOGGLE_INV_TO_COUNTER"
+        ]
+      },
+      "LONG_COND_VALUE_HI": {
+        "DEFAULT": 100,
+        "FLAGS": 1,
+        "ID": "LONG_COND_VALUE_HI",
+        "MAX": 255,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 39,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      },
+      "LONG_COND_VALUE_LO": {
+        "DEFAULT": 50,
+        "FLAGS": 1,
+        "ID": "LONG_COND_VALUE_LO",
+        "MAX": 255,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 38,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      },
+      "LONG_CT_OFF": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "LONG_CT_OFF",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 34,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "LONG_CT_OFFDELAY": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "LONG_CT_OFFDELAY",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 32,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "LONG_CT_ON": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "LONG_CT_ON",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 35,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "LONG_CT_ONDELAY": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "LONG_CT_ONDELAY",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 33,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "LONG_CT_RAMPOFF": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "LONG_CT_RAMPOFF",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 30,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "LONG_CT_RAMPON": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "LONG_CT_RAMPON",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 31,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "LONG_CT_REFOFF": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "LONG_CT_REFOFF",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 36,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "LONG_CT_REFON": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "LONG_CT_REFON",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 37,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "LONG_DRIVING_MODE": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "LONG_DRIVING_MODE",
+        "MAX": 3,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 59,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "DRIVE_DIRECTLY",
+          "DRIVE_VIA_UPPER_END_POSITION",
+          "DRIVE_VIA_LOWER_END_POSITION",
+          "DRIVE_VIA_NEXT_END_POSITION"
+        ]
+      },
+      "LONG_JT_OFF": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "LONG_JT_OFF",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 48,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "LONG_JT_OFFDELAY": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "LONG_JT_OFFDELAY",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 50,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "LONG_JT_ON": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "LONG_JT_ON",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 49,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "LONG_JT_ONDELAY": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "LONG_JT_ONDELAY",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 51,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "LONG_JT_RAMPOFF": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "LONG_JT_RAMPOFF",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 52,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "LONG_JT_RAMPON": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "LONG_JT_RAMPON",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 53,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "LONG_JT_REFOFF": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "LONG_JT_REFOFF",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 54,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "LONG_JT_REFON": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "LONG_JT_REFON",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 55,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "LONG_MAX_TIME_FIRST_DIR": {
+        "DEFAULT": 0.5,
+        "FLAGS": 1,
+        "ID": "LONG_MAX_TIME_FIRST_DIR",
+        "MAX": 25.4,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "SPECIAL": [
+          {
+            "ID": "NOT_USED",
+            "VALUE": 25.5
+          }
+        ],
+        "TAB_ORDER": 58,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "LONG_MULTIEXECUTE": {
+        "DEFAULT": 1,
+        "FLAGS": 1,
+        "ID": "LONG_MULTIEXECUTE",
+        "MAX": 1,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 46,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "OFF",
+          "ON"
+        ]
+      },
+      "LONG_OFFDELAY_TIME": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "LONG_OFFDELAY_TIME",
+        "MAX": 111600.0,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 42,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "LONG_OFF_LEVEL": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "LONG_OFF_LEVEL",
+        "MAX": 1.0,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 56,
+        "TYPE": "FLOAT",
+        "UNIT": "100%"
+      },
+      "LONG_OFF_TIME": {
+        "DEFAULT": 111600.0,
+        "FLAGS": 1,
+        "ID": "LONG_OFF_TIME",
+        "MAX": 108000.0,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "SPECIAL": [
+          {
+            "ID": "NOT_USED",
+            "VALUE": 111600.0
+          }
+        ],
+        "TAB_ORDER": 43,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "LONG_OFF_TIME_MODE": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "LONG_OFF_TIME_MODE",
+        "MAX": 1,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 45,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "ABSOLUTE",
+          "MINIMAL"
+        ]
+      },
+      "LONG_ONDELAY_TIME": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "LONG_ONDELAY_TIME",
+        "MAX": 111600.0,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 40,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "LONG_ON_LEVEL": {
+        "DEFAULT": 1.0,
+        "FLAGS": 1,
+        "ID": "LONG_ON_LEVEL",
+        "MAX": 1.0,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 57,
+        "TYPE": "FLOAT",
+        "UNIT": "100%"
+      },
+      "LONG_ON_TIME": {
+        "DEFAULT": 111600.0,
+        "FLAGS": 1,
+        "ID": "LONG_ON_TIME",
+        "MAX": 108000.0,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "SPECIAL": [
+          {
+            "ID": "NOT_USED",
+            "VALUE": 111600.0
+          }
+        ],
+        "TAB_ORDER": 41,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "LONG_ON_TIME_MODE": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "LONG_ON_TIME_MODE",
+        "MAX": 1,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 44,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "ABSOLUTE",
+          "MINIMAL"
+        ]
+      },
+      "SHORT_ACTION_TYPE": {
+        "DEFAULT": 1,
+        "FLAGS": 1,
+        "ID": "SHORT_ACTION_TYPE",
+        "MAX": 3,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 17,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "INACTIVE",
+          "JUMP_TO_TARGET",
+          "TOGGLE_TO_COUNTER",
+          "TOGGLE_INV_TO_COUNTER"
+        ]
+      },
+      "SHORT_COND_VALUE_HI": {
+        "DEFAULT": 100,
+        "FLAGS": 1,
+        "ID": "SHORT_COND_VALUE_HI",
+        "MAX": 255,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 10,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      },
+      "SHORT_COND_VALUE_LO": {
+        "DEFAULT": 50,
+        "FLAGS": 1,
+        "ID": "SHORT_COND_VALUE_LO",
+        "MAX": 255,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 9,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      },
+      "SHORT_CT_OFF": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "SHORT_CT_OFF",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 5,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "SHORT_CT_OFFDELAY": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "SHORT_CT_OFFDELAY",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 3,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "SHORT_CT_ON": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "SHORT_CT_ON",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 6,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "SHORT_CT_ONDELAY": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "SHORT_CT_ONDELAY",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 4,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "SHORT_CT_RAMPOFF": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "SHORT_CT_RAMPOFF",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 1,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "SHORT_CT_RAMPON": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "SHORT_CT_RAMPON",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 2,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "SHORT_CT_REFOFF": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "SHORT_CT_REFOFF",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 7,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "SHORT_CT_REFON": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "SHORT_CT_REFON",
+        "MAX": 5,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 8,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "X GE COND_VALUE_LO",
+          "X GE COND_VALUE_HI",
+          "X LT COND_VALUE_LO",
+          "X LT COND_VALUE_HI",
+          "COND_VALUE_LO LE X LT COND_VALUE_HI",
+          "X LT COND_VALUE_LO OR X GE COND_VALUE_HI"
+        ]
+      },
+      "SHORT_DRIVING_MODE": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "SHORT_DRIVING_MODE",
+        "MAX": 3,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 29,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "DRIVE_DIRECTLY",
+          "DRIVE_VIA_UPPER_END_POSITION",
+          "DRIVE_VIA_LOWER_END_POSITION",
+          "DRIVE_VIA_NEXT_END_POSITION"
+        ]
+      },
+      "SHORT_JT_OFF": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "SHORT_JT_OFF",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 18,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "SHORT_JT_OFFDELAY": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "SHORT_JT_OFFDELAY",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 20,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "SHORT_JT_ON": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "SHORT_JT_ON",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 19,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "SHORT_JT_ONDELAY": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "SHORT_JT_ONDELAY",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 21,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "SHORT_JT_RAMPOFF": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "SHORT_JT_RAMPOFF",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 22,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "SHORT_JT_RAMPON": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "SHORT_JT_RAMPON",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 23,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "SHORT_JT_REFOFF": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "SHORT_JT_REFOFF",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 24,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "SHORT_JT_REFON": {
+        "DEFAULT": 8,
+        "FLAGS": 1,
+        "ID": "SHORT_JT_REFON",
+        "MAX": 8,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 25,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NO_JUMP_IGNORE_COMMAND",
+          "ONDELAY",
+          "REFON",
+          "RAMPON",
+          "ON",
+          "OFFDELAY",
+          "REFOFF",
+          "RAMPOFF",
+          "OFF"
+        ]
+      },
+      "SHORT_MAX_TIME_FIRST_DIR": {
+        "DEFAULT": 25.5,
+        "FLAGS": 1,
+        "ID": "SHORT_MAX_TIME_FIRST_DIR",
+        "MAX": 25.4,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "SPECIAL": [
+          {
+            "ID": "NOT_USED",
+            "VALUE": 25.5
+          }
+        ],
+        "TAB_ORDER": 28,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "SHORT_OFFDELAY_TIME": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "SHORT_OFFDELAY_TIME",
+        "MAX": 111600.0,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 13,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "SHORT_OFF_LEVEL": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "SHORT_OFF_LEVEL",
+        "MAX": 1.0,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 26,
+        "TYPE": "FLOAT",
+        "UNIT": "100%"
+      },
+      "SHORT_OFF_TIME": {
+        "DEFAULT": 111600.0,
+        "FLAGS": 1,
+        "ID": "SHORT_OFF_TIME",
+        "MAX": 108000.0,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "SPECIAL": [
+          {
+            "ID": "NOT_USED",
+            "VALUE": 111600.0
+          }
+        ],
+        "TAB_ORDER": 14,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "SHORT_OFF_TIME_MODE": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "SHORT_OFF_TIME_MODE",
+        "MAX": 1,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 16,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "ABSOLUTE",
+          "MINIMAL"
+        ]
+      },
+      "SHORT_ONDELAY_TIME": {
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ONDELAY_TIME",
+        "MAX": 111600.0,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 11,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "SHORT_ON_LEVEL": {
+        "DEFAULT": 1.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ON_LEVEL",
+        "MAX": 1.0,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 27,
+        "TYPE": "FLOAT",
+        "UNIT": "100%"
+      },
+      "SHORT_ON_TIME": {
+        "DEFAULT": 111600.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ON_TIME",
+        "MAX": 108000.0,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "SPECIAL": [
+          {
+            "ID": "NOT_USED",
+            "VALUE": 111600.0
+          }
+        ],
+        "TAB_ORDER": 12,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "SHORT_ON_TIME_MODE": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "SHORT_ON_TIME_MODE",
+        "MAX": 1,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 15,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "ABSOLUTE",
+          "MINIMAL"
+        ]
+      },
+      "UI_HINT": {
+        "DEFAULT": "",
+        "FLAGS": 1,
+        "ID": "UI_HINT",
+        "MAX": "",
+        "MIN": "",
+        "OPERATIONS": 3,
+        "TAB_ORDER": 0,
+        "TYPE": "STRING",
+        "UNIT": ""
+      }
+    },
+    "MASTER": {
+      "AES_ACTIVE": {
+        "DEFAULT": false,
+        "FLAGS": 3,
+        "ID": "AES_ACTIVE",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 7,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "CHANGE_OVER_DELAY": {
+        "DEFAULT": 0.5,
+        "FLAGS": 1,
+        "ID": "CHANGE_OVER_DELAY",
+        "MAX": 25.5,
+        "MIN": 0.5,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 2,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "REFERENCE_RUNNING_TIME_BOTTOM_TOP": {
+        "DEFAULT": 50.0,
+        "FLAGS": 1,
+        "ID": "REFERENCE_RUNNING_TIME_BOTTOM_TOP",
+        "MAX": 6000.0,
+        "MIN": 0.1,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 1,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "REFERENCE_RUNNING_TIME_TOP_BOTTOM": {
+        "DEFAULT": 50.0,
+        "FLAGS": 1,
+        "ID": "REFERENCE_RUNNING_TIME_TOP_BOTTOM",
+        "MAX": 6000.0,
+        "MIN": 0.1,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 0,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "REFERENCE_RUN_COUNTER": {
+        "DEFAULT": 0,
+        "FLAGS": 1,
+        "ID": "REFERENCE_RUN_COUNTER",
+        "MAX": 255,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 3,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      },
+      "STATUSINFO_MINDELAY": {
+        "DEFAULT": 2.0,
+        "FLAGS": 1,
+        "ID": "STATUSINFO_MINDELAY",
+        "MAX": 15.5,
+        "MIN": 0.5,
+        "OPERATIONS": 3,
+        "SPECIAL": [
+          {
+            "ID": "NOT_USED",
+            "VALUE": 0.0
+          }
+        ],
+        "TAB_ORDER": 5,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "STATUSINFO_RANDOM": {
+        "DEFAULT": 1.0,
+        "FLAGS": 1,
+        "ID": "STATUSINFO_RANDOM",
+        "MAX": 7.0,
+        "MIN": 0.0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 6,
+        "TYPE": "FLOAT",
+        "UNIT": "s"
+      },
+      "TRANSMIT_TRY_MAX": {
+        "DEFAULT": 6,
+        "FLAGS": 1,
+        "ID": "TRANSMIT_TRY_MAX",
+        "MAX": 10,
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "TAB_ORDER": 4,
+        "TYPE": "INTEGER",
+        "UNIT": ""
+      }
+    },
+    "VALUES": {
+      "DIRECTION": {
+        "DEFAULT": 0,
+        "FLAGS": 3,
+        "ID": "DIRECTION",
+        "MAX": 3,
+        "MIN": 0,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 3,
+        "TYPE": "ENUM",
+        "UNIT": "",
+        "VALUE_LIST": [
+          "NONE",
+          "UP",
+          "DOWN",
+          "UNDEFINED"
+        ]
+      },
+      "INHIBIT": {
+        "CONTROL": "NONE",
+        "DEFAULT": false,
+        "FLAGS": 1,
+        "ID": "INHIBIT",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 7,
+        "TAB_ORDER": 2,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      },
+      "INSTALL_TEST": {
+        "DEFAULT": false,
+        "FLAGS": 3,
+        "ID": "INSTALL_TEST",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 2,
+        "TAB_ORDER": 4,
+        "TYPE": "ACTION",
+        "UNIT": ""
+      },
+      "LEVEL": {
+        "CONTROL": "BLIND.LEVEL",
+        "DEFAULT": 0.0,
+        "FLAGS": 1,
+        "ID": "LEVEL",
+        "MAX": 1.0,
+        "MIN": 0.0,
+        "OPERATIONS": 7,
+        "TAB_ORDER": 0,
+        "TYPE": "FLOAT",
+        "UNIT": "100%"
+      },
+      "STOP": {
+        "CONTROL": "BLIND.STOP",
+        "DEFAULT": false,
+        "FLAGS": 1,
+        "ID": "STOP",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 2,
+        "TAB_ORDER": 1,
+        "TYPE": "ACTION",
+        "UNIT": ""
+      },
+      "WORKING": {
+        "DEFAULT": false,
+        "FLAGS": 3,
+        "ID": "WORKING",
+        "MAX": true,
+        "MIN": false,
+        "OPERATIONS": 5,
+        "TAB_ORDER": 5,
+        "TYPE": "BOOL",
+        "UNIT": ""
+      }
+    }
+  }
+}
