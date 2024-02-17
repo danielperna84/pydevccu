@@ -1,0 +1,187 @@
+[
+  {
+    "ADDRESS": "VCU2487470",
+    "AVAILABLE_FIRMWARE": "3.27",
+    "CHILDREN": [
+      "VCU2487470:0",
+      "VCU2487470:1",
+      "VCU2487470:2",
+      "VCU2487470:3",
+      "VCU2487470:4",
+      "VCU2487470:5",
+      "VCU2487470:6",
+      "VCU2487470:7",
+      "VCU2487470:8"
+    ],
+    "FIRMWARE": "3.23",
+    "FLAGS": 1,
+    "PARAMSETS": [
+      "MASTER"
+    ],
+    "PARENT": "",
+    "TYPE": "HBW-LC4-IN4-DR",
+    "UPDATABLE": 1,
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU2487470:0",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 0,
+    "FLAGS": 3,
+    "INDEX": 0,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2487470",
+    "PARENT_TYPE": "HBW-LC4-IN4-DR",
+    "TYPE": "MAINTENANCE",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU2487470:1",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 1,
+    "LINK_SOURCE_ROLES": "SWITCH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2487470",
+    "PARENT_TYPE": "HBW-LC4-IN4-DR",
+    "TYPE": "KEY",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU2487470:2",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 2,
+    "LINK_SOURCE_ROLES": "SWITCH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2487470",
+    "PARENT_TYPE": "HBW-LC4-IN4-DR",
+    "TYPE": "KEY",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU2487470:3",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 3,
+    "LINK_SOURCE_ROLES": "SWITCH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2487470",
+    "PARENT_TYPE": "HBW-LC4-IN4-DR",
+    "TYPE": "KEY",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU2487470:4",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 1,
+    "FLAGS": 1,
+    "INDEX": 4,
+    "LINK_SOURCE_ROLES": "SWITCH",
+    "LINK_TARGET_ROLES": "",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2487470",
+    "PARENT_TYPE": "HBW-LC4-IN4-DR",
+    "TYPE": "KEY",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU2487470:5",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 5,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2487470",
+    "PARENT_TYPE": "HBW-LC4-IN4-DR",
+    "TYPE": "DIMMER",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU2487470:6",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 6,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2487470",
+    "PARENT_TYPE": "HBW-LC4-IN4-DR",
+    "TYPE": "DIMMER",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU2487470:7",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 7,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2487470",
+    "PARENT_TYPE": "HBW-LC4-IN4-DR",
+    "TYPE": "DIMMER",
+    "VERSION": 1
+  },
+  {
+    "ADDRESS": "VCU2487470:8",
+    "AES_ACTIVE": 0,
+    "DIRECTION": 2,
+    "FLAGS": 1,
+    "INDEX": 8,
+    "LINK_SOURCE_ROLES": "",
+    "LINK_TARGET_ROLES": "SWITCH",
+    "PARAMSETS": [
+      "LINK",
+      "MASTER",
+      "VALUES"
+    ],
+    "PARENT": "VCU2487470",
+    "PARENT_TYPE": "HBW-LC4-IN4-DR",
+    "TYPE": "DIMMER",
+    "VERSION": 1
+  }
+]
