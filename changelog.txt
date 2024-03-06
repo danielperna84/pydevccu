@@ -1,3 +1,9 @@
+Version 0.1.8 (2024-03-06)
+- Add HB-LC-Bl1-Velux
+- Add HBW-LC4-IN4-DR
+- Add HmIP-ESI
+- Add HmIP-FWI
+
 Version 0.1.7 (2023-10-17)
 - Add HmIPW-SCTHD
 - Add HmIP-eTRV-B-2 R4M
