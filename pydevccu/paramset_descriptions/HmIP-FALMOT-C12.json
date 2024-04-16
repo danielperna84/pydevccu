@@ -1,0 +1,4098 @@
+{
+  "VCU9245535": {
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:0": {
+    "MASTER": {
+      "DAYLIGHT_SAVINGS_TIME": {
+        "MIN": false,
+        "OPERATIONS": 3,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DAYLIGHT_SAVINGS_TIME",
+        "TYPE": "BOOL",
+        "DEFAULT": true
+      },
+      "DUTYCYCLE_LIMIT": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "DUTYCYCLE_LIMIT",
+        "TYPE": "INTEGER",
+        "DEFAULT": 180
+      },
+      "ON_TIME_FACTOR": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 31,
+        "FLAGS": 1,
+        "ID": "ON_TIME_FACTOR",
+        "TYPE": "INTEGER",
+        "DEFAULT": 1
+      },
+      "DST_END_DAY_OF_WEEK": {
+        "MIN": "SUNDAY",
+        "OPERATIONS": 3,
+        "MAX": "SATURDAY",
+        "FLAGS": 1,
+        "ID": "DST_END_DAY_OF_WEEK",
+        "TYPE": "ENUM",
+        "DEFAULT": "SUNDAY",
+        "VALUE_LIST": [
+          "SUNDAY",
+          "MONDAY",
+          "TUESDAY",
+          "WEDNESDAY",
+          "THURSDAY",
+          "FRIDAY",
+          "SATURDAY"
+        ]
+      },
+      "UTC_DST_OFFSET": {
+        "MIN": -720,
+        "UNIT": "min",
+        "OPERATIONS": 3,
+        "MAX": 720,
+        "FLAGS": 1,
+        "ID": "UTC_DST_OFFSET",
+        "TYPE": "INTEGER",
+        "DEFAULT": 120
+      },
+      "CYCLIC_INFO_MSG_OVERDUE_THRESHOLD": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 2147483647,
+        "FLAGS": 1,
+        "ID": "CYCLIC_INFO_MSG_OVERDUE_THRESHOLD",
+        "TYPE": "INTEGER",
+        "DEFAULT": 2
+      },
+      "LOCAL_RESET_DISABLED": {
+        "MIN": false,
+        "OPERATIONS": 3,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "LOCAL_RESET_DISABLED",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "FROST_PROTECTION_TEMPERATURE": {
+        "MIN": 1.5,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 10.0,
+        "FLAGS": 1,
+        "ID": "FROST_PROTECTION_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 8.0
+      },
+      "ARR_TIMEOUT": {
+        "MIN": 0,
+        "UNIT": "s",
+        "OPERATIONS": 3,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "ARR_TIMEOUT",
+        "TYPE": "INTEGER",
+        "DEFAULT": 10
+      },
+      "CYCLIC_INFO_MSG_DIS_UNCHANGED": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "CYCLIC_INFO_MSG_DIS_UNCHANGED",
+        "TYPE": "INTEGER",
+        "DEFAULT": 20
+      },
+      "SWITCHING_INTERVAL_BASE": {
+        "MIN": "BASE_1_S",
+        "OPERATIONS": 3,
+        "MAX": "BASE_1_D",
+        "FLAGS": 1,
+        "ID": "SWITCHING_INTERVAL_BASE",
+        "TYPE": "ENUM",
+        "DEFAULT": "BASE_1_D",
+        "VALUE_LIST": [
+          "BASE_1_S",
+          "BASE_5_S",
+          "BASE_10_S",
+          "BASE_1_M",
+          "BASE_5_M",
+          "BASE_10_M",
+          "BASE_1_H",
+          "BASE_1_D"
+        ]
+      },
+      "SWITCHING_INTERVAL_FACTOR": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 31,
+        "FLAGS": 1,
+        "ID": "SWITCHING_INTERVAL_FACTOR",
+        "TYPE": "INTEGER",
+        "DEFAULT": 14
+      },
+      "HEATING_EMERGENCY_PWM_SIGNAL": {
+        "MIN": 0.0,
+        "UNIT": "%",
+        "OPERATIONS": 3,
+        "MAX": 1.0,
+        "FLAGS": 1,
+        "ID": "HEATING_EMERGENCY_PWM_SIGNAL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.15
+      },
+      "CYCLIC_INFO_MSG_DIS": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "CYCLIC_INFO_MSG_DIS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 1
+      },
+      "ENABLE_ROUTING": {
+        "MIN": false,
+        "OPERATIONS": 3,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "ENABLE_ROUTING",
+        "TYPE": "BOOL",
+        "DEFAULT": true
+      },
+      "DST_END_WEEK_OF_MONTH": {
+        "MIN": "1.WEEK",
+        "OPERATIONS": 3,
+        "MAX": "LAST",
+        "FLAGS": 1,
+        "ID": "DST_END_WEEK_OF_MONTH",
+        "TYPE": "ENUM",
+        "DEFAULT": "LAST",
+        "VALUE_LIST": [
+          "RESERVED",
+          "1.WEEK",
+          "2.WEEK",
+          "3.WEEK",
+          "4.WEEK",
+          "LAST"
+        ]
+      },
+      "ON_TIME_BASE": {
+        "MIN": "BASE_100_MS",
+        "OPERATIONS": 3,
+        "MAX": "BASE_1_H",
+        "FLAGS": 1,
+        "ID": "ON_TIME_BASE",
+        "TYPE": "ENUM",
+        "DEFAULT": "BASE_1_M",
+        "VALUE_LIST": [
+          "BASE_100_MS",
+          "BASE_1_S",
+          "BASE_5_S",
+          "BASE_10_S",
+          "BASE_1_M",
+          "BASE_5_M",
+          "BASE_10_M",
+          "BASE_1_H"
+        ]
+      },
+      "DECALCIFICATION_WEEKDAY": {
+        "MIN": "SUNDAY",
+        "OPERATIONS": 3,
+        "MAX": "SATURDAY",
+        "FLAGS": 1,
+        "ID": "DECALCIFICATION_WEEKDAY",
+        "TYPE": "ENUM",
+        "DEFAULT": "SATURDAY",
+        "VALUE_LIST": [
+          "SUNDAY",
+          "MONDAY",
+          "TUESDAY",
+          "WEDNESDAY",
+          "THURSDAY",
+          "FRIDAY",
+          "SATURDAY"
+        ]
+      },
+      "DST_START_DAY_OF_WEEK": {
+        "MIN": "SUNDAY",
+        "OPERATIONS": 3,
+        "MAX": "SATURDAY",
+        "FLAGS": 1,
+        "ID": "DST_START_DAY_OF_WEEK",
+        "TYPE": "ENUM",
+        "DEFAULT": "SUNDAY",
+        "VALUE_LIST": [
+          "SUNDAY",
+          "MONDAY",
+          "TUESDAY",
+          "WEDNESDAY",
+          "THURSDAY",
+          "FRIDAY",
+          "SATURDAY"
+        ]
+      },
+      "DECALCIFICATION_TIME": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 47,
+        "FLAGS": 1,
+        "ID": "DECALCIFICATION_TIME",
+        "TYPE": "INTEGER",
+        "DEFAULT": 22
+      },
+      "PWM_AT_LOW_VALVE_POSITION": {
+        "MIN": false,
+        "OPERATIONS": 3,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "PWM_AT_LOW_VALVE_POSITION",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "DST_END_MONTH": {
+        "MIN": 1,
+        "OPERATIONS": 3,
+        "MAX": 12,
+        "FLAGS": 1,
+        "ID": "DST_END_MONTH",
+        "TYPE": "INTEGER",
+        "DEFAULT": 10
+      },
+      "ON_MIN_LEVEL": {
+        "MIN": 0.0,
+        "UNIT": "100%",
+        "OPERATIONS": 3,
+        "MAX": 1.0,
+        "FLAGS": 1,
+        "ID": "ON_MIN_LEVEL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0
+      },
+      "DST_START_MONTH": {
+        "MIN": 1,
+        "OPERATIONS": 3,
+        "MAX": 12,
+        "FLAGS": 1,
+        "ID": "DST_START_MONTH",
+        "TYPE": "INTEGER",
+        "DEFAULT": 3
+      },
+      "UTC_OFFSET": {
+        "MIN": -720,
+        "UNIT": "min",
+        "OPERATIONS": 3,
+        "MAX": 720,
+        "FLAGS": 1,
+        "ID": "UTC_OFFSET",
+        "TYPE": "INTEGER",
+        "DEFAULT": 60
+      },
+      "CYCLIC_INFO_MSG": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "CYCLIC_INFO_MSG",
+        "TYPE": "INTEGER",
+        "DEFAULT": 1
+      },
+      "DST_START_TIME": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 1425,
+        "FLAGS": 1,
+        "ID": "DST_START_TIME",
+        "TYPE": "INTEGER",
+        "DEFAULT": 120
+      },
+      "GLOBAL_BUTTON_LOCK": {
+        "MIN": false,
+        "OPERATIONS": 3,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "GLOBAL_BUTTON_LOCK",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "COOLING_EMERGENCY_PWM_SIGNAL": {
+        "MIN": 0.0,
+        "UNIT": "%",
+        "OPERATIONS": 3,
+        "MAX": 1.0,
+        "FLAGS": 1,
+        "ID": "COOLING_EMERGENCY_PWM_SIGNAL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0
+      },
+      "BACKLIGHT_ON_TIME": {
+        "MIN": 0,
+        "UNIT": "s",
+        "OPERATIONS": 3,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "BACKLIGHT_ON_TIME",
+        "TYPE": "INTEGER",
+        "DEFAULT": 30
+      },
+      "DST_START_WEEK_OF_MONTH": {
+        "MIN": "1.WEEK",
+        "OPERATIONS": 3,
+        "MAX": "LAST",
+        "FLAGS": 1,
+        "ID": "DST_START_WEEK_OF_MONTH",
+        "TYPE": "ENUM",
+        "DEFAULT": "LAST",
+        "VALUE_LIST": [
+          "RESERVED",
+          "1.WEEK",
+          "2.WEEK",
+          "3.WEEK",
+          "4.WEEK",
+          "LAST"
+        ]
+      },
+      "DST_END_TIME": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 1425,
+        "FLAGS": 1,
+        "ID": "DST_END_TIME",
+        "TYPE": "INTEGER",
+        "DEFAULT": 180
+      },
+      "AUTO_HYDRAULIC_ADJUSTMENT": {
+        "MIN": false,
+        "OPERATIONS": 3,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "AUTO_HYDRAULIC_ADJUSTMENT",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      }
+    },
+    "VALUES": {
+      "CONFIG_PENDING": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "CONFIG_PENDING",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "MAINTENANCE.CONFIG_PENDING"
+      },
+      "DUTY_CYCLE": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DUTY_CYCLE",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "INSTALL_TEST": {
+        "MIN": false,
+        "OPERATIONS": 3,
+        "MAX": true,
+        "FLAGS": 2,
+        "ID": "INSTALL_TEST",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "OPERATING_VOLTAGE_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "EXTERNAL",
+        "FLAGS": 1,
+        "ID": "OPERATING_VOLTAGE_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "EXTERNAL"
+        ],
+        "CONTROL": "MAINTENANCE.OPERATING_VOLTAGE_STATUS"
+      },
+      "HUMIDITY_ALARM": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "HUMIDITY_ALARM",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "RSSI_PEER": {
+        "MIN": -128,
+        "OPERATIONS": 5,
+        "MAX": 127,
+        "FLAGS": 1,
+        "ID": "RSSI_PEER",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "UPDATE_PENDING": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "UPDATE_PENDING",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "DATE_TIME_UNKNOWN": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DATE_TIME_UNKNOWN",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "UNREACH": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 25,
+        "ID": "UNREACH",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "MAINTENANCE.UNREACH"
+      },
+      "HEATING_COOLING": {
+        "MIN": "HEATING",
+        "OPERATIONS": 7,
+        "MAX": "COOLING",
+        "FLAGS": 1,
+        "ID": "HEATING_COOLING",
+        "TYPE": "ENUM",
+        "DEFAULT": "HEATING",
+        "VALUE_LIST": [
+          "HEATING",
+          "COOLING"
+        ]
+      },
+      "RSSI_DEVICE": {
+        "MIN": -128,
+        "OPERATIONS": 5,
+        "MAX": 127,
+        "FLAGS": 1,
+        "ID": "RSSI_DEVICE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "TEMPERATURE_LIMITER": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "TEMPERATURE_LIMITER",
+        "TYPE": "BOOL",
+        "DEFAULT": false
+      },
+      "OPERATING_VOLTAGE": {
+        "MIN": 0.0,
+        "UNIT": "V",
+        "OPERATIONS": 5,
+        "MAX": 25.2,
+        "FLAGS": 1,
+        "ID": "OPERATING_VOLTAGE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "MAINTENANCE.OPERATING_VOLTAGE"
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:1": {
+    "VALUES": {
+      "VALVE_STATE": {
+        "MIN": "STATE_NOT_AVAILABLE",
+        "OPERATIONS": 5,
+        "MAX": "ADJUSTMENT_TOO_SMALL",
+        "FLAGS": 9,
+        "ID": "VALVE_STATE",
+        "TYPE": "ENUM",
+        "DEFAULT": "STATE_NOT_AVAILABLE",
+        "VALUE_LIST": [
+          "STATE_NOT_AVAILABLE",
+          "RUN_TO_START",
+          "WAIT_FOR_ADAPTION",
+          "ADAPTION_IN_PROGRESS",
+          "ADAPTION_DONE",
+          "TOO_TIGHT",
+          "ADJUSTMENT_TOO_BIG",
+          "ADJUSTMENT_TOO_SMALL"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.VALVE_STATE"
+      },
+      "LEVEL_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "ERROR",
+        "FLAGS": 1,
+        "ID": "LEVEL_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "UNDERFLOW",
+          "ERROR"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL_STATUS"
+      },
+      "HUMIDITY_LIMITER": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "HUMIDITY_LIMITER",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.HUMIDITY_LIMITER"
+      },
+      "EMERGENCY_OPERATION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "EMERGENCY_OPERATION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EMERGENCY_OPERATION"
+      },
+      "FROST_PROTECTION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "FROST_PROTECTION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.FROST_PROTECTION"
+      },
+      "DEW_POINT_ALARM": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DEW_POINT_ALARM",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.DEW_POINT_ALARM"
+      },
+      "LEVEL": {
+        "MIN": 0.0,
+        "UNIT": "100%",
+        "OPERATIONS": 5,
+        "MAX": 1.01,
+        "FLAGS": 1,
+        "ID": "LEVEL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL"
+      },
+      "EXTERNAL_CLOCK": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "EXTERNAL_CLOCK",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EXTERNAL_CLOCK"
+      }
+    },
+    "LINK": {
+      "SHORT_ECO_COOLING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_COOLING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 23.0
+      },
+      "SHORT_COOLING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_COOLING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HEATING_MODE_SELECTION": {
+        "MIN": "STANDARD_ROOM",
+        "OPERATIONS": 3,
+        "MAX": "ROOM_WITH_TOWEL_RAIL",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_MODE_SELECTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "STANDARD_ROOM",
+        "VALUE_LIST": [
+          "STANDARD_ROOM",
+          "ROOM_WITH_FIREPLACE",
+          "ROOM_WITH_TOWEL_RAIL"
+        ]
+      },
+      "SHORT_ECO_HEATING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_HEATING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_MINIMAL_FLOOR_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_MINIMAL_FLOOR_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_CLOCK_FUNCTION": {
+        "MIN": "IGNORE_ECLK",
+        "OPERATIONS": 3,
+        "MAX": "ACCEPT_ECLK",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_CLOCK_FUNCTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "IGNORE_ECLK",
+        "VALUE_LIST": [
+          "IGNORE_ECLK",
+          "ACCEPT_ECLK"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_VALUE": {
+        "MIN": 40,
+        "UNIT": "% rF",
+        "OPERATIONS": 3,
+        "MAX": 80,
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_VALUE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 60
+      },
+      "SHORT_FLOOR_HEATING_MODE": {
+        "MIN": "FLOOR_HEATING_STANDARD",
+        "OPERATIONS": 3,
+        "MAX": "FLOOR_HEATING_LOW_ENERGY",
+        "FLAGS": 1,
+        "ID": "SHORT_FLOOR_HEATING_MODE",
+        "TYPE": "ENUM",
+        "DEFAULT": "FLOOR_HEATING_STANDARD",
+        "VALUE_LIST": [
+          "FLOOR_HEATING_STANDARD",
+          "FLOOR_HEATING_LOW_ENERGY"
+        ]
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:2": {
+    "VALUES": {
+      "VALVE_STATE": {
+        "MIN": "STATE_NOT_AVAILABLE",
+        "OPERATIONS": 5,
+        "MAX": "ADJUSTMENT_TOO_SMALL",
+        "FLAGS": 9,
+        "ID": "VALVE_STATE",
+        "TYPE": "ENUM",
+        "DEFAULT": "STATE_NOT_AVAILABLE",
+        "VALUE_LIST": [
+          "STATE_NOT_AVAILABLE",
+          "RUN_TO_START",
+          "WAIT_FOR_ADAPTION",
+          "ADAPTION_IN_PROGRESS",
+          "ADAPTION_DONE",
+          "TOO_TIGHT",
+          "ADJUSTMENT_TOO_BIG",
+          "ADJUSTMENT_TOO_SMALL"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.VALVE_STATE"
+      },
+      "LEVEL_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "ERROR",
+        "FLAGS": 1,
+        "ID": "LEVEL_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "UNDERFLOW",
+          "ERROR"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL_STATUS"
+      },
+      "HUMIDITY_LIMITER": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "HUMIDITY_LIMITER",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.HUMIDITY_LIMITER"
+      },
+      "EMERGENCY_OPERATION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "EMERGENCY_OPERATION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EMERGENCY_OPERATION"
+      },
+      "FROST_PROTECTION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "FROST_PROTECTION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.FROST_PROTECTION"
+      },
+      "DEW_POINT_ALARM": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DEW_POINT_ALARM",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.DEW_POINT_ALARM"
+      },
+      "LEVEL": {
+        "MIN": 0.0,
+        "UNIT": "100%",
+        "OPERATIONS": 5,
+        "MAX": 1.01,
+        "FLAGS": 1,
+        "ID": "LEVEL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL"
+      },
+      "EXTERNAL_CLOCK": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "EXTERNAL_CLOCK",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EXTERNAL_CLOCK"
+      }
+    },
+    "LINK": {
+      "SHORT_ECO_COOLING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_COOLING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 23.0
+      },
+      "SHORT_COOLING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_COOLING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HEATING_MODE_SELECTION": {
+        "MIN": "STANDARD_ROOM",
+        "OPERATIONS": 3,
+        "MAX": "ROOM_WITH_TOWEL_RAIL",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_MODE_SELECTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "STANDARD_ROOM",
+        "VALUE_LIST": [
+          "STANDARD_ROOM",
+          "ROOM_WITH_FIREPLACE",
+          "ROOM_WITH_TOWEL_RAIL"
+        ]
+      },
+      "SHORT_ECO_HEATING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_HEATING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_MINIMAL_FLOOR_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_MINIMAL_FLOOR_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_CLOCK_FUNCTION": {
+        "MIN": "IGNORE_ECLK",
+        "OPERATIONS": 3,
+        "MAX": "ACCEPT_ECLK",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_CLOCK_FUNCTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "IGNORE_ECLK",
+        "VALUE_LIST": [
+          "IGNORE_ECLK",
+          "ACCEPT_ECLK"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_VALUE": {
+        "MIN": 40,
+        "UNIT": "% rF",
+        "OPERATIONS": 3,
+        "MAX": 80,
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_VALUE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 60
+      },
+      "SHORT_FLOOR_HEATING_MODE": {
+        "MIN": "FLOOR_HEATING_STANDARD",
+        "OPERATIONS": 3,
+        "MAX": "FLOOR_HEATING_LOW_ENERGY",
+        "FLAGS": 1,
+        "ID": "SHORT_FLOOR_HEATING_MODE",
+        "TYPE": "ENUM",
+        "DEFAULT": "FLOOR_HEATING_STANDARD",
+        "VALUE_LIST": [
+          "FLOOR_HEATING_STANDARD",
+          "FLOOR_HEATING_LOW_ENERGY"
+        ]
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:3": {
+    "VALUES": {
+      "VALVE_STATE": {
+        "MIN": "STATE_NOT_AVAILABLE",
+        "OPERATIONS": 5,
+        "MAX": "ADJUSTMENT_TOO_SMALL",
+        "FLAGS": 9,
+        "ID": "VALVE_STATE",
+        "TYPE": "ENUM",
+        "DEFAULT": "STATE_NOT_AVAILABLE",
+        "VALUE_LIST": [
+          "STATE_NOT_AVAILABLE",
+          "RUN_TO_START",
+          "WAIT_FOR_ADAPTION",
+          "ADAPTION_IN_PROGRESS",
+          "ADAPTION_DONE",
+          "TOO_TIGHT",
+          "ADJUSTMENT_TOO_BIG",
+          "ADJUSTMENT_TOO_SMALL"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.VALVE_STATE"
+      },
+      "LEVEL_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "ERROR",
+        "FLAGS": 1,
+        "ID": "LEVEL_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "UNDERFLOW",
+          "ERROR"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL_STATUS"
+      },
+      "HUMIDITY_LIMITER": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "HUMIDITY_LIMITER",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.HUMIDITY_LIMITER"
+      },
+      "EMERGENCY_OPERATION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "EMERGENCY_OPERATION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EMERGENCY_OPERATION"
+      },
+      "FROST_PROTECTION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "FROST_PROTECTION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.FROST_PROTECTION"
+      },
+      "DEW_POINT_ALARM": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DEW_POINT_ALARM",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.DEW_POINT_ALARM"
+      },
+      "LEVEL": {
+        "MIN": 0.0,
+        "UNIT": "100%",
+        "OPERATIONS": 5,
+        "MAX": 1.01,
+        "FLAGS": 1,
+        "ID": "LEVEL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL"
+      },
+      "EXTERNAL_CLOCK": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "EXTERNAL_CLOCK",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EXTERNAL_CLOCK"
+      }
+    },
+    "LINK": {
+      "SHORT_ECO_COOLING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_COOLING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 23.0
+      },
+      "SHORT_COOLING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_COOLING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HEATING_MODE_SELECTION": {
+        "MIN": "STANDARD_ROOM",
+        "OPERATIONS": 3,
+        "MAX": "ROOM_WITH_TOWEL_RAIL",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_MODE_SELECTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "STANDARD_ROOM",
+        "VALUE_LIST": [
+          "STANDARD_ROOM",
+          "ROOM_WITH_FIREPLACE",
+          "ROOM_WITH_TOWEL_RAIL"
+        ]
+      },
+      "SHORT_ECO_HEATING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_HEATING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_MINIMAL_FLOOR_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_MINIMAL_FLOOR_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_CLOCK_FUNCTION": {
+        "MIN": "IGNORE_ECLK",
+        "OPERATIONS": 3,
+        "MAX": "ACCEPT_ECLK",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_CLOCK_FUNCTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "IGNORE_ECLK",
+        "VALUE_LIST": [
+          "IGNORE_ECLK",
+          "ACCEPT_ECLK"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_VALUE": {
+        "MIN": 40,
+        "UNIT": "% rF",
+        "OPERATIONS": 3,
+        "MAX": 80,
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_VALUE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 60
+      },
+      "SHORT_FLOOR_HEATING_MODE": {
+        "MIN": "FLOOR_HEATING_STANDARD",
+        "OPERATIONS": 3,
+        "MAX": "FLOOR_HEATING_LOW_ENERGY",
+        "FLAGS": 1,
+        "ID": "SHORT_FLOOR_HEATING_MODE",
+        "TYPE": "ENUM",
+        "DEFAULT": "FLOOR_HEATING_STANDARD",
+        "VALUE_LIST": [
+          "FLOOR_HEATING_STANDARD",
+          "FLOOR_HEATING_LOW_ENERGY"
+        ]
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:4": {
+    "VALUES": {
+      "VALVE_STATE": {
+        "MIN": "STATE_NOT_AVAILABLE",
+        "OPERATIONS": 5,
+        "MAX": "ADJUSTMENT_TOO_SMALL",
+        "FLAGS": 9,
+        "ID": "VALVE_STATE",
+        "TYPE": "ENUM",
+        "DEFAULT": "STATE_NOT_AVAILABLE",
+        "VALUE_LIST": [
+          "STATE_NOT_AVAILABLE",
+          "RUN_TO_START",
+          "WAIT_FOR_ADAPTION",
+          "ADAPTION_IN_PROGRESS",
+          "ADAPTION_DONE",
+          "TOO_TIGHT",
+          "ADJUSTMENT_TOO_BIG",
+          "ADJUSTMENT_TOO_SMALL"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.VALVE_STATE"
+      },
+      "LEVEL_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "ERROR",
+        "FLAGS": 1,
+        "ID": "LEVEL_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "UNDERFLOW",
+          "ERROR"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL_STATUS"
+      },
+      "HUMIDITY_LIMITER": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "HUMIDITY_LIMITER",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.HUMIDITY_LIMITER"
+      },
+      "EMERGENCY_OPERATION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "EMERGENCY_OPERATION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EMERGENCY_OPERATION"
+      },
+      "FROST_PROTECTION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "FROST_PROTECTION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.FROST_PROTECTION"
+      },
+      "DEW_POINT_ALARM": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DEW_POINT_ALARM",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.DEW_POINT_ALARM"
+      },
+      "LEVEL": {
+        "MIN": 0.0,
+        "UNIT": "100%",
+        "OPERATIONS": 5,
+        "MAX": 1.01,
+        "FLAGS": 1,
+        "ID": "LEVEL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL"
+      },
+      "EXTERNAL_CLOCK": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "EXTERNAL_CLOCK",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EXTERNAL_CLOCK"
+      }
+    },
+    "LINK": {
+      "SHORT_ECO_COOLING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_COOLING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 23.0
+      },
+      "SHORT_COOLING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_COOLING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HEATING_MODE_SELECTION": {
+        "MIN": "STANDARD_ROOM",
+        "OPERATIONS": 3,
+        "MAX": "ROOM_WITH_TOWEL_RAIL",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_MODE_SELECTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "STANDARD_ROOM",
+        "VALUE_LIST": [
+          "STANDARD_ROOM",
+          "ROOM_WITH_FIREPLACE",
+          "ROOM_WITH_TOWEL_RAIL"
+        ]
+      },
+      "SHORT_ECO_HEATING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_HEATING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_MINIMAL_FLOOR_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_MINIMAL_FLOOR_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_CLOCK_FUNCTION": {
+        "MIN": "IGNORE_ECLK",
+        "OPERATIONS": 3,
+        "MAX": "ACCEPT_ECLK",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_CLOCK_FUNCTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "IGNORE_ECLK",
+        "VALUE_LIST": [
+          "IGNORE_ECLK",
+          "ACCEPT_ECLK"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_VALUE": {
+        "MIN": 40,
+        "UNIT": "% rF",
+        "OPERATIONS": 3,
+        "MAX": 80,
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_VALUE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 60
+      },
+      "SHORT_FLOOR_HEATING_MODE": {
+        "MIN": "FLOOR_HEATING_STANDARD",
+        "OPERATIONS": 3,
+        "MAX": "FLOOR_HEATING_LOW_ENERGY",
+        "FLAGS": 1,
+        "ID": "SHORT_FLOOR_HEATING_MODE",
+        "TYPE": "ENUM",
+        "DEFAULT": "FLOOR_HEATING_STANDARD",
+        "VALUE_LIST": [
+          "FLOOR_HEATING_STANDARD",
+          "FLOOR_HEATING_LOW_ENERGY"
+        ]
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:5": {
+    "VALUES": {
+      "VALVE_STATE": {
+        "MIN": "STATE_NOT_AVAILABLE",
+        "OPERATIONS": 5,
+        "MAX": "ADJUSTMENT_TOO_SMALL",
+        "FLAGS": 9,
+        "ID": "VALVE_STATE",
+        "TYPE": "ENUM",
+        "DEFAULT": "STATE_NOT_AVAILABLE",
+        "VALUE_LIST": [
+          "STATE_NOT_AVAILABLE",
+          "RUN_TO_START",
+          "WAIT_FOR_ADAPTION",
+          "ADAPTION_IN_PROGRESS",
+          "ADAPTION_DONE",
+          "TOO_TIGHT",
+          "ADJUSTMENT_TOO_BIG",
+          "ADJUSTMENT_TOO_SMALL"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.VALVE_STATE"
+      },
+      "LEVEL_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "ERROR",
+        "FLAGS": 1,
+        "ID": "LEVEL_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "UNDERFLOW",
+          "ERROR"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL_STATUS"
+      },
+      "HUMIDITY_LIMITER": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "HUMIDITY_LIMITER",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.HUMIDITY_LIMITER"
+      },
+      "EMERGENCY_OPERATION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "EMERGENCY_OPERATION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EMERGENCY_OPERATION"
+      },
+      "FROST_PROTECTION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "FROST_PROTECTION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.FROST_PROTECTION"
+      },
+      "DEW_POINT_ALARM": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DEW_POINT_ALARM",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.DEW_POINT_ALARM"
+      },
+      "LEVEL": {
+        "MIN": 0.0,
+        "UNIT": "100%",
+        "OPERATIONS": 5,
+        "MAX": 1.01,
+        "FLAGS": 1,
+        "ID": "LEVEL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL"
+      },
+      "EXTERNAL_CLOCK": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "EXTERNAL_CLOCK",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EXTERNAL_CLOCK"
+      }
+    },
+    "LINK": {
+      "SHORT_ECO_COOLING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_COOLING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 23.0
+      },
+      "SHORT_COOLING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_COOLING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HEATING_MODE_SELECTION": {
+        "MIN": "STANDARD_ROOM",
+        "OPERATIONS": 3,
+        "MAX": "ROOM_WITH_TOWEL_RAIL",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_MODE_SELECTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "STANDARD_ROOM",
+        "VALUE_LIST": [
+          "STANDARD_ROOM",
+          "ROOM_WITH_FIREPLACE",
+          "ROOM_WITH_TOWEL_RAIL"
+        ]
+      },
+      "SHORT_ECO_HEATING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_HEATING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_MINIMAL_FLOOR_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_MINIMAL_FLOOR_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_CLOCK_FUNCTION": {
+        "MIN": "IGNORE_ECLK",
+        "OPERATIONS": 3,
+        "MAX": "ACCEPT_ECLK",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_CLOCK_FUNCTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "IGNORE_ECLK",
+        "VALUE_LIST": [
+          "IGNORE_ECLK",
+          "ACCEPT_ECLK"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_VALUE": {
+        "MIN": 40,
+        "UNIT": "% rF",
+        "OPERATIONS": 3,
+        "MAX": 80,
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_VALUE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 60
+      },
+      "SHORT_FLOOR_HEATING_MODE": {
+        "MIN": "FLOOR_HEATING_STANDARD",
+        "OPERATIONS": 3,
+        "MAX": "FLOOR_HEATING_LOW_ENERGY",
+        "FLAGS": 1,
+        "ID": "SHORT_FLOOR_HEATING_MODE",
+        "TYPE": "ENUM",
+        "DEFAULT": "FLOOR_HEATING_STANDARD",
+        "VALUE_LIST": [
+          "FLOOR_HEATING_STANDARD",
+          "FLOOR_HEATING_LOW_ENERGY"
+        ]
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:6": {
+    "VALUES": {
+      "VALVE_STATE": {
+        "MIN": "STATE_NOT_AVAILABLE",
+        "OPERATIONS": 5,
+        "MAX": "ADJUSTMENT_TOO_SMALL",
+        "FLAGS": 9,
+        "ID": "VALVE_STATE",
+        "TYPE": "ENUM",
+        "DEFAULT": "STATE_NOT_AVAILABLE",
+        "VALUE_LIST": [
+          "STATE_NOT_AVAILABLE",
+          "RUN_TO_START",
+          "WAIT_FOR_ADAPTION",
+          "ADAPTION_IN_PROGRESS",
+          "ADAPTION_DONE",
+          "TOO_TIGHT",
+          "ADJUSTMENT_TOO_BIG",
+          "ADJUSTMENT_TOO_SMALL"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.VALVE_STATE"
+      },
+      "LEVEL_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "ERROR",
+        "FLAGS": 1,
+        "ID": "LEVEL_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "UNDERFLOW",
+          "ERROR"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL_STATUS"
+      },
+      "HUMIDITY_LIMITER": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "HUMIDITY_LIMITER",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.HUMIDITY_LIMITER"
+      },
+      "EMERGENCY_OPERATION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "EMERGENCY_OPERATION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EMERGENCY_OPERATION"
+      },
+      "FROST_PROTECTION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "FROST_PROTECTION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.FROST_PROTECTION"
+      },
+      "DEW_POINT_ALARM": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DEW_POINT_ALARM",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.DEW_POINT_ALARM"
+      },
+      "LEVEL": {
+        "MIN": 0.0,
+        "UNIT": "100%",
+        "OPERATIONS": 5,
+        "MAX": 1.01,
+        "FLAGS": 1,
+        "ID": "LEVEL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL"
+      },
+      "EXTERNAL_CLOCK": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "EXTERNAL_CLOCK",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EXTERNAL_CLOCK"
+      }
+    },
+    "LINK": {
+      "SHORT_ECO_COOLING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_COOLING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 23.0
+      },
+      "SHORT_COOLING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_COOLING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HEATING_MODE_SELECTION": {
+        "MIN": "STANDARD_ROOM",
+        "OPERATIONS": 3,
+        "MAX": "ROOM_WITH_TOWEL_RAIL",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_MODE_SELECTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "STANDARD_ROOM",
+        "VALUE_LIST": [
+          "STANDARD_ROOM",
+          "ROOM_WITH_FIREPLACE",
+          "ROOM_WITH_TOWEL_RAIL"
+        ]
+      },
+      "SHORT_ECO_HEATING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_HEATING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_MINIMAL_FLOOR_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_MINIMAL_FLOOR_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_CLOCK_FUNCTION": {
+        "MIN": "IGNORE_ECLK",
+        "OPERATIONS": 3,
+        "MAX": "ACCEPT_ECLK",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_CLOCK_FUNCTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "IGNORE_ECLK",
+        "VALUE_LIST": [
+          "IGNORE_ECLK",
+          "ACCEPT_ECLK"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_VALUE": {
+        "MIN": 40,
+        "UNIT": "% rF",
+        "OPERATIONS": 3,
+        "MAX": 80,
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_VALUE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 60
+      },
+      "SHORT_FLOOR_HEATING_MODE": {
+        "MIN": "FLOOR_HEATING_STANDARD",
+        "OPERATIONS": 3,
+        "MAX": "FLOOR_HEATING_LOW_ENERGY",
+        "FLAGS": 1,
+        "ID": "SHORT_FLOOR_HEATING_MODE",
+        "TYPE": "ENUM",
+        "DEFAULT": "FLOOR_HEATING_STANDARD",
+        "VALUE_LIST": [
+          "FLOOR_HEATING_STANDARD",
+          "FLOOR_HEATING_LOW_ENERGY"
+        ]
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:7": {
+    "VALUES": {
+      "VALVE_STATE": {
+        "MIN": "STATE_NOT_AVAILABLE",
+        "OPERATIONS": 5,
+        "MAX": "ADJUSTMENT_TOO_SMALL",
+        "FLAGS": 9,
+        "ID": "VALVE_STATE",
+        "TYPE": "ENUM",
+        "DEFAULT": "STATE_NOT_AVAILABLE",
+        "VALUE_LIST": [
+          "STATE_NOT_AVAILABLE",
+          "RUN_TO_START",
+          "WAIT_FOR_ADAPTION",
+          "ADAPTION_IN_PROGRESS",
+          "ADAPTION_DONE",
+          "TOO_TIGHT",
+          "ADJUSTMENT_TOO_BIG",
+          "ADJUSTMENT_TOO_SMALL"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.VALVE_STATE"
+      },
+      "LEVEL_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "ERROR",
+        "FLAGS": 1,
+        "ID": "LEVEL_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "UNDERFLOW",
+          "ERROR"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL_STATUS"
+      },
+      "HUMIDITY_LIMITER": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "HUMIDITY_LIMITER",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.HUMIDITY_LIMITER"
+      },
+      "EMERGENCY_OPERATION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "EMERGENCY_OPERATION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EMERGENCY_OPERATION"
+      },
+      "FROST_PROTECTION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "FROST_PROTECTION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.FROST_PROTECTION"
+      },
+      "DEW_POINT_ALARM": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DEW_POINT_ALARM",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.DEW_POINT_ALARM"
+      },
+      "LEVEL": {
+        "MIN": 0.0,
+        "UNIT": "100%",
+        "OPERATIONS": 5,
+        "MAX": 1.01,
+        "FLAGS": 1,
+        "ID": "LEVEL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL"
+      },
+      "EXTERNAL_CLOCK": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "EXTERNAL_CLOCK",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EXTERNAL_CLOCK"
+      }
+    },
+    "LINK": {
+      "SHORT_ECO_COOLING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_COOLING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 23.0
+      },
+      "SHORT_COOLING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_COOLING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HEATING_MODE_SELECTION": {
+        "MIN": "STANDARD_ROOM",
+        "OPERATIONS": 3,
+        "MAX": "ROOM_WITH_TOWEL_RAIL",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_MODE_SELECTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "STANDARD_ROOM",
+        "VALUE_LIST": [
+          "STANDARD_ROOM",
+          "ROOM_WITH_FIREPLACE",
+          "ROOM_WITH_TOWEL_RAIL"
+        ]
+      },
+      "SHORT_ECO_HEATING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_HEATING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_MINIMAL_FLOOR_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_MINIMAL_FLOOR_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_CLOCK_FUNCTION": {
+        "MIN": "IGNORE_ECLK",
+        "OPERATIONS": 3,
+        "MAX": "ACCEPT_ECLK",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_CLOCK_FUNCTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "IGNORE_ECLK",
+        "VALUE_LIST": [
+          "IGNORE_ECLK",
+          "ACCEPT_ECLK"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_VALUE": {
+        "MIN": 40,
+        "UNIT": "% rF",
+        "OPERATIONS": 3,
+        "MAX": 80,
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_VALUE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 60
+      },
+      "SHORT_FLOOR_HEATING_MODE": {
+        "MIN": "FLOOR_HEATING_STANDARD",
+        "OPERATIONS": 3,
+        "MAX": "FLOOR_HEATING_LOW_ENERGY",
+        "FLAGS": 1,
+        "ID": "SHORT_FLOOR_HEATING_MODE",
+        "TYPE": "ENUM",
+        "DEFAULT": "FLOOR_HEATING_STANDARD",
+        "VALUE_LIST": [
+          "FLOOR_HEATING_STANDARD",
+          "FLOOR_HEATING_LOW_ENERGY"
+        ]
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:8": {
+    "VALUES": {
+      "VALVE_STATE": {
+        "MIN": "STATE_NOT_AVAILABLE",
+        "OPERATIONS": 5,
+        "MAX": "ADJUSTMENT_TOO_SMALL",
+        "FLAGS": 9,
+        "ID": "VALVE_STATE",
+        "TYPE": "ENUM",
+        "DEFAULT": "STATE_NOT_AVAILABLE",
+        "VALUE_LIST": [
+          "STATE_NOT_AVAILABLE",
+          "RUN_TO_START",
+          "WAIT_FOR_ADAPTION",
+          "ADAPTION_IN_PROGRESS",
+          "ADAPTION_DONE",
+          "TOO_TIGHT",
+          "ADJUSTMENT_TOO_BIG",
+          "ADJUSTMENT_TOO_SMALL"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.VALVE_STATE"
+      },
+      "LEVEL_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "ERROR",
+        "FLAGS": 1,
+        "ID": "LEVEL_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "UNDERFLOW",
+          "ERROR"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL_STATUS"
+      },
+      "HUMIDITY_LIMITER": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "HUMIDITY_LIMITER",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.HUMIDITY_LIMITER"
+      },
+      "EMERGENCY_OPERATION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "EMERGENCY_OPERATION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EMERGENCY_OPERATION"
+      },
+      "FROST_PROTECTION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "FROST_PROTECTION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.FROST_PROTECTION"
+      },
+      "DEW_POINT_ALARM": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DEW_POINT_ALARM",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.DEW_POINT_ALARM"
+      },
+      "LEVEL": {
+        "MIN": 0.0,
+        "UNIT": "100%",
+        "OPERATIONS": 5,
+        "MAX": 1.01,
+        "FLAGS": 1,
+        "ID": "LEVEL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL"
+      },
+      "EXTERNAL_CLOCK": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "EXTERNAL_CLOCK",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EXTERNAL_CLOCK"
+      }
+    },
+    "LINK": {
+      "SHORT_ECO_COOLING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_COOLING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 23.0
+      },
+      "SHORT_COOLING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_COOLING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HEATING_MODE_SELECTION": {
+        "MIN": "STANDARD_ROOM",
+        "OPERATIONS": 3,
+        "MAX": "ROOM_WITH_TOWEL_RAIL",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_MODE_SELECTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "STANDARD_ROOM",
+        "VALUE_LIST": [
+          "STANDARD_ROOM",
+          "ROOM_WITH_FIREPLACE",
+          "ROOM_WITH_TOWEL_RAIL"
+        ]
+      },
+      "SHORT_ECO_HEATING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_HEATING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_MINIMAL_FLOOR_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_MINIMAL_FLOOR_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_CLOCK_FUNCTION": {
+        "MIN": "IGNORE_ECLK",
+        "OPERATIONS": 3,
+        "MAX": "ACCEPT_ECLK",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_CLOCK_FUNCTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "IGNORE_ECLK",
+        "VALUE_LIST": [
+          "IGNORE_ECLK",
+          "ACCEPT_ECLK"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_VALUE": {
+        "MIN": 40,
+        "UNIT": "% rF",
+        "OPERATIONS": 3,
+        "MAX": 80,
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_VALUE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 60
+      },
+      "SHORT_FLOOR_HEATING_MODE": {
+        "MIN": "FLOOR_HEATING_STANDARD",
+        "OPERATIONS": 3,
+        "MAX": "FLOOR_HEATING_LOW_ENERGY",
+        "FLAGS": 1,
+        "ID": "SHORT_FLOOR_HEATING_MODE",
+        "TYPE": "ENUM",
+        "DEFAULT": "FLOOR_HEATING_STANDARD",
+        "VALUE_LIST": [
+          "FLOOR_HEATING_STANDARD",
+          "FLOOR_HEATING_LOW_ENERGY"
+        ]
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:9": {
+    "VALUES": {
+      "VALVE_STATE": {
+        "MIN": "STATE_NOT_AVAILABLE",
+        "OPERATIONS": 5,
+        "MAX": "ADJUSTMENT_TOO_SMALL",
+        "FLAGS": 9,
+        "ID": "VALVE_STATE",
+        "TYPE": "ENUM",
+        "DEFAULT": "STATE_NOT_AVAILABLE",
+        "VALUE_LIST": [
+          "STATE_NOT_AVAILABLE",
+          "RUN_TO_START",
+          "WAIT_FOR_ADAPTION",
+          "ADAPTION_IN_PROGRESS",
+          "ADAPTION_DONE",
+          "TOO_TIGHT",
+          "ADJUSTMENT_TOO_BIG",
+          "ADJUSTMENT_TOO_SMALL"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.VALVE_STATE"
+      },
+      "LEVEL_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "ERROR",
+        "FLAGS": 1,
+        "ID": "LEVEL_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "UNDERFLOW",
+          "ERROR"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL_STATUS"
+      },
+      "HUMIDITY_LIMITER": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "HUMIDITY_LIMITER",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.HUMIDITY_LIMITER"
+      },
+      "EMERGENCY_OPERATION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "EMERGENCY_OPERATION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EMERGENCY_OPERATION"
+      },
+      "FROST_PROTECTION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "FROST_PROTECTION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.FROST_PROTECTION"
+      },
+      "DEW_POINT_ALARM": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DEW_POINT_ALARM",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.DEW_POINT_ALARM"
+      },
+      "LEVEL": {
+        "MIN": 0.0,
+        "UNIT": "100%",
+        "OPERATIONS": 5,
+        "MAX": 1.01,
+        "FLAGS": 1,
+        "ID": "LEVEL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL"
+      },
+      "EXTERNAL_CLOCK": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "EXTERNAL_CLOCK",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EXTERNAL_CLOCK"
+      }
+    },
+    "LINK": {
+      "SHORT_ECO_COOLING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_COOLING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 23.0
+      },
+      "SHORT_COOLING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_COOLING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HEATING_MODE_SELECTION": {
+        "MIN": "STANDARD_ROOM",
+        "OPERATIONS": 3,
+        "MAX": "ROOM_WITH_TOWEL_RAIL",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_MODE_SELECTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "STANDARD_ROOM",
+        "VALUE_LIST": [
+          "STANDARD_ROOM",
+          "ROOM_WITH_FIREPLACE",
+          "ROOM_WITH_TOWEL_RAIL"
+        ]
+      },
+      "SHORT_ECO_HEATING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_HEATING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_MINIMAL_FLOOR_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_MINIMAL_FLOOR_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_CLOCK_FUNCTION": {
+        "MIN": "IGNORE_ECLK",
+        "OPERATIONS": 3,
+        "MAX": "ACCEPT_ECLK",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_CLOCK_FUNCTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "IGNORE_ECLK",
+        "VALUE_LIST": [
+          "IGNORE_ECLK",
+          "ACCEPT_ECLK"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_VALUE": {
+        "MIN": 40,
+        "UNIT": "% rF",
+        "OPERATIONS": 3,
+        "MAX": 80,
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_VALUE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 60
+      },
+      "SHORT_FLOOR_HEATING_MODE": {
+        "MIN": "FLOOR_HEATING_STANDARD",
+        "OPERATIONS": 3,
+        "MAX": "FLOOR_HEATING_LOW_ENERGY",
+        "FLAGS": 1,
+        "ID": "SHORT_FLOOR_HEATING_MODE",
+        "TYPE": "ENUM",
+        "DEFAULT": "FLOOR_HEATING_STANDARD",
+        "VALUE_LIST": [
+          "FLOOR_HEATING_STANDARD",
+          "FLOOR_HEATING_LOW_ENERGY"
+        ]
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:10": {
+    "VALUES": {
+      "VALVE_STATE": {
+        "MIN": "STATE_NOT_AVAILABLE",
+        "OPERATIONS": 5,
+        "MAX": "ADJUSTMENT_TOO_SMALL",
+        "FLAGS": 9,
+        "ID": "VALVE_STATE",
+        "TYPE": "ENUM",
+        "DEFAULT": "STATE_NOT_AVAILABLE",
+        "VALUE_LIST": [
+          "STATE_NOT_AVAILABLE",
+          "RUN_TO_START",
+          "WAIT_FOR_ADAPTION",
+          "ADAPTION_IN_PROGRESS",
+          "ADAPTION_DONE",
+          "TOO_TIGHT",
+          "ADJUSTMENT_TOO_BIG",
+          "ADJUSTMENT_TOO_SMALL"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.VALVE_STATE"
+      },
+      "LEVEL_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "ERROR",
+        "FLAGS": 1,
+        "ID": "LEVEL_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "UNDERFLOW",
+          "ERROR"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL_STATUS"
+      },
+      "HUMIDITY_LIMITER": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "HUMIDITY_LIMITER",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.HUMIDITY_LIMITER"
+      },
+      "EMERGENCY_OPERATION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "EMERGENCY_OPERATION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EMERGENCY_OPERATION"
+      },
+      "FROST_PROTECTION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "FROST_PROTECTION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.FROST_PROTECTION"
+      },
+      "DEW_POINT_ALARM": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DEW_POINT_ALARM",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.DEW_POINT_ALARM"
+      },
+      "LEVEL": {
+        "MIN": 0.0,
+        "UNIT": "100%",
+        "OPERATIONS": 5,
+        "MAX": 1.01,
+        "FLAGS": 1,
+        "ID": "LEVEL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL"
+      },
+      "EXTERNAL_CLOCK": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "EXTERNAL_CLOCK",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EXTERNAL_CLOCK"
+      }
+    },
+    "LINK": {
+      "SHORT_ECO_COOLING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_COOLING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 23.0
+      },
+      "SHORT_COOLING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_COOLING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HEATING_MODE_SELECTION": {
+        "MIN": "STANDARD_ROOM",
+        "OPERATIONS": 3,
+        "MAX": "ROOM_WITH_TOWEL_RAIL",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_MODE_SELECTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "STANDARD_ROOM",
+        "VALUE_LIST": [
+          "STANDARD_ROOM",
+          "ROOM_WITH_FIREPLACE",
+          "ROOM_WITH_TOWEL_RAIL"
+        ]
+      },
+      "SHORT_ECO_HEATING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_HEATING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_MINIMAL_FLOOR_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_MINIMAL_FLOOR_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_CLOCK_FUNCTION": {
+        "MIN": "IGNORE_ECLK",
+        "OPERATIONS": 3,
+        "MAX": "ACCEPT_ECLK",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_CLOCK_FUNCTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "IGNORE_ECLK",
+        "VALUE_LIST": [
+          "IGNORE_ECLK",
+          "ACCEPT_ECLK"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_VALUE": {
+        "MIN": 40,
+        "UNIT": "% rF",
+        "OPERATIONS": 3,
+        "MAX": 80,
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_VALUE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 60
+      },
+      "SHORT_FLOOR_HEATING_MODE": {
+        "MIN": "FLOOR_HEATING_STANDARD",
+        "OPERATIONS": 3,
+        "MAX": "FLOOR_HEATING_LOW_ENERGY",
+        "FLAGS": 1,
+        "ID": "SHORT_FLOOR_HEATING_MODE",
+        "TYPE": "ENUM",
+        "DEFAULT": "FLOOR_HEATING_STANDARD",
+        "VALUE_LIST": [
+          "FLOOR_HEATING_STANDARD",
+          "FLOOR_HEATING_LOW_ENERGY"
+        ]
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:11": {
+    "VALUES": {
+      "VALVE_STATE": {
+        "MIN": "STATE_NOT_AVAILABLE",
+        "OPERATIONS": 5,
+        "MAX": "ADJUSTMENT_TOO_SMALL",
+        "FLAGS": 9,
+        "ID": "VALVE_STATE",
+        "TYPE": "ENUM",
+        "DEFAULT": "STATE_NOT_AVAILABLE",
+        "VALUE_LIST": [
+          "STATE_NOT_AVAILABLE",
+          "RUN_TO_START",
+          "WAIT_FOR_ADAPTION",
+          "ADAPTION_IN_PROGRESS",
+          "ADAPTION_DONE",
+          "TOO_TIGHT",
+          "ADJUSTMENT_TOO_BIG",
+          "ADJUSTMENT_TOO_SMALL"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.VALVE_STATE"
+      },
+      "LEVEL_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "ERROR",
+        "FLAGS": 1,
+        "ID": "LEVEL_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "UNDERFLOW",
+          "ERROR"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL_STATUS"
+      },
+      "HUMIDITY_LIMITER": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "HUMIDITY_LIMITER",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.HUMIDITY_LIMITER"
+      },
+      "EMERGENCY_OPERATION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "EMERGENCY_OPERATION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EMERGENCY_OPERATION"
+      },
+      "FROST_PROTECTION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "FROST_PROTECTION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.FROST_PROTECTION"
+      },
+      "DEW_POINT_ALARM": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DEW_POINT_ALARM",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.DEW_POINT_ALARM"
+      },
+      "LEVEL": {
+        "MIN": 0.0,
+        "UNIT": "100%",
+        "OPERATIONS": 5,
+        "MAX": 1.01,
+        "FLAGS": 1,
+        "ID": "LEVEL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL"
+      },
+      "EXTERNAL_CLOCK": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "EXTERNAL_CLOCK",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EXTERNAL_CLOCK"
+      }
+    },
+    "LINK": {
+      "SHORT_ECO_COOLING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_COOLING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 23.0
+      },
+      "SHORT_COOLING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_COOLING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HEATING_MODE_SELECTION": {
+        "MIN": "STANDARD_ROOM",
+        "OPERATIONS": 3,
+        "MAX": "ROOM_WITH_TOWEL_RAIL",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_MODE_SELECTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "STANDARD_ROOM",
+        "VALUE_LIST": [
+          "STANDARD_ROOM",
+          "ROOM_WITH_FIREPLACE",
+          "ROOM_WITH_TOWEL_RAIL"
+        ]
+      },
+      "SHORT_ECO_HEATING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_HEATING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_MINIMAL_FLOOR_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_MINIMAL_FLOOR_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_CLOCK_FUNCTION": {
+        "MIN": "IGNORE_ECLK",
+        "OPERATIONS": 3,
+        "MAX": "ACCEPT_ECLK",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_CLOCK_FUNCTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "IGNORE_ECLK",
+        "VALUE_LIST": [
+          "IGNORE_ECLK",
+          "ACCEPT_ECLK"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_VALUE": {
+        "MIN": 40,
+        "UNIT": "% rF",
+        "OPERATIONS": 3,
+        "MAX": 80,
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_VALUE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 60
+      },
+      "SHORT_FLOOR_HEATING_MODE": {
+        "MIN": "FLOOR_HEATING_STANDARD",
+        "OPERATIONS": 3,
+        "MAX": "FLOOR_HEATING_LOW_ENERGY",
+        "FLAGS": 1,
+        "ID": "SHORT_FLOOR_HEATING_MODE",
+        "TYPE": "ENUM",
+        "DEFAULT": "FLOOR_HEATING_STANDARD",
+        "VALUE_LIST": [
+          "FLOOR_HEATING_STANDARD",
+          "FLOOR_HEATING_LOW_ENERGY"
+        ]
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:12": {
+    "VALUES": {
+      "VALVE_STATE": {
+        "MIN": "STATE_NOT_AVAILABLE",
+        "OPERATIONS": 5,
+        "MAX": "ADJUSTMENT_TOO_SMALL",
+        "FLAGS": 9,
+        "ID": "VALVE_STATE",
+        "TYPE": "ENUM",
+        "DEFAULT": "STATE_NOT_AVAILABLE",
+        "VALUE_LIST": [
+          "STATE_NOT_AVAILABLE",
+          "RUN_TO_START",
+          "WAIT_FOR_ADAPTION",
+          "ADAPTION_IN_PROGRESS",
+          "ADAPTION_DONE",
+          "TOO_TIGHT",
+          "ADJUSTMENT_TOO_BIG",
+          "ADJUSTMENT_TOO_SMALL"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.VALVE_STATE"
+      },
+      "LEVEL_STATUS": {
+        "MIN": "NORMAL",
+        "OPERATIONS": 5,
+        "MAX": "ERROR",
+        "FLAGS": 1,
+        "ID": "LEVEL_STATUS",
+        "TYPE": "ENUM",
+        "DEFAULT": "NORMAL",
+        "VALUE_LIST": [
+          "NORMAL",
+          "UNKNOWN",
+          "OVERFLOW",
+          "UNDERFLOW",
+          "ERROR"
+        ],
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL_STATUS"
+      },
+      "HUMIDITY_LIMITER": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "HUMIDITY_LIMITER",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.HUMIDITY_LIMITER"
+      },
+      "EMERGENCY_OPERATION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 9,
+        "ID": "EMERGENCY_OPERATION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EMERGENCY_OPERATION"
+      },
+      "FROST_PROTECTION": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "FROST_PROTECTION",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.FROST_PROTECTION"
+      },
+      "DEW_POINT_ALARM": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "DEW_POINT_ALARM",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.DEW_POINT_ALARM"
+      },
+      "LEVEL": {
+        "MIN": 0.0,
+        "UNIT": "100%",
+        "OPERATIONS": 5,
+        "MAX": 1.01,
+        "FLAGS": 1,
+        "ID": "LEVEL",
+        "TYPE": "FLOAT",
+        "DEFAULT": 0.0,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.LEVEL"
+      },
+      "EXTERNAL_CLOCK": {
+        "MIN": false,
+        "OPERATIONS": 5,
+        "MAX": true,
+        "FLAGS": 1,
+        "ID": "EXTERNAL_CLOCK",
+        "TYPE": "BOOL",
+        "DEFAULT": false,
+        "CONTROL": "CLIMATECONTROL_FLOOR_TRANSCEIVER.EXTERNAL_CLOCK"
+      }
+    },
+    "LINK": {
+      "SHORT_ECO_COOLING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_COOLING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 23.0
+      },
+      "SHORT_COOLING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_COOLING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_HEATING_MODE_SELECTION": {
+        "MIN": "STANDARD_ROOM",
+        "OPERATIONS": 3,
+        "MAX": "ROOM_WITH_TOWEL_RAIL",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_MODE_SELECTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "STANDARD_ROOM",
+        "VALUE_LIST": [
+          "STANDARD_ROOM",
+          "ROOM_WITH_FIREPLACE",
+          "ROOM_WITH_TOWEL_RAIL"
+        ]
+      },
+      "SHORT_ECO_HEATING_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_ECO_HEATING_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_DISABLE": {
+        "MIN": "DISABLE",
+        "OPERATIONS": 3,
+        "MAX": "ENABLE",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_DISABLE",
+        "TYPE": "ENUM",
+        "DEFAULT": "ENABLE",
+        "VALUE_LIST": [
+          "DISABLE",
+          "ENABLE"
+        ]
+      },
+      "SHORT_MINIMAL_FLOOR_TEMPERATURE": {
+        "MIN": 5.0,
+        "UNIT": "°C",
+        "OPERATIONS": 3,
+        "MAX": 30.0,
+        "FLAGS": 1,
+        "ID": "SHORT_MINIMAL_FLOOR_TEMPERATURE",
+        "TYPE": "FLOAT",
+        "DEFAULT": 19.0
+      },
+      "SHORT_HEATING_CLOCK_FUNCTION": {
+        "MIN": "IGNORE_ECLK",
+        "OPERATIONS": 3,
+        "MAX": "ACCEPT_ECLK",
+        "FLAGS": 1,
+        "ID": "SHORT_HEATING_CLOCK_FUNCTION",
+        "TYPE": "ENUM",
+        "DEFAULT": "IGNORE_ECLK",
+        "VALUE_LIST": [
+          "IGNORE_ECLK",
+          "ACCEPT_ECLK"
+        ]
+      },
+      "SHORT_HUMIDITY_LIMIT_VALUE": {
+        "MIN": 40,
+        "UNIT": "% rF",
+        "OPERATIONS": 3,
+        "MAX": 80,
+        "FLAGS": 1,
+        "ID": "SHORT_HUMIDITY_LIMIT_VALUE",
+        "TYPE": "INTEGER",
+        "DEFAULT": 60
+      },
+      "SHORT_FLOOR_HEATING_MODE": {
+        "MIN": "FLOOR_HEATING_STANDARD",
+        "OPERATIONS": 3,
+        "MAX": "FLOOR_HEATING_LOW_ENERGY",
+        "FLAGS": 1,
+        "ID": "SHORT_FLOOR_HEATING_MODE",
+        "TYPE": "ENUM",
+        "DEFAULT": "FLOOR_HEATING_STANDARD",
+        "VALUE_LIST": [
+          "FLOOR_HEATING_STANDARD",
+          "FLOOR_HEATING_LOW_ENERGY"
+        ]
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:13": {
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:14": {
+    "MASTER": {
+      "ON_TIME_BASE": {
+        "MIN": "BASE_100_MS",
+        "OPERATIONS": 3,
+        "MAX": "BASE_1_H",
+        "FLAGS": 1,
+        "ID": "ON_TIME_BASE",
+        "TYPE": "ENUM",
+        "DEFAULT": "BASE_1_M",
+        "VALUE_LIST": [
+          "BASE_100_MS",
+          "BASE_1_S",
+          "BASE_5_S",
+          "BASE_10_S",
+          "BASE_1_M",
+          "BASE_5_M",
+          "BASE_10_M",
+          "BASE_1_H"
+        ]
+      },
+      "SWITCHING_INTERVAL_BASE": {
+        "MIN": "BASE_1_S",
+        "OPERATIONS": 3,
+        "MAX": "BASE_1_D",
+        "FLAGS": 1,
+        "ID": "SWITCHING_INTERVAL_BASE",
+        "TYPE": "ENUM",
+        "DEFAULT": "BASE_1_D",
+        "VALUE_LIST": [
+          "BASE_1_S",
+          "BASE_5_S",
+          "BASE_10_S",
+          "BASE_1_M",
+          "BASE_5_M",
+          "BASE_10_M",
+          "BASE_1_H",
+          "BASE_1_D"
+        ]
+      },
+      "ON_TIME_FACTOR": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 31,
+        "FLAGS": 1,
+        "ID": "ON_TIME_FACTOR",
+        "TYPE": "INTEGER",
+        "DEFAULT": 1
+      },
+      "SWITCHING_INTERVAL_FACTOR": {
+        "MIN": 0,
+        "OPERATIONS": 3,
+        "MAX": 31,
+        "FLAGS": 1,
+        "ID": "SWITCHING_INTERVAL_FACTOR",
+        "TYPE": "INTEGER",
+        "DEFAULT": 14
+      }
+    },
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:15": {
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  },
+  "VCU9245535:16": {
+    "SERVICE": {
+      "TEST_STATUS": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 255,
+        "FLAGS": 1,
+        "ID": "TEST_STATUS",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      },
+      "OS_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "OS_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "APPLICATION_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "APPLICATION_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "BOOTLOADER_VERSION": {
+        "MIN": "0.0.0",
+        "OPERATIONS": 1,
+        "MAX": "255.255.255",
+        "FLAGS": 1,
+        "ID": "BOOTLOADER_VERSION",
+        "TYPE": "STRING",
+        "DEFAULT": "0.0.0"
+      },
+      "HARDWARE_VERSION": {
+        "MIN": 0,
+        "OPERATIONS": 1,
+        "MAX": 65535,
+        "FLAGS": 1,
+        "ID": "HARDWARE_VERSION",
+        "TYPE": "INTEGER",
+        "DEFAULT": 0
+      }
+    }
+  }
+}
