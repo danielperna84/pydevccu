@@ -7,6 +7,7 @@ import threading
 import json
 from xmlrpc.server import SimpleXMLRPCServer
 from xmlrpc.server import SimpleXMLRPCRequestHandler
+from pydevccu.converter import CONVERTABLE_PARAMETERS, convert_combined_parameter_to_paramset
 
 from . import const
 from .proxy import LockingServerProxy
@@ -218,7 +219,10 @@ class RPCFunctions():
     def setValue(self, address, value_key, value, force=False):
         address = address.upper()
         LOG.debug("RPCFunctions.setValue: address=%s, value_key=%s, value=%s, force=%s", address, value_key, value, force)
-        paramset = {value_key: value}
+        if value_key in CONVERTABLE_PARAMETERS:
+            paramset = convert_combined_parameter_to_paramset(value_key, value)
+        else:
+            paramset = {value_key: value}
         self.putParamset(address, const.PARAMSET_ATTR_VALUES, paramset, force=force)
         return ""
 
