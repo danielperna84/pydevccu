@@ -4,3 +4,4 @@ venv
 paramsets_db.json
 start*
 .idea
+/build

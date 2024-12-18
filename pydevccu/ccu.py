@@ -251,12 +251,13 @@ class RPCFunctions():
             if param_type == const.PARAMSET_TYPE_FLOAT:
                 value = float(value)
             if param_type == const.PARAMSET_TYPE_ENUM:
-                if value > float(param_data[const.PARAMSET_ATTR_MAX]):
-                    LOG.warning("RPCFunctions.putParamset: address=%s, value_key=%s: value too high", address, value_key)
-                    raise Exception
-                if value < float(param_data[const.PARAMSET_ATTR_MIN]):
-                    LOG.warning("RPCFunctions.putParamset: address=%s, value_key=%s: value too low", address, value_key)
-                    raise Exception
+                if not isinstance(param_data[const.PARAMSET_ATTR_MAX], str):
+                    if value > float(param_data[const.PARAMSET_ATTR_MAX]):
+                        LOG.warning("RPCFunctions.putParamset: address=%s, value_key=%s: value too high", address, value_key)
+                        raise Exception
+                    if value < float(param_data[const.PARAMSET_ATTR_MIN]):
+                        LOG.warning("RPCFunctions.putParamset: address=%s, value_key=%s: value too low", address, value_key)
+                        raise Exception
             if param_type in [const.PARAMSET_TYPE_FLOAT, const.PARAMSET_TYPE_INTEGER]:
                 special = param_data.get(const.PARAMSET_ATTR_SPECIAL, [])
                 valid = []

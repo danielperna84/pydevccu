@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools==75.6.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name        = "pydevccu"
+version     = "0.1.9"
+license     = {text = "MIT License"}
+description = "Virtual HomeMatic CCU XML-RPC backend."
+readme      = "README.md"
+authors     = [
+    {name = "Daniel Perna", email = "danielperna84@gmail.com"},
+    {name = "SukramJ", email = "sukramj@icloud.com"},
+]
+keywords    = ["homematic", "ccu", "xml-rpc"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Home Automation",
+]
+requires-python = ">=3.12.0"
+
+[project.urls]
+"Source Code" = "https://github.com/sukramj/pydevccu"
+"Bug Reports" = "https://github.com/sukramj/pydevccu/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["pydevccu*"]
+exclude = ["tests", "tests.*", "dist", "build"]
+
+[tool.setuptools.package-data]
+pydevccu = ["py.typed", "*/*.json"]
+
+

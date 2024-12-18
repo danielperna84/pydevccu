@@ -7,7 +7,7 @@ The main objective is to provide you access to all available devices without own
 
 The `init` method used to subscribe to events is available and functional. Events will be fired when you use the `setValue` or `putParamset` methods to change parameters of a device.  
 
-When adding the `logic` argument while creating the server-object, modules found in _device\_logic_ will be loaded depending on which devices are enabled. For example: the module [HM_Sec_SC_2.py](https://github.com/danielperna84/pydevccu/blob/master/pydevccu/device_logic/HM_Sec_SC_2.py) fires two events at the specified _interval_. The `STATE` toggles with every event, and `LOWBAT` gets toggled every 5 events.  
+When adding the `logic` argument while creating the server-object, modules found in _device\_logic_ will be loaded depending on which devices are enabled. For example: the module [HM_Sec_SC_2.py](https://github.com/sukramj/pydevccu/blob/master/pydevccu/device_logic/HM_Sec_SC_2.py) fires two events at the specified _interval_. The `STATE` toggles with every event, and `LOWBAT` gets toggled every 5 events.  
 The _startupdelay_ randomizes when the eventloop will initially start from 0 to _startupdelay_ seconds. This is to prevent multiple devices from firing their events at the same time.
 
 ## Methods

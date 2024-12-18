@@ -7,8 +7,8 @@ The two resulting files will be stored in the folders:
 - paramset_descriptions
 
 Post these files at https://gist.github.com/ to assist device implementation
-for pyhomematic (https://github.com/danielperna84/pyhomematic) and / or create
-a pull request at https://github.com/danielperna84/pydevccu to increase
+for hahomematic (https://github.com/sukramj/hahomematic) and / or create
+a pull request at https://github.com/sukramj/pydevccu to increase
 device coverage if data for your device is not yet available in the repository.
 
 Set CCU_IP to the IP address of your CCU.
