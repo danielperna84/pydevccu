@@ -5,3 +5,4 @@ paramsets_db.json
 start*
 .idea
 /build
+.DS_Store

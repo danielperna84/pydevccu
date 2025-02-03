@@ -1,3 +1,13 @@
+Version 0.1.10 (2025-02-03)
+- Add ELV-SH-CTH
+- Add HmIP-ASIR-O
+
+Version 0.1.9 (2024-12-18)
+- Add HmIP-DRG-DALI
+- Add HmIP-FALMOT-C12
+- Add HmIP-BSL
+- Add HmIP-DRBLI4
+
 Version 0.1.8 (2024-03-06)
 - Add HB-LC-Bl1-Velux
 - Add HBW-LC4-IN4-DR
